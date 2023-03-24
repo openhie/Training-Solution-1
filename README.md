@@ -1,19 +1,17 @@
-Empty IG
----
-This is an empty IG
-<br> </br>
-###
-### Publication
-This ImplementationGuide is published in the following locations:
+# FHIR Training Solution 1 IG
 
-Continuous Build: __http://build.fhir.org/ig/openhie/fhir-ig-empty/branches/main/index.html__  
-Canonical / permanent URL: 
-<br> </br>
+A solution IG to the hackathon - https://docs.google.com/document/d/1MYZHukPqMvZMSbtwm8SRcHnl7ee9bvC6NtZTwFQd45I
 
-### Issues
+## Publication 
+
+This Implementation Guide is published in the following locations:
+
+* Continuous Build: <http://build.fhir.org/ig/openhie/Training-Solution-1/>
+* Canonical/permanent URL: <https://openhie.github.io/Training-Solution-1/index.html>
+
+## Issues
+
 Issues and change requests are managed here:  
 
-Issues:  __https://github.com/openhie/fhir-ig-empty/issues__  
-Kanban board:  __https://github.com/openhie/fhir-ig-empty/projects/1__  
-
----
+* Issues:  <https://github.com/openhie/Training-Solution-1/issues>  
+* Kanban board: 
