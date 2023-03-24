@@ -1,7 +1,7 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd" lang="en">
   <a name="scope">  </a>
 	<p>
-    This is a solution FHIR Implementation Guide (IG) to the <a href="https://docs.google.com/document/d/1MYZHukPqMvZMSbtwm8SRcHnl7ee9bvC6NtZTwFQd45I" target="_blank">hackthon concept note</a>.
+    This is a solution FHIR Implementation Guide (IG) to the <a href="https://docs.google.com/document/d/1MYZHukPqMvZMSbtwm8SRcHnl7ee9bvC6NtZTwFQd45I" target="_blank">hackathon concept note</a>.
   </p>
 
   <p>
@@ -15,7 +15,7 @@
       This FHIR IG not intended for production use but may be used to support the training needs of others.
       <br />
       <br />
-      For more information regarding the training course that was used to inform the aforementioned hackathon concept note, please see the <a href="https://docs.google.com/document/d/1zHHnK0hnIn3kNFOT835OYpKvvoCYniJyJNe2-0B1sS0" target="_blank">FHIR training course guidlines</a>.
+      For more information regarding the training course that was used to inform the aforementioned hackathon concept note, please see the <a href="https://docs.google.com/document/d/1zHHnK0hnIn3kNFOT835OYpKvvoCYniJyJNe2-0B1sS0" target="_blank">FHIR training course guidelines</a>.
     </p>
   </blockquote>
 </div>
