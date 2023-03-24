@@ -8,7 +8,7 @@
     The purpose of the hackathon was to simulate a data exchange between an EMR and laboratory system through a planned practical demonstration. 
     The overall intent of the planned practical was to allow participants to demonstrate what they have learnt through the creation of FHIR IG where the use cases and FHIR data elements were provided by the lecturer. 
     Participants were required to deploy their FHIR IG to a lecturer provided centrally hosted platform per country and then demonstrate that their FHIR IG was able to support the lecturer provided use cases through a data exchange.
-  </P>
+  </p>
 
   <blockquote class="stu-note">
     <p>
