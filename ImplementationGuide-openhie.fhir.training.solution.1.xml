@@ -12,7 +12,7 @@
   <title value="FHIR Training Solution 1"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-03-24T14:42:38+00:00"/>
+  <date value="2023-03-24T15:33:20+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -911,7 +911,7 @@
           <valueUrl value="index.html"/>
         </extension>
         <nameUrl value="index.html"/>
-        <title value="MyIG Home Page"/>
+        <title value="Solution IG"/>
         <generation value="html"/>
       </page>
       <page>
