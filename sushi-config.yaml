@@ -7,16 +7,16 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: my-ig
-canonical: http://example.com/fhir/example
-url: http://example.com/fhir/example
-name: ExampleIG
+id: openhie.fhir.training.solution.1
+canonical: http://openhie.org/fhir/training-solution-1
+url: http://openhie.org/fhir/training-solution-1
+name: TrainingSolution1
 title: "HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1"
-description: Example IG exercises many of the fields in a SUSHI configuration.
+description: A FHIR Implementation Guide which represents the solution to a FHIR training hackathon (https://docs.google.com/document/d/1MYZHukPqMvZMSbtwm8SRcHnl7ee9bvC6NtZTwFQd45I).
 status: active
 license: CC0-1.0
-date: 2020-02-26
-version: 1.0.0
+date: 2022-03-24
+version: 0.1.0
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
 # it can be a single item OR and array here (but so far SUSHI only
@@ -37,16 +37,16 @@ releaseLabel: STU1
 # as IG.publisher.  The contact details and/or additional publishers
 # will be translated into IG.contact values.
 publisher:
-  name: My Organization 
-  url: http://example.com/committees
-  email: my-group@example.com
+  name: Jembi Health Systems 
+  url: https://www.jembi.org
+  email: info@jembi.org
 
 # ContactDetail is required by the template.
 contact:
-  - name: Bob Smith
+  - name: Richard Langford
     telecom:
       - system: email
-        value: bobsmith@example.com
+        value: richard.langford@jembi.org
         use: work
 
 # The jurisdiction can be a single item or a list. The FHIR Shorthand
