@@ -18,7 +18,7 @@
   fhir:title [ fhir:v "FHIR Training Solution 1"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-03-26T09:02:01+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-03-26T10:35:39+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Jembi Health Systems"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -694,6 +694,17 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/date-hiv-test-done> ;
+         fhir:reference [ fhir:v "StructureDefinition/date-hiv-test-done" ]
+       ] ;
+       fhir:name [ fhir:v "Date HIV Test Done" ] ;
+       fhir:description [ fhir:v "This profile is to record the date when HIV test was done for a patient." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task> ;
          fhir:reference [ fhir:v "StructureDefinition/hiv-lab-task" ]
        ] ;
@@ -727,6 +738,20 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/Observation/DateHIVTestDoneExample> ;
+         fhir:reference [ fhir:v "Observation/DateHIVTestDoneExample" ]
+       ] ;
+       fhir:name [ fhir:v "Example Observation - DateHIVTestDoneExample" ] ;
+       fhir:example [
+         fhir:v "http://openhie.org/fhir/training-solution-1/StructureDefinition/date-hiv-test-done"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/date-hiv-test-done>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
@@ -738,6 +763,17 @@
          fhir:v "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task"^^xsd:anyURI ;
          fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task>
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/ValueSet/vs-hiv-test-done> ;
+         fhir:reference [ fhir:v "ValueSet/vs-hiv-test-done" ]
+       ] ;
+       fhir:name [ fhir:v "HIV Test Done" ] ;
+       fhir:description [ fhir:v "Used by the observation to indicate that a HIV test was performed." ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -902,6 +938,20 @@
        ] ;
        fhir:name [ fhir:v "Target Facility Encounter" ] ;
        fhir:description [ fhir:v "This profile represents the current facility at which the patient is receiving treatment." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/Bundle/EMR> ;
+         fhir:reference [ fhir:v "Bundle/EMR" ]
+       ] ;
+       fhir:name [ fhir:v "Example Bundle - EMR" ] ;
+       fhir:example [
+         fhir:v "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-patient"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-patient>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

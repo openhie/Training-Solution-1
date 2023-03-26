@@ -21,6 +21,13 @@
     "name" : "HIVServiceRequest"
   },
   {
+    "id" : "date-hiv-test-done",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/date-hiv-test-done",
+    "version" : "0.1.0",
+    "name" : "DateHIVTestDone"
+  },
+  {
     "id" : "hiv-care-next-visit",
     "type" : "StructureDefinition",
     "url" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-care-next-visit",
@@ -124,6 +131,13 @@
     "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-condition",
     "version" : "0.1.0",
     "name" : "VSCondition"
+  },
+  {
+    "id" : "vs-hiv-test-done",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-hiv-test-done",
+    "version" : "0.1.0",
+    "name" : "VSHIVTestDone"
   },
   {
     "id" : "vs-key-population-status",

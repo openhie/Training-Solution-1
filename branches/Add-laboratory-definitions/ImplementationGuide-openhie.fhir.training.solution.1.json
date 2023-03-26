@@ -11,7 +11,7 @@
   "title" : "FHIR Training Solution 1",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-03-26T09:02:01+00:00",
+  "date" : "2023-03-26T10:35:39+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -776,6 +776,17 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/date-hiv-test-done"
+      },
+      "name" : "Date HIV Test Done",
+      "description" : "This profile is to record the date when HIV test was done for a patient."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/hiv-lab-task"
       },
       "name" : "Lab Task",
@@ -806,6 +817,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/DateHIVTestDoneExample"
+      },
+      "name" : "Example Observation - DateHIVTestDoneExample",
+      "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/date-hiv-test-done"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
       }],
       "reference" : {
@@ -813,6 +835,17 @@
       },
       "name" : "Example Bundle - LabRejection",
       "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-hiv-test-done"
+      },
+      "name" : "HIV Test Done",
+      "description" : "Used by the observation to indicate that a HIV test was performed."
     },
     {
       "extension" : [{
@@ -956,6 +989,17 @@
       },
       "name" : "Target Facility Encounter",
       "description" : "This profile represents the current facility at which the patient is receiving treatment."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/EMR"
+      },
+      "name" : "Example Bundle - EMR",
+      "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-patient"
     },
     {
       "extension" : [{
