@@ -343,3 +343,19 @@ Description: "Viral Load Suppression example"
 * note.authorReference = Reference(HIVOrganizationExample)
 * note.time = "2015-02-07T13:28:17-05:00"
 * performer = Reference(HIVOrganizationExample)
+
+Instance: DateHIVTestDoneExample
+InstanceOf: DateHIVTestDone
+Usage: #example
+Title: "Date HIV Test Done example"
+Description: "Date HIV Test Done example"
+* status = #final
+* code = $SCT#315124004
+* code.text = "Viral Load Examination"
+* code.coding.display = "Human immunodeficiency virus viral load"
+* subject = Reference(HIVPatientExample)
+* encounter = Reference(TargetFacilityEncounterExample)
+* effectiveDateTime = "2022-12-10"
+* note.text = "Additional information regarding the HIV test"
+* note.authorReference = Reference(HIVOrganizationExample)
+* note.time = "2015-02-07T13:28:17-05:00"

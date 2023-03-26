@@ -301,3 +301,16 @@ Description: "A report as a result of the lab task being completed."
 * performer 1..1
 * result 1..1
 * conclusion 0..1
+
+Profile: DateHIVTestDone
+Parent: Observation
+Id: date-hiv-test-done
+Title: "Date HIV Test Done"
+Description: "This profile is to record the date when HIV test was done for a patient."
+* status = #final
+* code from VSHIVTestDone (required)
+* code.text = "Viral Load Examination"
+* subject 1..1
+* encounter 1..1
+* effectiveDateTime 1..1
+* note 0..1
