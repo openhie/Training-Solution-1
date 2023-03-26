@@ -12,7 +12,7 @@
   <title value="FHIR Training Solution 1"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-03-26T09:07:12+00:00"/>
+  <date value="2023-03-26T10:35:39+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -604,6 +604,16 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/date-hiv-test-done"/>
+      </reference>
+      <name value="Date HIV Test Done"/>
+      <description value="This profile is to record the date when HIV test was done for a patient."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/hiv-lab-task"/>
       </reference>
       <name value="Lab Task"/>
@@ -631,6 +641,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/DateHIVTestDoneExample"/>
+      </reference>
+      <name value="Example Observation - DateHIVTestDoneExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/date-hiv-test-done"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Bundle"/>
       </extension>
       <reference>
@@ -638,6 +658,16 @@
       </reference>
       <name value="Example Bundle - LabRejection"/>
       <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-hiv-test-done"/>
+      </reference>
+      <name value="HIV Test Done"/>
+      <description value="Used by the observation to indicate that a HIV test was performed."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -768,6 +798,16 @@
       </reference>
       <name value="Target Facility Encounter"/>
       <description value="This profile represents the current facility at which the patient is receiving treatment."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/EMR"/>
+      </reference>
+      <name value="Example Bundle - EMR"/>
+      <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

@@ -38,6 +38,12 @@
         "title": "Lab Order"
       }
     ],
+    "Observation": [
+      {
+        "url": "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-test-results",
+        "title": "Lab Results"
+      }
+    ],
     "Condition": [
       {
         "url": "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-diagnosis",
@@ -78,12 +84,6 @@
       {
         "url": "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-practitioner",
         "title": "Practitioner"
-      }
-    ],
-    "Observation": [
-      {
-        "url": "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-test-results",
-        "title": "Lab Results"
       }
     ],
     "Encounter": [
@@ -151,9 +151,11 @@
       "ImplementationGuide.definition.resource"
     ],
     "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-care-next-visit": [
+      "Bundle.entry.resource",
       "Encounter"
     ],
     "http://openhie.org/fhir/training-solution-1/StructureDefinition/key-population-status": [
+      "Bundle.entry.resource",
       "Patient"
     ]
   }
