@@ -6,7 +6,7 @@
     <profile value="http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-organization"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="HIVOrganizationExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;HIVOrganizationExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-hiv-organization.html">HIV Organization</a></p></div><p><b>identifier</b>: Organization identifier: facility1</p><p><b>name</b>: HIV Test Services Health Facility</p><p><b>address</b>: DISI line 1 DISI line 2 DISI line 3 DISI city 1 DISI state 1 DISI postal code DISI country </p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="HIVOrganizationExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;HIVOrganizationExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-hiv-organization.html">HIV Organization</a></p></div><p><b>identifier</b>: HIV Organization identifier: facility1</p><p><b>name</b>: HIV Test Services Health Facility</p><p><b>address</b>: DISI line 1 DISI line 2 DISI line 3 DISI city 1 DISI state 1 DISI postal code DISI country </p></div>
   </text>
   <identifier>
     <type>
@@ -15,6 +15,7 @@
         <code value="XX"/>
         <display value="Organization identifier"/>
       </coding>
+      <text value="HIV Organization identifier"/>
     </type>
     <system value="http://openhie.org/fhir/hiv-cbs/identifier/hiv-organization"/>
     <value value="facility1"/>
