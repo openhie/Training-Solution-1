@@ -1,4 +1,4 @@
-# FHIR Training Solution 1 IG
+# Solution IG
 
 A solution IG to the hackathon - https://docs.google.com/document/d/1MYZHukPqMvZMSbtwm8SRcHnl7ee9bvC6NtZTwFQd45I
 
