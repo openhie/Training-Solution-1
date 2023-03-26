@@ -8,6 +8,7 @@ Description: "Organization example"
 * identifier[XX].type.coding.code = #XX
 * identifier[XX].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier[XX].type.coding.display = "Organization identifier"
+* identifier[XX].type.text = "HIV Organization identifier"
 * name = "HIV Test Services Health Facility"
 * address[+].country = "DISI country"
 * address[=].state = "DISI state 1"
@@ -31,6 +32,7 @@ Description: "Patient example"
 * identifier[MR].type.coding.code = #MR
 * identifier[MR].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier[MR].type.coding.display = "Medical record number"
+* identifier[MR].type.text = "Patient folder number"
 * active = true
 * name.use = #official
 * name.family = "Smith"
@@ -85,6 +87,8 @@ Description: "This resource is used for Management of a Patient's HIV Programme.
 * identifier[PI].system = "http://openhie.org/fhir/hiv-cbs/identifier/enrollment-unique-id" (exactly)
 * identifier[PI].type.coding.code = #PI
 * identifier[PI].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* identifier[PI].type.coding.display = "Patient internal identifier"
+* identifier[PI].type.text = "Enrollment identifier"
 * status = #active
 * diagnosis.condition = Reference(HIVDiagnosisExample)
 * patient = Reference(HIVPatientExample)
@@ -113,6 +117,8 @@ Description: "Showing a confirmed HIV diagnosis"
 * identifier[PI].system = "http://openhie.org/fhir/hiv-cbs/identifier/hiv-diagnosis"
 * identifier[PI].type.coding.code = #PI
 * identifier[PI].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* identifier[PI].type.coding.display = "Patient internal identifier"
+* identifier[PI].type.text = "HIV positive testing identifier"
 * clinicalStatus = #active
 * clinicalStatus.coding.system = "http://terminology.hl7.org/CodeSystem/condition-clinical"
 * verificationStatus = #confirmed
@@ -135,6 +141,7 @@ Description: "Viral Load Specimen example"
 * identifier[USID].type.coding.code = #USID
 * identifier[USID].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier[USID].type.coding.display = "Unique Specimen ID"
+* identifier[USID].type.text = "Specimen identifier"
 * type = $SCT#119361006
 * type.text = "Specimen Type"
 * type.coding.display = "Plasma specimen (specimen)"
@@ -153,7 +160,8 @@ Description: "HIV Service Request Location example"
 * identifier[XX].system = "http://openhie.org/fhir/training-solution-1/identifier/hiv-service-request-location"
 * identifier[XX].type.coding.code = #XX
 * identifier[XX].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
-* identifier[XX].type.coding.display = "Organization Identifier"
+* identifier[XX].type.coding.display = "Organization identifier"
+* identifier[XX].type.text = "HIV Organization identifier"
 * name = "Laboratory Services"
 * address[+].country = "DISI country"
 * address[=].state = "DISI state 1"
@@ -184,6 +192,7 @@ Description: "HIV Lab Order example"
 * identifier[PLAC].type.coding.code = #PLAC
 * identifier[PLAC].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier[PLAC].type.coding.display = "Placer Identifier"
+* identifier[PLAC].type.text = "HIV lab service request identifier"
 * status = #completed
 * intent = #order
 * code = $LNC#25836-8
@@ -234,6 +243,7 @@ Description: "Lab Result Task example"
 * identifier[FILL].type.coding.code = #FILL
 * identifier[FILL].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier[FILL].type.coding.display = "Filler Identifier"
+* identifier[FILL].type.text = "Lab order number"
 * basedOn = Reference(HIVServiceRequestExample)
 * status = #completed
 * intent = #order

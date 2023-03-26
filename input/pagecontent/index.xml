@@ -6,8 +6,10 @@
 
   <p>
     The purpose of the hackathon was to simulate a data exchange between an EMR and laboratory system through a planned practical demonstration. 
-    The overall intent of the planned practical was to allow participants to demonstrate what they have learnt through the creation of FHIR IG where the use cases and FHIR data elements were provided by the lecturer. 
-    Participants were required to deploy their FHIR IG to a lecturer provided centrally hosted platform per country and then demonstrate that their FHIR IG was able to support the lecturer provided use cases through a data exchange.
+    The overall intent of the planned practical was to allow participants to demonstrate what they have learnt through the creation of a FHIR IG where the use cases and data elements were provided by the lecturer. 
+    <br />
+    <br />
+    Participants were required to deploy their FHIR IG to a lecturer provided <a href="https://jembi.gitbook.io/jembi-platform/" target="_blank">centrally hosted platform</a> per country and then demonstrate that their FHIR IG was able to support the use cases through a data exchange.
   </p>
 
   <blockquote class="stu-note">
