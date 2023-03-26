@@ -42,6 +42,7 @@ Description: "A list of reasons associated with the service request for the lab 
 * $SCT#281268007 "Insufficient sample"
 * $SCT#281265005 "Sample incorrectly labeled"
 * $SCT#419182006 "Supplies not available"
+
 ValueSet: VSVLResultCode
 Id: vs-vl-result-code
 Title: "Viral Load Result Code"
@@ -93,7 +94,7 @@ Id: vs-condition
 Title: "Conditions"
 Description:  "A list of possible HIV conditions."
 * ^experimental = false
-* $SCT#86406008 "Human immunodeficiency virus infection (disorder)"
+* $SCT#86406008 "Human immunodeficiency virus infection"
 
 ValueSet: VSHIVTestDone
 Id: vs-hiv-test-done

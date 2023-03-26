@@ -139,6 +139,7 @@ Description: "This profile represents the confirmation of HIV diagnosis."
 * verificationStatus 1..1
 * code 1..1
 * code from VSCondition (required)
+* code.text = "Diagnosis"
 * subject 1..1
 * encounter 1..1
 * recordedDate 1..1
