@@ -124,6 +124,8 @@ Description: "Showing a confirmed HIV diagnosis"
 * verificationStatus = #confirmed
 * verificationStatus.coding.system = "http://terminology.hl7.org/CodeSystem/condition-ver-status"
 * code = $SCT#86406008
+* code.text = "Diagnosis"
+* code.coding.display = "Human immunodeficiency virus infection"
 * subject = Reference(HIVPatientExample)
 * encounter = Reference(TargetFacilityEncounterExample)
 * recordedDate = "2021-05-18"
