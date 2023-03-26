@@ -3,7 +3,7 @@
   "name" : "TrainingSolution1",
   "package-id" : "openhie.fhir.training.solution.1",
   "ig-ver" : "0.1.0",
-  "date" : "Sun, 26 Mar, 2023 08:42:47 +0000",
+  "date" : "Sun, 26 Mar, 2023 09:01:05 +0000",
   "errs" : 0,
   "warnings" : 4,
   "hints" : 0,
