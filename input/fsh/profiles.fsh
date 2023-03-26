@@ -309,6 +309,7 @@ Title: "Date HIV Test Done"
 Description: "This profile is to record the date when HIV test was done for a patient."
 * status = #final
 * code from VSHIVTestDone (required)
+* code.text = "Viral Load Examination"
 * subject 1..1
 * encounter 1..1
 * effectiveDateTime 1..1

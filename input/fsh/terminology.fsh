@@ -94,3 +94,10 @@ Title: "Conditions"
 Description:  "A list of possible HIV conditions."
 * ^experimental = false
 * $SCT#86406008 "Human immunodeficiency virus infection (disorder)"
+
+ValueSet: VSHIVTestDone
+Id: vs-hiv-test-done
+Title: "HIV Test Done"
+Description:  "Used by the observation to indicate that a HIV test was performed."
+* ^experimental = false
+* $SCT#315124004 "Human immunodeficiency virus viral load"
