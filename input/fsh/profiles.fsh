@@ -17,6 +17,7 @@ Description: "A patient resource for an HIV Patient"
 * identifier[MR].type.coding.code = #MR
 * identifier[MR].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier[MR].type.coding.display = "Medical record number"
+* identifier[MR].type.text = "Patient folder number"
 * active 0..1
 * name.given 1..*
 * name.family 1..1
@@ -55,6 +56,7 @@ Description: "Organization providing HIV Testing Services."
 * identifier[XX].type.coding.code = #XX
 * identifier[XX].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier[XX].type.coding.display = "Organization identifier"
+* identifier[XX].type.text = "HIV Organization identifier"
 * address 1..1
 * address.country 1..1
 * address.state 1..1
@@ -107,6 +109,8 @@ Description: "This profile is used to enrol the patient into HIV care."
 * identifier[PI].system = "http://openhie.org/fhir/hiv-cbs/identifier/enrollment-unique-id" (exactly)
 * identifier[PI].type.coding.code = #PI
 * identifier[PI].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* identifier[PI].type.coding.display = "Patient internal identifier"
+* identifier[PI].type.text = "Enrollment identifier"
 * status 1..1
 * diagnosis 1..* 
 * diagnosis.condition 1..1 
@@ -129,6 +133,8 @@ Description: "This profile represents the confirmation of HIV diagnosis."
 * identifier[PI].system = "http://openhie.org/fhir/hiv-cbs/identifier/hiv-diagnosis" (exactly)
 * identifier[PI].type.coding.code = #PI
 * identifier[PI].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* identifier[PI].type.coding.display = "Patient internal identifier"
+* identifier[PI].type.text = "HIV positive testing identifier"
 * clinicalStatus 1..1
 * verificationStatus 1..1
 * code 1..1
@@ -154,6 +160,7 @@ Description: "The test sample that was collected for the initiated lab order."
 * identifier[USID].type.coding.code = #USID
 * identifier[USID].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier[USID].type.coding.display = "Unique Specimen ID"
+* identifier[USID].type.text = "Specimen identifier"
 * type 1..1
 * type from VSSpecimenType (required)
 * type.text = "Specimen Type"
@@ -177,7 +184,8 @@ Description: "What is the location of the organization responsible for conductin
 * identifier[XX].system = "http://openhie.org/fhir/training-solution-1/identifier/hiv-service-request-location" (exactly)
 * identifier[XX].type.coding.code = #XX
 * identifier[XX].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
-* identifier[XX].type.coding.display = "Organization Identifier"
+* identifier[XX].type.coding.display = "Organization identifier"
+* identifier[XX].type.text = "HIV Organization identifier"
 * address 1..1
 * address.country 1..1
 * address.state 1..1
@@ -202,6 +210,7 @@ Description: "A service request that initiates the need for the lab to collect t
 * identifier[PLAC].type.coding.code = #PLAC
 * identifier[PLAC].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier[PLAC].type.coding.display = "Placer Identifier"
+* identifier[PLAC].type.text = "HIV lab service request identifier"
 * status 1..1
 * intent = #order
 * code 1..1
@@ -262,6 +271,7 @@ Description: "Assists with tracking the state of the lab order and its completio
 * identifier[FILL].type.coding.code = #FILL
 * identifier[FILL].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier[FILL].type.coding.display = "Filler Identifier"
+* identifier[FILL].type.text = "Lab order number"
 * basedOn only Reference(ServiceRequest)
 * status 1..1
 * statusReason from VSReasonForSampleCancellationOrRejection
