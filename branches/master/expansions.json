@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "00dc7d7c-3e4d-462d-8eb0-e865bdaf96f1",
+  "id" : "eedef0ee-fa24-4896-bd5e-755bad39cfc3",
   "meta" : {
-    "lastUpdated" : "2023-03-26T09:07:12.645+00:00"
+    "lastUpdated" : "2023-03-26T10:42:59.413+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -20,7 +20,7 @@
       "title" : "Key Population Status",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-26T09:07:12+00:00",
+      "date" : "2023-03-26T10:42:59+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -40,8 +40,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d24de081-894d-43cf-9d6a-0f41218777cc",
-        "timestamp" : "2023-03-26T09:07:38+00:00",
+        "identifier" : "urn:uuid:01ccd636-6683-4e32-9c50-e522a03b8726",
+        "timestamp" : "2023-03-26T10:43:26+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -112,7 +112,7 @@
       "title" : "Viral Load Result Code",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-26T09:07:12+00:00",
+      "date" : "2023-03-26T10:42:59+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -132,8 +132,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c03b64a4-95b6-49d5-b6f5-2f38599fc46f",
-        "timestamp" : "2023-03-26T09:07:43+00:00",
+        "identifier" : "urn:uuid:b07c359f-949d-4ee5-9a14-bb38aa896b4d",
+        "timestamp" : "2023-03-26T10:43:30+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -170,7 +170,7 @@
       "title" : "Specimen Type Used In Viral Load testing",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-26T09:07:12+00:00",
+      "date" : "2023-03-26T10:42:59+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -190,8 +190,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f99a935c-bfb6-4909-bf56-96600c547f43",
-        "timestamp" : "2023-03-26T09:07:45+00:00",
+        "identifier" : "urn:uuid:511fe8e1-19e2-4162-b5c9-af6501ac7354",
+        "timestamp" : "2023-03-26T10:43:32+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -248,7 +248,7 @@
       "title" : "Reason for Assessment or Test Not Performed",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-26T09:07:12+00:00",
+      "date" : "2023-03-26T10:42:59+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -268,8 +268,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:fd6b1b81-0bfd-49d2-a1cb-9da77be6a8d6",
-        "timestamp" : "2023-03-26T09:07:48+00:00",
+        "identifier" : "urn:uuid:54749af9-8048-4f34-926e-41ecb6471179",
+        "timestamp" : "2023-03-26T10:43:35+00:00",
         "total" : 15,
         "parameter" : [{
           "name" : "excludeNested",
@@ -362,6 +362,64 @@
     }
   },
   {
+    "fullUrl" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-hiv-test-done",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-hiv-test-done",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-315124004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/315124004\">315124004</a></td><td>http://snomed.info/sct</td><td>Human immunodeficiency virus viral load</td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-hiv-test-done",
+      "version" : "0.1.0",
+      "name" : "VSHIVTestDone",
+      "title" : "HIV Test Done",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2023-03-26T10:42:59+00:00",
+      "publisher" : "Jembi Health Systems",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.jembi.org"
+        },
+        {
+          "system" : "email",
+          "value" : "info@jembi.org"
+        }]
+      }],
+      "description" : "Used by the observation to indicate that a HIV test was performed.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:096f11e7-12df-4b92-a8a9-ab83c57cc95a",
+        "timestamp" : "2023-03-26T10:43:35+00:00",
+        "total" : 1,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "315124004",
+          "display" : "Human immunodeficiency virus viral load"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-reason-sample-cancelled-or-rejected",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -376,7 +434,7 @@
       "title" : "Reasons why a lab order was cancelled or rejected",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-26T09:07:12+00:00",
+      "date" : "2023-03-26T10:42:59+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -396,8 +454,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ab1a0697-0768-476e-8e3e-daebae65a6fa",
-        "timestamp" : "2023-03-26T09:07:55+00:00",
+        "identifier" : "urn:uuid:126c6906-8d4a-4593-856e-3c1c7506d56c",
+        "timestamp" : "2023-03-26T10:43:40+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -444,7 +502,7 @@
       "title" : "Test Types",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-26T09:07:12+00:00",
+      "date" : "2023-03-26T10:42:59+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -464,8 +522,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:87854d0c-5931-40db-ad78-f04dd3e26826",
-        "timestamp" : "2023-03-26T09:07:56+00:00",
+        "identifier" : "urn:uuid:2d2dcfe3-c9a8-4d28-b608-eca3305477bc",
+        "timestamp" : "2023-03-26T10:43:41+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -507,7 +565,7 @@
       "title" : "Conditions",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-26T09:07:12+00:00",
+      "date" : "2023-03-26T10:42:59+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -527,8 +585,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:bb42b250-8392-481b-b8ea-5f4480ede05d",
-        "timestamp" : "2023-03-26T09:07:56+00:00",
+        "identifier" : "urn:uuid:8a5bbae4-d44e-476c-a317-abe59ca99063",
+        "timestamp" : "2023-03-26T10:43:41+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -565,7 +623,7 @@
       "title" : "Viral Load Suppressions Status",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-26T09:07:12+00:00",
+      "date" : "2023-03-26T10:42:59+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -585,8 +643,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d4566e6f-d5f4-4126-b3c8-16020534bdc0",
-        "timestamp" : "2023-03-26T09:07:57+00:00",
+        "identifier" : "urn:uuid:c62e55b0-d5d8-47b2-9eba-aaddc93966c1",
+        "timestamp" : "2023-03-26T10:43:41+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
