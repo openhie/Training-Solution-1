@@ -80,6 +80,7 @@ Title: "Target Facility Encounter"
 Description: "This profile represents the current facility at which the patient is receiving treatment."
 * extension contains HIVCareNextAppointment named next-visit 0..1 MS
 * status 1..1
+* class 1..1
 * subject 1..1
 * period 1..1
 * partOf 0..1
@@ -97,6 +98,7 @@ Id: transferring-facility-encounter
 Title: "Transferring Facility Encounter" 
 Description: "This profile represents the facility the patient is being transferred from."
 * status 1..1
+* class 1..1
 * period 1..1
 * serviceProvider 1..1
 

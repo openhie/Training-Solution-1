@@ -70,6 +70,8 @@ Title: "Target Facility Encounter example"
 Description: "Target Facility Encounter example"
 * extension[next-visit].valueDateTime = "2022-10-22"
 * status = #finished
+* class.code = #AMB
+* class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
 * subject = Reference(HIVPatientExample)
 * period.start = "2022-12-01"
 * period.end = "2023-01-20"
@@ -100,6 +102,8 @@ Usage: #example
 Title: "Transferring Facility Encounter example" 
 Description: "Transferring Facility Encounter example"
 * status = #finished
+* class.code = #AMB
+* class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
 * period.start = "2022-12-01"
 * period.end = "2023-01-20"
 * serviceProvider = Reference(HIVOrganizationExample)
