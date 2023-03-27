@@ -104,8 +104,6 @@ Description: "Transferring Facility Encounter example"
 * status = #finished
 * class.code = #AMB
 * class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
-* period.start = "2022-12-01"
-* period.end = "2023-01-20"
 * serviceProvider = Reference(HIVOrganizationExample)
 
 Instance: HIVDiagnosisExample

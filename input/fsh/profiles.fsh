@@ -99,7 +99,6 @@ Title: "Transferring Facility Encounter"
 Description: "This profile represents the facility the patient is being transferred from."
 * status 1..1
 * class 1..1
-* period 1..1
 * serviceProvider 1..1
 
 Profile: HIVEpisodeOfCare
