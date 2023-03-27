@@ -18,14 +18,22 @@ Description: "A patient resource for an HIV Patient"
 * identifier[MR].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier[MR].type.coding.display = "Medical record number"
 * identifier[MR].type.text = "Patient folder number"
-* active 0..1
 * name.given 1..*
 * name.family 1..1
 * telecom 0..*
 * gender 1..1
 * birthDate 1..1
 * address 0..*
+* address.city 1..1
+* address.line 1..*
+* address.district 1..1
+* address.state 1..1
+* address.country 1..1
 * contact 0..*
+* contact.name.given 1..*
+* contact.name.family 1..1
+* contact.telecom 0..*
+* contact.relationship 1..1
 * maritalStatus 1..1 
 * managingOrganization 1..1
 * extension contains KeyPopulationStatus named KPS 1..1
@@ -62,6 +70,7 @@ Description: "Organization providing HIV Testing Services."
 * address.state 1..1
 * address.district 1..1
 * address.city 1..1
+* address.line 1..*
 * name 1..1
 
 Profile: TargetFacilityEncounter
@@ -71,10 +80,8 @@ Title: "Target Facility Encounter"
 Description: "This profile represents the current facility at which the patient is receiving treatment."
 * extension contains HIVCareNextAppointment named next-visit 0..1 MS
 * status 1..1
-* class 1..1
 * subject 1..1
 * period 1..1
-* serviceProvider 1..1
 * partOf 0..1
 * episodeOfCare 1..*
 
@@ -90,7 +97,6 @@ Id: transferring-facility-encounter
 Title: "Transferring Facility Encounter" 
 Description: "This profile represents the facility the patient is being transferred from."
 * status 1..1
-* class 1..1
 * period 1..1
 * serviceProvider 1..1
 
@@ -135,15 +141,13 @@ Description: "This profile represents the confirmation of HIV diagnosis."
 * identifier[PI].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier[PI].type.coding.display = "Patient internal identifier"
 * identifier[PI].type.text = "HIV positive testing identifier"
-* clinicalStatus 1..1
-* verificationStatus 1..1
 * code 1..1
 * code from VSCondition (required)
 * code.text = "Diagnosis"
 * subject 1..1
 * encounter 1..1
 * recordedDate 1..1
-* note 0..1
+* note 0..*
 
 Profile: VLSpecimen
 Parent: Specimen
@@ -167,7 +171,7 @@ Description: "The test sample that was collected for the initiated lab order."
 * type.text = "Specimen Type"
 * subject 1..1
 * collection.collectedDateTime 1..1
-* note 0..1
+* note 0..*
 
 Profile: HIVServiceRequestLocation
 Parent: Organization
@@ -227,7 +231,7 @@ Description: "A service request that initiates the need for the lab to collect t
 * reasonCode from VSReasonForAssessmentOrTestNotPerformed (required)
 * reasonCode.text = "Reason"
 * specimen 1..1
-* note 0..1
+* note 0..*
 
 Profile: HIVTestResult
 Parent: Observation
@@ -245,7 +249,7 @@ Description: "The result of the lab test which determines whether the patient is
 * interpretation from VSVLSuppression (required)
 * interpretation.text = "Viral Load Suppression Status"
 * performer 1..1
-* note 0..1
+* note 0..*
 
 Profile: HIVPractitioner
 Parent: Practitioner
@@ -282,7 +286,7 @@ Description: "Assists with tracking the state of the lab order and its completio
 * lastModified 0..1
 * requester 0..1
 * owner 0..1
-* note 0..1
+* note 0..*
 * output 0..*
 * output.type.coding.code from VSVLResultCode (required)
 * output.type.text = "Viral Load Result"
@@ -314,4 +318,4 @@ Description: "This profile is to record the date when HIV test was done for a pa
 * subject 1..1
 * encounter 1..1
 * effectiveDateTime 1..1
-* note 0..1
+* note 0..*
