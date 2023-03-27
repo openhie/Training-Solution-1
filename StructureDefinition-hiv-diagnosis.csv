@@ -96,12 +96,12 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Condition.identifier:PI.assigner","Condition.identifier.assigner","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
 ","Organization that issued id (may be just text)","Organization that issued/manages the identifier.","The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.","","","","","","","","",,,,,"",,,,"Identifier.assigner",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CX.4 / (CX.4,CX.9,CX.10)","II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper"
-"Condition.clinicalStatus","Condition.clinicalStatus","","","",1,1,"","Y","Y","CodeableConcept {[]} {[]}
+"Condition.clinicalStatus","Condition.clinicalStatus","","","",0,1,"","Y","Y","CodeableConcept {[]} {[]}
 ","active | recurrence | relapse | inactive | remission | resolved","The clinical status of the condition.","The data type is CodeableConcept because clinicalStatus has some clinical judgment involved, such that there might need to be more specificity than the required FHIR value set allows. For example, a SNOMED coding might allow for additional specificity.","","","","","","","","",,"required","The clinical status of the condition or diagnosis.","http://hl7.org/fhir/ValueSet/condition-clinical|4.0.1","",,,,"Condition.clinicalStatus",0,1,"con-3
 con-4con-5","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.status","< 303105007 |Disease phases|","PRB-14","Observation ACT
 .inboundRelationship[typeCode=COMP].source[classCode=OBS, code=""clinicalStatus"", moodCode=EVN].value","FiveWs.status"
-"Condition.verificationStatus","Condition.verificationStatus","","","",1,1,"","Y","Y","CodeableConcept {[]} {[]}
+"Condition.verificationStatus","Condition.verificationStatus","","","",0,1,"","Y","Y","CodeableConcept {[]} {[]}
 ","unconfirmed | provisional | differential | confirmed | refuted | entered-in-error","The verification status to support the clinical status of the condition.","verificationStatus is not required.  For example, when a patient has abdominal pain in the ED, there is not likely going to be a verification status.
 The data type is CodeableConcept because verificationStatus has some clinical judgment involved, such that there might need to be more specificity than the required FHIR value set allows. For example, a SNOMED coding might allow for additional specificity.","","","","","","","","",,"required","The verification status to support or decline the clinical status of the condition or diagnosis.","http://hl7.org/fhir/ValueSet/condition-ver-status|4.0.1","",,,,"Condition.verificationStatus",0,1,"con-3
 con-5","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -214,6 +214,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Supporting information found elsewhere","Links to other relevant information, including pathology reports.","","","","","","","","","",,,,,"",,,,"Condition.evidence.detail",0,*,"con-2
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".self","FiveWs.why[x]"
-"Condition.note","Condition.note","","","",0,1,"","","","Annotation {[]} {[]}
+"Condition.note","Condition.note","","","",0,*,"","","","Annotation {[]} {[]}
 ","Additional information about the Condition","Additional information about the Condition. This is a general notes/comments entry  for description of the Condition, its diagnosis and prognosis.","","","","","","","","","",,,,,"",,,,"Condition.note",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.note","NTE child of PRB",".inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=""annotation""].value"
