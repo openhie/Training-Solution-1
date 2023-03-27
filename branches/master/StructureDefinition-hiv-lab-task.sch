@@ -13,7 +13,6 @@
     <sch:title>f:Task</sch:title>
     <sch:rule context="f:Task">
       <sch:assert test="count(f:executionPeriod) &gt;= 1">executionPeriod: minimum cardinality of 'executionPeriod' is 1</sch:assert>
-      <sch:assert test="count(f:note) &lt;= 1">note: maximum cardinality of 'note' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
