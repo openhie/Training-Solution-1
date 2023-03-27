@@ -192,7 +192,7 @@ Executer","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/S
 "Task.insurance","Task.insurance","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Coverage], CanonicalType[http://hl7.org/fhir/StructureDefinition/ClaimResponse]]}
 ","Associated insurance coverage","Insurance plans, coverage extensions, pre-authorizations and/or pre-determinations that may be relevant to the Task.","","","","","","","","","",,,,,"",,,,"Task.insurance",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.insurance",".outboundRelationship[typeCode=COVBY].target","IN1/IN2"
-"Task.note","Task.note","","","",0,1,"","","","Annotation {[]} {[]}
+"Task.note","Task.note","","","",0,*,"","","","Annotation {[]} {[]}
 ","Comments made about the task","Free-text information captured about the task as it progresses.","","","","","","","","","",,,,,"",,,,"Task.note",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.note, Event.note",".inboundRelationship[typeCode=SUBJ, ].source[classCode=OBS, moodCode=EVN, code=""annotation""].value(string)"
 "Task.relevantHistory","Task.relevantHistory","","Status History
