@@ -226,7 +226,7 @@ Description: "A service request that initiates the need for the lab to collect t
 * encounter 1..1
 * occurrenceDateTime 1..1
 * requester 1..1
-* performer 1..1
+* performer 1..*
 * doNotPerform 0..1
 * reasonCode 1..*
 * reasonCode from VSReasonForAssessmentOrTestNotPerformed (required)
@@ -249,7 +249,7 @@ Description: "The result of the lab test which determines whether the patient is
 * interpretation 1..1
 * interpretation from VSVLSuppression (required)
 * interpretation.text = "Viral Load Suppression Status"
-* performer 1..1
+* performer 1..*
 * note 0..*
 
 Profile: HIVPractitioner
@@ -258,7 +258,10 @@ Id: hiv-practitioner
 Title: "Practitioner"
 Description: "The healthcare professional who has been assigned to a given lab task."
 * name 1..1
-* telecom 0..1
+* name.given 1..*
+* name.family 1..1
+* telecom 1..*
+* telecom.system.value = #phone
 
 Profile: HIVLabTask
 Parent: Task
@@ -304,7 +307,7 @@ Description: "A report as a result of the lab task being completed."
 * code.text = "Test Type"
 * subject 1..1
 * encounter 1..1
-* performer 1..1
+* performer 1..*
 * result 1..1
 * conclusion 0..1
 
