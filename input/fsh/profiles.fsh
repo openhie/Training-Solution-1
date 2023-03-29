@@ -227,7 +227,6 @@ Description: "A service request that initiates the need for the lab to collect t
 * occurrenceDateTime 1..1
 * requester 1..1
 * performer 1..*
-* doNotPerform 0..1
 * reasonCode 1..*
 * reasonCode from VSReasonForAssessmentOrTestNotPerformed (required)
 * reasonCode.text = "Reason"

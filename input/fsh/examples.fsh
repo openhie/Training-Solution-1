@@ -199,7 +199,6 @@ Description: "HIV Lab Order example"
 * occurrenceDateTime = "2012-01-05"
 * requester = Reference(PractitionerExample)
 * performer = Reference(HIVServiceRequestLocationExample)
-* doNotPerform = false
 * reasonCode = $SCT#428450006
 * reasonCode.text = "Reason"
 * reasonCode.coding.display = "Repeat laboratory specimen sent"
