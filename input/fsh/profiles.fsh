@@ -33,7 +33,7 @@ Description: "A patient resource for an HIV Patient"
 * contact.name.given 1..*
 * contact.name.family 1..1
 * contact.telecom 0..*
-* contact.relationship 1..1
+* contact.relationship = #N
 * maritalStatus 1..1 
 * managingOrganization 1..1
 * extension contains KeyPopulationStatus named KPS 1..1
