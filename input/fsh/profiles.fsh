@@ -34,6 +34,7 @@ Description: "A patient resource for an HIV Patient"
 * contact.name.family 1..1
 * contact.telecom 0..*
 * contact.relationship = #N
+* contact.relationship.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0131"
 * maritalStatus 1..1 
 * managingOrganization 1..1
 * extension contains KeyPopulationStatus named KPS 1..1
