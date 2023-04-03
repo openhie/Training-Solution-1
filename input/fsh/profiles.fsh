@@ -230,7 +230,7 @@ Description: "A service request that initiates the need for the lab to collect t
 * reasonCode 1..*
 * reasonCode from VSReasonForAssessmentOrTestNotPerformed (required)
 * reasonCode.text = "Reason"
-* specimen 1..1
+* specimen 0..1 MS
 * note 0..*
 
 Profile: HIVTestResult
