@@ -10,7 +10,7 @@ Description: "A patient resource for an HIV Patient"
 * identifier contains
     NID 0..1 and
     MR 1..1
-* identifier[NID].value 0..1
+* identifier[NID].value 0..1 MS
 * identifier[NID].system = "http://openhie.org/fhir/hiv-cbs/identifier/nid" (exactly)
 * identifier[MR].value 1..1
 * identifier[MR].system = "http://openhie.org/fhir/hiv-cbs/identifier/mr" (exactly)
@@ -20,19 +20,19 @@ Description: "A patient resource for an HIV Patient"
 * identifier[MR].type.text = "Patient folder number"
 * name.given 1..*
 * name.family 1..1
-* telecom 0..*
+* telecom 0..* MS
 * gender 1..1
 * birthDate 1..1
-* address 0..*
+* address 0..* MS
 * address.city 1..1
 * address.line 1..*
 * address.district 1..1
 * address.state 1..1
 * address.country 1..1
-* contact 0..*
+* contact 0..* MS
 * contact.name.given 1..*
 * contact.name.family 1..1
-* contact.telecom 0..*
+* contact.telecom 0..* MS
 * contact.relationship 1..1
 * maritalStatus 1..1 
 * managingOrganization 1..1
@@ -83,7 +83,7 @@ Description: "This profile represents the current facility at which the patient 
 * class 1..1
 * subject 1..1
 * period 1..1
-* partOf 0..1
+* partOf 0..1 MS
 * episodeOfCare 1..*
 
 Extension: HIVCareNextAppointment
@@ -148,7 +148,7 @@ Description: "This profile represents the confirmation of HIV diagnosis."
 * subject 1..1
 * encounter 1..1
 * recordedDate 1..1
-* note 0..*
+* note 0..* MS
 
 Profile: VLSpecimen
 Parent: Specimen
@@ -171,8 +171,8 @@ Description: "The test sample that was collected for the initiated lab order."
 * type from VSSpecimenType (required)
 * type.text = "Specimen Type"
 * subject 1..1
-* collection.collectedDateTime 1..1
-* note 0..*
+* collection.collectedDateTime 0..1 MS
+* note 0..* MS
 
 Profile: HIVServiceRequestLocation
 Parent: Organization
@@ -230,8 +230,8 @@ Description: "A service request that initiates the need for the lab to collect t
 * reasonCode 1..*
 * reasonCode from VSReasonForAssessmentOrTestNotPerformed (required)
 * reasonCode.text = "Reason"
-* specimen 0..1 MS
-* note 0..*
+* specimen 1..1
+* note 0..* MS
 
 Profile: HIVTestResult
 Parent: Observation
@@ -249,7 +249,7 @@ Description: "The result of the lab test which determines whether the patient is
 * interpretation from VSVLSuppression (required)
 * interpretation.text = "Viral Load Suppression Status"
 * performer 1..*
-* note 0..*
+* note 0..* MS
 
 Profile: HIVPractitioner
 Parent: Practitioner
@@ -286,11 +286,11 @@ Description: "Assists with tracking the state of the lab order and its completio
 * statusReason.text = "Reason For Canceling/Rejecting the Lab Order"
 * intent = #order
 * executionPeriod 1..1
-* lastModified 0..1
-* requester 0..1
-* owner 0..1
-* note 0..*
-* output 0..*
+* lastModified 0..1 MS
+* requester 0..1 MS
+* owner 0..1 MS
+* note 0..* MS
+* output 0..* MS
 * output.type.coding.code from VSVLResultCode (required)
 * output.type.text = "Viral Load Result"
 * output.valueReference 1..1
@@ -308,7 +308,7 @@ Description: "A report as a result of the lab task being completed."
 * encounter 1..1
 * performer 1..*
 * result 1..1
-* conclusion 0..1
+* conclusion 0..1 MS
 
 Profile: DateHIVTestDone
 Parent: Observation
@@ -321,4 +321,4 @@ Description: "This profile is to record the date when HIV test was done for a pa
 * subject 1..1
 * encounter 1..1
 * effectiveDateTime 1..1
-* note 0..*
+* note 0..* MS
