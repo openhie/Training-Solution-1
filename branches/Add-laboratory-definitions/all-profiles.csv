@@ -39,8 +39,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",,"openAtEnd","Patient.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hiv-patient","Patient.identifier:NID","Patient.identifier","NID","","",0,1,"","","Y","Identifier {[]} {[]}
-","An identifier for this patient","An identifier for this patient.","","Patients are almost always assigned specific numerical identifiers.","","","","","","","",,,,,"",,,,"Patient.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
+","An identifier for this patient","An identifier for this patient.","","Patients are almost always assigned specific numerical identifiers.","","","","","","","",,,,,"",,,,"Patient.identifier",0,*,"",""
 "hiv-patient","Patient.identifier:NID.id","Patient.identifier.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "hiv-patient","Patient.identifier:NID.extension","Patient.identifier.extension","","extensions
@@ -57,7 +56,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "hiv-patient","Patient.identifier:NID.system","Patient.identifier.system","","","",1,1,"","","Y","uri {[]} {[]}
 ","The namespace for the identifier value","Establishes the namespace for the value - that is, a URL that describes a set values that are unique.","Identifier.system is always case sensitive.","There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers.","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://openhie.org/fhir/hiv-cbs/identifier/nid""/>","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://www.acme.com/identifiers/patient""/>","","",,,,,"",,,,"Identifier.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"hiv-patient","Patient.identifier:NID.value","Patient.identifier.value","","","",0,1,"","","Y","string {[]} {[]}
+"hiv-patient","Patient.identifier:NID.value","Patient.identifier.value","","","",0,1,"Y","","Y","string {[]} {[]}
 ","The value that is unique","The portion of the identifier typically relevant to the user and which is unique within the context of the system.","If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](http://hl7.org/fhir/R4/extension-rendered-value.html). Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""123456""/>","","",,,,,"",,,,"Identifier.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hiv-patient","Patient.identifier:NID.period","Patient.identifier.period","","","",0,1,"","","Y","Period {[]} {[]}
@@ -170,7 +169,7 @@ middle name","",1,*,"","","Y","string {[]} {[]}
 "hiv-patient","Patient.name.period","Patient.name.period","","","",0,1,"","","Y","Period {[]} {[]}
 ","Time period when name was/is in use","Indicates the period of time when this name was valid for the named person.","","Allows names to be placed in historical context.","","","","","","","",,,,,"",,,,"HumanName.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"hiv-patient","Patient.telecom","Patient.telecom","","","",0,*,"","","Y","ContactPoint {[]} {[]}
+"hiv-patient","Patient.telecom","Patient.telecom","","","",0,*,"Y","","Y","ContactPoint {[]} {[]}
 ","A contact detail for the individual","A contact detail (e.g. a telephone number or an email address) by which the individual may be contacted.","A Patient may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently and also to help with identification. The address might not go directly to the individual, but may reach another party that is able to proxy for the patient (i.e. home phone, or pet owner's phone).","People have (primary) ways to contact them in some way such as phone, email.","","","","","","","",,,,,"",,,,"Patient.telecom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hiv-patient","Patient.gender","Patient.gender","","","",1,1,"","","Y","code {[]} {[]}
@@ -182,7 +181,7 @@ middle name","",1,*,"","","Y","string {[]} {[]}
 "hiv-patient","Patient.deceased[x]","Patient.deceased[x]","","","",0,1,"","Y","Y","boolean {[]} {[]}
 dateTime {[]} {[]}","Indicates if the individual is deceased or not","Indicates if the individual is deceased or not.","If there's no value in the instance, it means there is no statement on whether or not the individual is deceased. Most systems will interpret the absence of a value as a sign of the person being alive.","The fact that a patient is deceased influences the clinical process. Also, in human communication and relation management it is necessary to know whether the person is alive.","","","","","","","",,,,,"",,,,"Patient.deceased[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"hiv-patient","Patient.address","Patient.address","","","",0,*,"","","Y","Address {[]} {[]}
+"hiv-patient","Patient.address","Patient.address","","","",0,*,"Y","","Y","Address {[]} {[]}
 ","An address for the individual","An address for the individual.","Patient may have multiple addresses with different uses or applicable periods.","May need to keep track of patient addresses for contacting, billing or reporting requirements and also to help with identification.","","","","","","","",,,,,"",,,,"Patient.address",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hiv-patient","Patient.address.id","Patient.address.id","","","",0,1,"","","","string {[]} {[]}
@@ -241,7 +240,7 @@ integer {[]} {[]}","Whether patient is part of a multiple birth","Indicates whet
 * Limit dimensions to thumbnail.
 * Keep byte count low to ease resource updates.","Many EHR systems have the capability to capture an image of the patient. Fits with newer social media usage too.","","","","","","","",,,,,"",,,,"Patient.photo",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"hiv-patient","Patient.contact","Patient.contact","","","",0,*,"","","","BackboneElement {[]} {[]}
+"hiv-patient","Patient.contact","Patient.contact","","","",0,*,"Y","","","BackboneElement {[]} {[]}
 ","A contact party (e.g. guardian, partner, friend) for the patient","A contact party (e.g. guardian, partner, friend) for the patient.","Contact covers all kinds of contact parties: family members, business contacts, guardians, caregivers. Not applicable to register pedigree and family ties beyond use of having contact.","Need to track people you can contact about the patient.","","","","","","","",,,,,"",,,,"Patient.contact",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 pat-1:SHALL at least contain a contact's details or a reference to an organization {name.exists() or telecom.exists() or address.exists() or organization.exists()}"
 "hiv-patient","Patient.contact.id","Patient.contact.id","","","",0,1,"","","","string {[]} {[]}
@@ -292,7 +291,7 @@ middle name","",1,*,"","","Y","string {[]} {[]}
 "hiv-patient","Patient.contact.name.period","Patient.contact.name.period","","","",0,1,"","","Y","Period {[]} {[]}
 ","Time period when name was/is in use","Indicates the period of time when this name was valid for the named person.","","Allows names to be placed in historical context.","","","","","","","",,,,,"",,,,"HumanName.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"hiv-patient","Patient.contact.telecom","Patient.contact.telecom","","","",0,*,"","","","ContactPoint {[]} {[]}
+"hiv-patient","Patient.contact.telecom","Patient.contact.telecom","","","",0,*,"Y","","","ContactPoint {[]} {[]}
 ","A contact detail for the person","A contact detail for the person, e.g. a telephone number or an email address.","Contact may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently, and also to help with identification.","People have (primary) ways to contact them in some way such as phone, email.","","","","","","","",,,,,"",,,,"Patient.contact.telecom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hiv-patient","Patient.contact.address","Patient.contact.address","","","",0,1,"","","","Address {[]} {[]}
@@ -485,7 +484,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "hiv-test-results","Observation.interpretation.text","Observation.interpretation.text","","","",0,1,"","","Y","string {[]} {[]}
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Viral Load Suppression Status""/>","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"hiv-test-results","Observation.note","Observation.note","","","",0,*,"","","","Annotation {[]} {[]}
+"hiv-test-results","Observation.note","Observation.note","","","",0,*,"Y","","","Annotation {[]} {[]}
 ","Comments about the observation","Comments about the observation or the results.","May include general statements about the observation, or statements about significant, unexpected or unreliable results values, or information about its source when relevant to its interpretation.","Need to be able to provide free text additional information.","","","","","","","",,,,,"",,,,"Observation.note",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hiv-test-results","Observation.bodySite","Observation.bodySite","","","",0,1,"","","","CodeableConcept {[]} {[]}
@@ -1216,7 +1215,7 @@ The alternate way is to use the value element for actual observations and use th
 ","",0,*,"","","","CodeableConcept {[]} {[]}
 ","High, low, normal, etc.","A categorical assessment of an observation value.  For example, high, low, normal.","Historically used for laboratory results (known as 'abnormal flag' ),  its use extends to other use cases where coded interpretations  are relevant.  Often reported as one or more simple compact codes this element is often placed adjacent to the result value in reports and flow sheets to signal the meaning/normalcy status of the result.","For some results, particularly numeric results, an interpretation is necessary to fully understand the significance of a result.","","","","","","","",,"extensible","Codes identifying interpretations of observations.","http://hl7.org/fhir/ValueSet/observation-interpretation","",,,,"Observation.interpretation",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"date-hiv-test-done","Observation.note","Observation.note","","","",0,*,"","","","Annotation {[]} {[]}
+"date-hiv-test-done","Observation.note","Observation.note","","","",0,*,"Y","","","Annotation {[]} {[]}
 ","Comments about the observation","Comments about the observation or the results.","May include general statements about the observation, or statements about significant, unexpected or unreliable results values, or information about its source when relevant to its interpretation.","Need to be able to provide free text additional information.","","","","","","","",,,,,"",,,,"Observation.note",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "date-hiv-test-done","Observation.bodySite","Observation.bodySite","","","",0,1,"","","","CodeableConcept {[]} {[]}
@@ -1475,18 +1474,18 @@ In most cases, Tasks will have an intent of ""order"".","","","","","<valueCode 
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hiv-lab-task","Task.lastModified","Task.lastModified","","Update Date
-","",0,1,"","","Y","dateTime {[]} {[]}
+","",0,1,"Y","","Y","dateTime {[]} {[]}
 ","Task Last Modified Date","The date and time of last modification to this task.","","Used along with history to track task activity and time in a particular task state.  This enables monitoring and management.","","","","","","","",,,,,"",,,,"Task.lastModified",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"hiv-lab-task","Task.requester","Task.requester","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Device], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]}
+"hiv-lab-task","Task.requester","Task.requester","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Device], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]}
 ","Who is asking for task to be done","The creator of the task.","","Identifies who created this task.  May be used by access control mechanisms (e.g., to ensure that only the creator can cancel a task).","","","","","","","",,,,,"",,,,"Task.requester",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hiv-lab-task","Task.performerType","Task.performerType","","","",0,*,"","","","CodeableConcept {[]} {[]}
 ","Requested performer","The kind of participant that should perform the task.","","Use to distinguish tasks on different activity queues.","","","","","","","",,"preferred","The type(s) of task performers allowed.","http://hl7.org/fhir/ValueSet/performer-role","",,,,"Task.performerType",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hiv-lab-task","Task.owner","Task.owner","","Performer
-Executer","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization], CanonicalType[http://hl7.org/fhir/StructureDefinition/CareTeam], CanonicalType[http://hl7.org/fhir/StructureDefinition/HealthcareService], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Device], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]}
+Executer","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization], CanonicalType[http://hl7.org/fhir/StructureDefinition/CareTeam], CanonicalType[http://hl7.org/fhir/StructureDefinition/HealthcareService], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Device], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]}
 ","Responsible individual","Individual organization or Device currently responsible for task execution.","Tasks may be created with an owner not yet identified.","Identifies who is expected to perform this task.","","","","","","","",,,,,"",,,,"Task.owner",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hiv-lab-task","Task.location","Task.location","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Location]]}
@@ -1501,7 +1500,7 @@ Executer","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/S
 "hiv-lab-task","Task.insurance","Task.insurance","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Coverage], CanonicalType[http://hl7.org/fhir/StructureDefinition/ClaimResponse]]}
 ","Associated insurance coverage","Insurance plans, coverage extensions, pre-authorizations and/or pre-determinations that may be relevant to the Task.","","","","","","","","","",,,,,"",,,,"Task.insurance",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"hiv-lab-task","Task.note","Task.note","","","",0,*,"","","","Annotation {[]} {[]}
+"hiv-lab-task","Task.note","Task.note","","","",0,*,"Y","","","Annotation {[]} {[]}
 ","Comments made about the task","Free-text information captured about the task as it progresses.","","","","","","","","","",,,,,"",,,,"Task.note",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hiv-lab-task","Task.relevantHistory","Task.relevantHistory","","Status History
@@ -1555,7 +1554,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "hiv-lab-task","Task.input.value[x]","Task.input.value[x]","","","",1,1,"","","","base64Binary {[]} {[]}
 boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}url {[]} {[]}uuid {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}ContactDetail {[]} {[]}Contributor {[]} {[]}DataRequirement {[]} {[]}Expression {[]} {[]}ParameterDefinition {[]} {[]}RelatedArtifact {[]} {[]}TriggerDefinition {[]} {[]}UsageContext {[]} {[]}Dosage {[]} {[]}Meta {[]} {[]}","Content to use in performing the task","The value of the input parameter as a basic type.","","","","","","","","","",,,,,"",,,,"Task.input.value[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"hiv-lab-task","Task.output","Task.output","","","",0,*,"","","","BackboneElement {[]} {[]}
+"hiv-lab-task","Task.output","Task.output","","","",0,*,"Y","","","BackboneElement {[]} {[]}
 ","Information produced as part of task","Outputs produced by the Task.","","Resources and data produced during the execution the task.  This data is generated by the business logic of task execution, and is stored separately because it varies between workflows.","","","","","","","",,,,,"",,,,"Task.output",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hiv-lab-task","Task.output.id","Task.output.id","","","",0,1,"","","","string {[]} {[]}
@@ -2097,14 +2096,14 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 AOE","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}
 ","Additional clinical information","Additional clinical information about the patient or specimen that may influence the services or their interpretations.     This information includes diagnosis, clinical findings and other observations.  In laboratory ordering these are typically referred to as ""ask at order entry questions (AOEs)"".  This includes observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order. For example,  reporting the amount of inspired oxygen for blood gas measurements.","To represent information about how the services are to be delivered use the `instructions` element.","","","","","","","","",,,,,"",,,,"ServiceRequest.supportingInfo",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"HIV-lab-order","ServiceRequest.specimen","ServiceRequest.specimen","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Specimen]]}
+"HIV-lab-order","ServiceRequest.specimen","ServiceRequest.specimen","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Specimen]]}
 ","Procedure Samples","One or more specimens that the laboratory procedure will use.","Many diagnostic procedures need a specimen, but the request itself is not actually about the specimen. This element is for when the diagnostic is requested on already existing specimens and the request points to the specimen it applies to.    Conversely, if the request is entered first with an unknown specimen, then the [Specimen](http://hl7.org/fhir/R4/specimen.html) resource points to the ServiceRequest.","","","","","","","","",,,,,"",,,,"ServiceRequest.specimen",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "HIV-lab-order","ServiceRequest.bodySite","ServiceRequest.bodySite","","location
 ","",0,*,"","","Y","CodeableConcept {[]} {[]}
 ","Location on Body","Anatomic location where the procedure should be performed. This is the target site.","Only used if not implicit in the code found in ServiceRequest.code.  If the use case requires BodySite to be handled as a separate resource instead of an inline coded element (e.g. to identify and track separately)  then use the standard extension [procedure-targetBodyStructure](http://hl7.org/fhir/R4/extension-procedure-targetbodystructure.html).","Knowing where the procedure is performed is important for tracking if multiple sites are possible.","","","","","","","",,"example","Codes describing anatomical locations. May include laterality.","http://hl7.org/fhir/ValueSet/body-site","",,,,"ServiceRequest.bodySite",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"HIV-lab-order","ServiceRequest.note","ServiceRequest.note","","","",0,*,"","","","Annotation {[]} {[]}
+"HIV-lab-order","ServiceRequest.note","ServiceRequest.note","","","",0,*,"Y","","","Annotation {[]} {[]}
 ","Comments","Any other notes and comments made about the service request. For example, internal billing notes.","","","","","","","","","",,,,,"",,,,"ServiceRequest.note",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "HIV-lab-order","ServiceRequest.patientInstruction","ServiceRequest.patientInstruction","","","",0,1,"","","Y","string {[]} {[]}
@@ -2233,7 +2232,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Reference to the image source","Reference to the image source.","","","","","","","","","",,,,,"",,,,"DiagnosticReport.media.link",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hiv-diagnostic-report","DiagnosticReport.conclusion","DiagnosticReport.conclusion","","Report
-","",0,1,"","","","string {[]} {[]}
+","",0,1,"Y","","","string {[]} {[]}
 ","Clinical conclusion (interpretation) of test results","Concise and clinically contextualized summary conclusion (interpretation/impression) of the diagnostic report.","","Need to be able to provide a conclusion that is not lost among the basic result data.","","","","","","","",,,,,"",,,,"DiagnosticReport.conclusion",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hiv-diagnostic-report","DiagnosticReport.conclusionCode","DiagnosticReport.conclusionCode","","","",0,*,"","","","CodeableConcept {[]} {[]}
@@ -2446,7 +2445,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Supporting information found elsewhere","Links to other relevant information, including pathology reports.","","","","","","","","","",,,,,"",,,,"Condition.evidence.detail",0,*,"con-2
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"hiv-diagnosis","Condition.note","Condition.note","","","",0,*,"","","","Annotation {[]} {[]}
+"hiv-diagnosis","Condition.note","Condition.note","","","",0,*,"Y","","","Annotation {[]} {[]}
 ","Additional information about the Condition","Additional information about the Condition. This is a general notes/comments entry  for description of the Condition, its diagnosis and prognosis.","","","","","","","","","",,,,,"",,,,"Condition.note",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "target-facility-encounter","Encounter","Encounter","","Visit
@@ -2698,7 +2697,7 @@ There may be many levels in the hierachy, and this may only pic specific levels 
 "target-facility-encounter","Encounter.serviceProvider","Encounter.serviceProvider","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
 ","The organization (facility) responsible for this encounter","The organization that is primarily responsible for this Encounter's services. This MAY be the same as the organization on the Patient record, however it could be different, such as if the actor performing the services was from an external organization (which may be billed seperately) for an external consultation.  Refer to the example bundle showing an abbreviated set of Encounters for a colonoscopy.","","","","","","","","","",,,,,"",,,,"Encounter.serviceProvider",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"target-facility-encounter","Encounter.partOf","Encounter.partOf","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}
+"target-facility-encounter","Encounter.partOf","Encounter.partOf","","","",0,1,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}
 ","Another Encounter this encounter is part of","Another Encounter of which this encounter is a part of (administratively or in time).","This is also used for associating a child's encounter back to the mother's encounter.Refer to the Notes section in the Patient resource for further details.","","","","","","","","",,,,,"",,,,"Encounter.partOf",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "transferring-facility-encounter","Encounter","Encounter","","Visit
@@ -3081,8 +3080,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Why the specimen was collected","Details concerning a service request that required a specimen to be collected.","The request may be explicit or implied such with a ServiceRequest that requires a blood draw.","","","","","","","","",,,,,"",,,,"Specimen.request",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "viral-load-specimen","Specimen.collection","Specimen.collection","","","",0,1,"","","","BackboneElement {[]} {[]}
-","Collection details","Details concerning the specimen collection.","","","","","","","","","",,,,,"",,,,"Specimen.collection",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
+","Collection details","Details concerning the specimen collection.","","","","","","","","","",,,,,"",,,,"Specimen.collection",0,1,"",""
 "viral-load-specimen","Specimen.collection.id","Specimen.collection.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "viral-load-specimen","Specimen.collection.extension","Specimen.collection.extension","","extensions
@@ -3098,11 +3096,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "viral-load-specimen","Specimen.collection.collector","Specimen.collection.collector","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole]]}
 ","Who collected the specimen","Person who collected the specimen.","","","","","","","","","",,,,,"",,,,"Specimen.collection.collector",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"viral-load-specimen","Specimen.collection.collected[x]","Specimen.collection.collected[x]","","","",1,1,"","","Y","dateTime {[]} {[]}
-","Collection time","Time when specimen was collected from subject - the physiologically relevant time.","","","","","","","","","",,,,,"","type:$this}
-","",,"closed","Specimen.collection.collected[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"viral-load-specimen","Specimen.collection.collected[x]","Specimen.collection.collected[x]","","","",0,1,"","","Y","dateTime {[]} {[]}
+Period {[]} {[]}","Collection time","Time when specimen was collected from subject - the physiologically relevant time.","","","","","","","","","",,,,,"","type:$this}
+","",,"open","Specimen.collection.collected[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"viral-load-specimen","Specimen.collection.collected[x]:collectedDateTime","Specimen.collection.collected[x]","collectedDateTime","","",1,1,"","","Y","dateTime {[]} {[]}
+"viral-load-specimen","Specimen.collection.collected[x]:collectedDateTime","Specimen.collection.collected[x]","collectedDateTime","","",0,1,"Y","","Y","dateTime {[]} {[]}
 ","Collection time","Time when specimen was collected from subject - the physiologically relevant time.","","","","","","","","","",,,,,"",,,,"Specimen.collection.collected[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "viral-load-specimen","Specimen.collection.duration","Specimen.collection.duration","","","",0,1,"","","Y","Duration {[]} {[]}
@@ -3183,6 +3181,6 @@ Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Substance
 "viral-load-specimen","Specimen.condition","Specimen.condition","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
 ","State of the specimen","A mode or state of being that describes the nature of the specimen.","Specimen condition is an observation made about the specimen.  It's a point-in-time assessment.  It can be used to assess its quality or appropriateness for a specific test.","The specimen condition can be used to assess its quality or appropriateness for a specific test.","","","","","","","",,"extensible","Codes describing the state of the specimen.","http://terminology.hl7.org/ValueSet/v2-0493","",,,,"Specimen.condition",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"viral-load-specimen","Specimen.note","Specimen.note","","","",0,*,"","","","Annotation {[]} {[]}
+"viral-load-specimen","Specimen.note","Specimen.note","","","",0,*,"Y","","","Annotation {[]} {[]}
 ","Comments","To communicate any details or issues about the specimen or during the specimen collection. (for example: broken vial, sent with patient, frozen).","","","","","","","","","",,,,,"",,,,"Specimen.note",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "

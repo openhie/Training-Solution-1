@@ -39,8 +39,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",,"openAtEnd","Patient.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","id",".id","FiveWs.identifier","PID-3"
 "Patient.identifier:NID","Patient.identifier","NID","","",0,1,"","","Y","Identifier {[]} {[]}
-","An identifier for this patient","An identifier for this patient.","","Patients are almost always assigned specific numerical identifiers.","","","","","","","",,,,,"",,,,"Patient.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","id",".id","FiveWs.identifier","PID-3"
+","An identifier for this patient","An identifier for this patient.","","Patients are almost always assigned specific numerical identifiers.","","","","","","","",,,,,"",,,,"Patient.identifier",0,*,"","","id",".id","FiveWs.identifier","PID-3"
 "Patient.identifier:NID.id","Patient.identifier.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Patient.identifier:NID.extension","Patient.identifier.extension","","extensions
@@ -57,7 +56,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Patient.identifier:NID.system","Patient.identifier.system","","","",1,1,"","","Y","uri {[]} {[]}
 ","The namespace for the identifier value","Establishes the namespace for the value - that is, a URL that describes a set values that are unique.","Identifier.system is always case sensitive.","There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers.","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://openhie.org/fhir/hiv-cbs/identifier/nid""/>","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://www.acme.com/identifiers/patient""/>","","",,,,,"",,,,"Identifier.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","II.root or Role.id.root","CX.4 / EI-2-4"
-"Patient.identifier:NID.value","Patient.identifier.value","","","",0,1,"","","Y","string {[]} {[]}
+"Patient.identifier:NID.value","Patient.identifier.value","","","",0,1,"Y","","Y","string {[]} {[]}
 ","The value that is unique","The portion of the identifier typically relevant to the user and which is unique within the context of the system.","If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](http://hl7.org/fhir/R4/extension-rendered-value.html). Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""123456""/>","","",,,,,"",,,,"Identifier.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)","CX.1 / EI.1"
 "Patient.identifier:NID.period","Patient.identifier.period","","","",0,1,"","","Y","Period {[]} {[]}
@@ -170,7 +169,7 @@ middle name","",1,*,"","","Y","string {[]} {[]}
 "Patient.name.period","Patient.name.period","","","",0,1,"","","Y","Period {[]} {[]}
 ","Time period when name was/is in use","Indicates the period of time when this name was valid for the named person.","","Allows names to be placed in historical context.","","","","","","","",,,,,"",,,,"HumanName.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./usablePeriod[type=""IVL<TS>""]","XPN.13 + XPN.14"
-"Patient.telecom","Patient.telecom","","","",0,*,"","","Y","ContactPoint {[]} {[]}
+"Patient.telecom","Patient.telecom","","","",0,*,"Y","","Y","ContactPoint {[]} {[]}
 ","A contact detail for the individual","A contact detail (e.g. a telephone number or an email address) by which the individual may be contacted.","A Patient may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently and also to help with identification. The address might not go directly to the individual, but may reach another party that is able to proxy for the patient (i.e. home phone, or pet owner's phone).","People have (primary) ways to contact them in some way such as phone, email.","","","","","","","",,,,,"",,,,"Patient.telecom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","telecom",".telecom","PID-13, PID-14, PID-40"
 "Patient.gender","Patient.gender","","","",1,1,"","","Y","code {[]} {[]}
@@ -182,7 +181,7 @@ middle name","",1,*,"","","Y","string {[]} {[]}
 "Patient.deceased[x]","Patient.deceased[x]","","","",0,1,"","Y","Y","boolean {[]} {[]}
 dateTime {[]} {[]}","Indicates if the individual is deceased or not","Indicates if the individual is deceased or not.","If there's no value in the instance, it means there is no statement on whether or not the individual is deceased. Most systems will interpret the absence of a value as a sign of the person being alive.","The fact that a patient is deceased influences the clinical process. Also, in human communication and relation management it is necessary to know whether the person is alive.","","","","","","","",,,,,"",,,,"Patient.deceased[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","player[classCode=PSN|ANM and determinerCode=INSTANCE]/deceasedInd, player[classCode=PSN|ANM and determinerCode=INSTANCE]/deceasedTime","n/a","PID-30  (bool) and PID-29 (datetime)"
-"Patient.address","Patient.address","","","",0,*,"","","Y","Address {[]} {[]}
+"Patient.address","Patient.address","","","",0,*,"Y","","Y","Address {[]} {[]}
 ","An address for the individual","An address for the individual.","Patient may have multiple addresses with different uses or applicable periods.","May need to keep track of patient addresses for contacting, billing or reporting requirements and also to help with identification.","","","","","","","",,,,,"",,,,"Patient.address",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","addr",".addr","PID-11"
 "Patient.address.id","Patient.address.id","","","",0,1,"","","","string {[]} {[]}
@@ -241,7 +240,7 @@ integer {[]} {[]}","Whether patient is part of a multiple birth","Indicates whet
 * Limit dimensions to thumbnail.
 * Keep byte count low to ease resource updates.","Many EHR systems have the capability to capture an image of the patient. Fits with newer social media usage too.","","","","","","","",,,,,"",,,,"Patient.photo",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","player[classCode=PSN|ANM and determinerCode=INSTANCE]/desc","n/a","OBX-5 - needs a profile"
-"Patient.contact","Patient.contact","","","",0,*,"","","","BackboneElement {[]} {[]}
+"Patient.contact","Patient.contact","","","",0,*,"Y","","","BackboneElement {[]} {[]}
 ","A contact party (e.g. guardian, partner, friend) for the patient","A contact party (e.g. guardian, partner, friend) for the patient.","Contact covers all kinds of contact parties: family members, business contacts, guardians, caregivers. Not applicable to register pedigree and family ties beyond use of having contact.","Need to track people you can contact about the patient.","","","","","","","",,,,,"",,,,"Patient.contact",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 pat-1:SHALL at least contain a contact's details or a reference to an organization {name.exists() or telecom.exists() or address.exists() or organization.exists()}","player[classCode=PSN|ANM and determinerCode=INSTANCE]/scopedRole[classCode=CON]","n/a"
 "Patient.contact.id","Patient.contact.id","","","",0,1,"","","","string {[]} {[]}
@@ -292,7 +291,7 @@ middle name","",1,*,"","","Y","string {[]} {[]}
 "Patient.contact.name.period","Patient.contact.name.period","","","",0,1,"","","Y","Period {[]} {[]}
 ","Time period when name was/is in use","Indicates the period of time when this name was valid for the named person.","","Allows names to be placed in historical context.","","","","","","","",,,,,"",,,,"HumanName.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./usablePeriod[type=""IVL<TS>""]","XPN.13 + XPN.14"
-"Patient.contact.telecom","Patient.contact.telecom","","","",0,*,"","","","ContactPoint {[]} {[]}
+"Patient.contact.telecom","Patient.contact.telecom","","","",0,*,"Y","","","ContactPoint {[]} {[]}
 ","A contact detail for the person","A contact detail for the person, e.g. a telephone number or an email address.","Contact may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently, and also to help with identification.","People have (primary) ways to contact them in some way such as phone, email.","","","","","","","",,,,,"",,,,"Patient.contact.telecom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","telecom","n/a","NK1-5, NK1-6, NK1-40"
 "Patient.contact.address","Patient.contact.address","","","",0,1,"","","","Address {[]} {[]}
