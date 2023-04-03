@@ -119,7 +119,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Reference to the image source","Reference to the image source.","","","","","","","","","",,,,,"",,,,"DiagnosticReport.media.link",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".value.reference"
 "DiagnosticReport.conclusion","DiagnosticReport.conclusion","","Report
-","",0,1,"","","","string {[]} {[]}
+","",0,1,"Y","","","string {[]} {[]}
 ","Clinical conclusion (interpretation) of test results","Concise and clinically contextualized summary conclusion (interpretation/impression) of the diagnostic report.","","Need to be able to provide a conclusion that is not lost among the basic result data.","","","","","","","",,,,,"",,,,"DiagnosticReport.conclusion",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","OBX","inboundRelationship[typeCode=""SPRT""].source[classCode=OBS, moodCode=EVN, code=LOINC:48767-8].value (type=ST)"
 "DiagnosticReport.conclusionCode","DiagnosticReport.conclusionCode","","","",0,*,"","","","CodeableConcept {[]} {[]}
