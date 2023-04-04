@@ -21,6 +21,14 @@
     </p>
   </blockquote>
 
+  <h3 id="cross-version-analysis">Cross Version Analysis<a class="anchorjs-link " href="#cross-version-analysis" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+
+  <h3 id="dependency-table">Dependency Table<a class="anchorjs-link " href="#dependency-table" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+
+  <h3 id="globals-table">Globals Table<a class="anchorjs-link " href="#globals-table" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+
+  <h3 id="ip-statements">IP Statements<a class="anchorjs-link " href="#ip-statements" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+
   <h3>Intellectual Property Considerations</h3>  <a name="ip"> </a>
   <p>
     While this implementation guide and the underlying FHIR are licensed as public domain, this guide may include examples making use of terminologies such 
