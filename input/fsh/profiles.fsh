@@ -171,7 +171,7 @@ Description: "The test sample that was collected for the initiated lab order."
 * type from VSSpecimenType (required)
 * type.text = "Specimen Type"
 * subject 1..1
-* collection.collectedDateTime 0..1 MS
+* collection.collectedDateTime 1..1
 * note 0..* MS
 
 Profile: HIVServiceRequestLocation
