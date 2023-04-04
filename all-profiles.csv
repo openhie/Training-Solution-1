@@ -3080,7 +3080,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Why the specimen was collected","Details concerning a service request that required a specimen to be collected.","The request may be explicit or implied such with a ServiceRequest that requires a blood draw.","","","","","","","","",,,,,"",,,,"Specimen.request",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "viral-load-specimen","Specimen.collection","Specimen.collection","","","",0,1,"","","","BackboneElement {[]} {[]}
-","Collection details","Details concerning the specimen collection.","","","","","","","","","",,,,,"",,,,"Specimen.collection",0,1,"",""
+","Collection details","Details concerning the specimen collection.","","","","","","","","","",,,,,"",,,,"Specimen.collection",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
 "viral-load-specimen","Specimen.collection.id","Specimen.collection.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "viral-load-specimen","Specimen.collection.extension","Specimen.collection.extension","","extensions
@@ -3096,11 +3097,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "viral-load-specimen","Specimen.collection.collector","Specimen.collection.collector","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole]]}
 ","Who collected the specimen","Person who collected the specimen.","","","","","","","","","",,,,,"",,,,"Specimen.collection.collector",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"viral-load-specimen","Specimen.collection.collected[x]","Specimen.collection.collected[x]","","","",0,1,"","","Y","dateTime {[]} {[]}
-Period {[]} {[]}","Collection time","Time when specimen was collected from subject - the physiologically relevant time.","","","","","","","","","",,,,,"","type:$this}
-","",,"open","Specimen.collection.collected[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"viral-load-specimen","Specimen.collection.collected[x]","Specimen.collection.collected[x]","","","",1,1,"","","Y","dateTime {[]} {[]}
+","Collection time","Time when specimen was collected from subject - the physiologically relevant time.","","","","","","","","","",,,,,"","type:$this}
+","",,"closed","Specimen.collection.collected[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"viral-load-specimen","Specimen.collection.collected[x]:collectedDateTime","Specimen.collection.collected[x]","collectedDateTime","","",0,1,"Y","","Y","dateTime {[]} {[]}
+"viral-load-specimen","Specimen.collection.collected[x]:collectedDateTime","Specimen.collection.collected[x]","collectedDateTime","","",1,1,"","","Y","dateTime {[]} {[]}
 ","Collection time","Time when specimen was collected from subject - the physiologically relevant time.","","","","","","","","","",,,,,"",,,,"Specimen.collection.collected[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "viral-load-specimen","Specimen.collection.duration","Specimen.collection.duration","","","",0,1,"","","Y","Duration {[]} {[]}
