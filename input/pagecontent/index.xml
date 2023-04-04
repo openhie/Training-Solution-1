@@ -21,19 +21,19 @@
     </p>
   </blockquote>
 
-  <h3 id="cross-version-analysis">Cross Version Analysis<a class="anchorjs-link " href="#cross-version-analysis" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+  <h3 id="cross-version-analysis">Cross Version Analysis</h3> <a name="cross-version-analysis"></a>
 
   {% include cross-version-analysis.xhtml %}
 
-  <h3 id="dependency-table">Dependency Table<a class="anchorjs-link " href="#dependency-table" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+  <h3 id="dependency-table">Dependency Table</h3> <a name="dependency-table"></a>
 
   {% include dependency-table.xhtml %}
 
-  <h3 id="globals-table">Globals Table<a class="anchorjs-link " href="#globals-table" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+  <h3 id="globals-table">Globals Table</h3> <a name="globals-table"></a>
 
   {% include globals-table.xhtml %}
 
-  <h3 id="ip-statements">IP Statements<a class="anchorjs-link " href="#ip-statements" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+  <h3 id="ip-statements">IP Statements</h3> <a name="ip-statements"></a>
 
    {% include ip-statements.xhtml %}
 
