@@ -27,7 +27,7 @@
        ] ) ;
        fhir:text [ fhir:v "HIV Organization identifier" ]
      ] ;
-     fhir:system [ fhir:v "http://openhie.org/fhir/hiv-cbs/identifier/hiv-organization"^^xsd:anyURI ] ;
+     fhir:system [ fhir:v "http://openhie.org/fhir/training-solution-1/identifier/hiv-organization"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "facility1" ]
   ] ) ; # 
   fhir:name [ fhir:v "HIV Test Services Health Facility"] ; # 

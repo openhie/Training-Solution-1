@@ -17,7 +17,7 @@
       </coding>
       <text value="HIV Organization identifier"/>
     </type>
-    <system value="http://openhie.org/fhir/hiv-cbs/identifier/hiv-organization"/>
+    <system value="http://openhie.org/fhir/training-solution-1/identifier/hiv-organization"/>
     <value value="facility1"/>
   </identifier>
   <name value="HIV Test Services Health Facility"/>

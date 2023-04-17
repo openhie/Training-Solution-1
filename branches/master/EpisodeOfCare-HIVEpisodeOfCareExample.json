@@ -17,7 +17,7 @@
       }],
       "text" : "Enrollment identifier"
     },
-    "system" : "http://openhie.org/fhir/hiv-cbs/identifier/enrollment-unique-id",
+    "system" : "http://openhie.org/fhir/training-solution-1/identifier/enrollment-unique-id",
     "value" : "abc123"
   }],
   "status" : "active",

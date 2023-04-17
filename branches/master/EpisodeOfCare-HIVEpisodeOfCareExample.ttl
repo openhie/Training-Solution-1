@@ -27,7 +27,7 @@
        ] ) ;
        fhir:text [ fhir:v "Enrollment identifier" ]
      ] ;
-     fhir:system [ fhir:v "http://openhie.org/fhir/hiv-cbs/identifier/enrollment-unique-id"^^xsd:anyURI ] ;
+     fhir:system [ fhir:v "http://openhie.org/fhir/training-solution-1/identifier/enrollment-unique-id"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "abc123" ]
   ] ) ; # 
   fhir:status [ fhir:v "active"] ; # 

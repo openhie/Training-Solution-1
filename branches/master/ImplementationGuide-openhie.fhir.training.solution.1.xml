@@ -12,7 +12,7 @@
   <title value="FHIR Training Solution 1"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-04-04T13:39:29+00:00"/>
+  <date value="2023-04-17T12:49:16+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -461,73 +461,33 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="Practitioner/PractitionerExample"/>
+        <reference value="StructureDefinition/hiv-diagnosis"/>
       </reference>
-      <name value="Example Practitioner - PractitionerExample"/>
-      <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-practitioner"/>
+      <name value="Diagnosis"/>
+      <description value="This profile represents the confirmation of HIV diagnosis."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/vs-key-population-status"/>
+        <reference value="ValueSet/vs-hiv-test-done"/>
       </reference>
-      <name value="Key Population Status"/>
-      <description value="A list of key population types"/>
+      <name value="HIV Test Done"/>
+      <description value="Used by the observation to indicate that a HIV test was performed."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="Task"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/hiv-patient"/>
+        <reference value="Task/HIVLabOrderTaskExample"/>
       </reference>
-      <name value="Patient"/>
-      <description value="A patient resource for an HIV Patient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hiv-test-results"/>
-      </reference>
-      <name value="Lab Results"/>
-      <description value="The result of the lab test which determines whether the patient is infected with HIV or not."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-vl-result-code"/>
-      </reference>
-      <name value="Viral Load Result Code"/>
-      <description value="A code used to indicate the category for the lab result."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hiv-practitioner"/>
-      </reference>
-      <name value="Practitioner"/>
-      <description value="The healthcare professional who has been assigned to a given lab task."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hiv-service-request-location"/>
-      </reference>
-      <name value="Lab Order Request Location"/>
-      <description value="What is the location of the organization responsible for conducting the examination of the individual's sample?"/>
+      <name value="Example Task - HIVLabOrderTaskExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -538,6 +498,16 @@
       </reference>
       <name value="Next Appointment Date"/>
       <description value="A date representing the patient's next scheduled appointment."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/transferring-facility-encounter"/>
+      </reference>
+      <name value="Transferring Facility Encounter"/>
+      <description value="This profile represents the facility the patient is being transferred from."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -554,40 +524,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/vs-specimen-type"/>
+        <reference value="ValueSet/vs-reason-for-assessment-or-test-not-performed"/>
       </reference>
-      <name value="Specimen Type Used In Viral Load testing"/>
-      <description value="A list of specimen types."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hiv-episode-of-care"/>
-      </reference>
-      <name value="Patient Enrollment Type"/>
-      <description value="This profile is used to enrol the patient into HIV care."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
-      </extension>
-      <reference>
-        <reference value="Organization/HIVOrganizationExample"/>
-      </reference>
-      <name value="Example Organization - HIVOrganizationExample"/>
-      <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-organization"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Encounter"/>
-      </extension>
-      <reference>
-        <reference value="Encounter/TransferringFacilityEncounterExample"/>
-      </reference>
-      <name value="Example Encounter - TransferringFacilityEncounterExample"/>
-      <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/transferring-facility-encounter"/>
+      <name value="Reason for Assessment or Test Not Performed"/>
+      <description value="A list of reasons associated with the service request for the lab order."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -601,46 +541,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/date-hiv-test-done"/>
-      </reference>
-      <name value="Date HIV Test Done"/>
-      <description value="This profile is to record the date when HIV test was done for a patient."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hiv-lab-task"/>
-      </reference>
-      <name value="Lab Task"/>
-      <description value="Assists with tracking the state of the lab order and its completion status."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Encounter"/>
-      </extension>
-      <reference>
-        <reference value="Encounter/TargetFacilityEncounterExample"/>
-      </reference>
-      <name value="Example Encounter - TargetFacilityEncounterExample"/>
-      <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/target-facility-encounter"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-reason-for-assessment-or-test-not-performed"/>
-      </reference>
-      <name value="Reason for Assessment or Test Not Performed"/>
-      <description value="A list of reasons associated with the service request for the lab order."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -651,33 +551,23 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
+        <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="Bundle/LabRejection"/>
+        <reference value="ValueSet/vs-test-types"/>
       </reference>
-      <name value="Example Bundle - LabRejection"/>
-      <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task"/>
+      <name value="Test Types"/>
+      <description value="A list of HIV test types"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/vs-hiv-test-done"/>
+        <reference value="ValueSet/vs-key-population-status"/>
       </reference>
-      <name value="HIV Test Done"/>
-      <description value="Used by the observation to indicate that a HIV test was performed."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/LabCancellation"/>
-      </reference>
-      <name value="Example Bundle - LabCancellation"/>
-      <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task"/>
+      <name value="Key Population Status"/>
+      <description value="A list of key population types"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -694,10 +584,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/hiv-organization"/>
+        <reference value="StructureDefinition/HIV-lab-order"/>
       </reference>
-      <name value="HIV Organization"/>
-      <description value="Organization providing HIV Testing Services."/>
+      <name value="Lab Order"/>
+      <description value="A service request that initiates the need for the lab to collect the test sample."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -708,6 +598,26 @@
       </reference>
       <name value="Example Organization - HIVServiceRequestLocationExample"/>
       <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-service-request-location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/target-facility-encounter"/>
+      </reference>
+      <name value="Target Facility Encounter"/>
+      <description value="This profile represents the current facility at which the patient is receiving treatment."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hiv-service-request-location"/>
+      </reference>
+      <name value="Lab Order Request Location"/>
+      <description value="What is the location of the organization responsible for conducting the examination of the individual's sample?"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -724,40 +634,60 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/HIV-lab-order"/>
+        <reference value="StructureDefinition/hiv-patient"/>
       </reference>
-      <name value="Lab Order"/>
-      <description value="A service request that initiates the need for the lab to collect the test sample."/>
+      <name value="Patient"/>
+      <description value="A patient resource for an HIV Patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
+        <valueString value="DiagnosticReport"/>
       </extension>
       <reference>
-        <reference value="Patient/HIVPatientExample"/>
+        <reference value="DiagnosticReport/HIVLabResultsDiagnosticReportExample"/>
       </reference>
-      <name value="Example Patient - HIVPatientExample"/>
-      <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-patient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hiv-diagnostic-report"/>
-      </reference>
-      <name value="Diagnostic Report"/>
-      <description value="A report as a result of the lab task being completed."/>
+      <name value="Example DiagnosticReport - HIVLabResultsDiagnosticReportExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-diagnostic-report"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Task"/>
       </extension>
       <reference>
-        <reference value="Task/HIVLabOrderTaskExample"/>
+        <reference value="Task/HIVLabResultTaskExample"/>
       </reference>
-      <name value="Example Task - HIVLabOrderTaskExample"/>
+      <name value="Example Task - HIVLabResultTaskExample"/>
       <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hiv-organization"/>
+      </reference>
+      <name value="HIV Organization"/>
+      <description value="Organization providing HIV Testing Services."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/TargetFacilityEncounterExample"/>
+      </reference>
+      <name value="Example Encounter - TargetFacilityEncounterExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/target-facility-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-vl-result-code"/>
+      </reference>
+      <name value="Viral Load Result Code"/>
+      <description value="A code used to indicate the category for the lab result."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -774,120 +704,70 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/hiv-diagnosis"/>
+        <reference value="StructureDefinition/date-hiv-test-done"/>
       </reference>
-      <name value="Diagnosis"/>
-      <description value="This profile represents the confirmation of HIV diagnosis."/>
+      <name value="Date HIV Test Done"/>
+      <description value="This profile is to record the date when HIV test was done for a patient."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
+        <valueString value="EpisodeOfCare"/>
       </extension>
       <reference>
-        <reference value="Observation/HIVTestResultExample"/>
+        <reference value="EpisodeOfCare/HIVEpisodeOfCareExample"/>
       </reference>
-      <name value="Example Observation - HIVTestResultExample"/>
-      <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-test-results"/>
+      <name value="Example EpisodeOfCare - HIVEpisodeOfCareExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-episode-of-care"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/target-facility-encounter"/>
+        <reference value="StructureDefinition/hiv-practitioner"/>
       </reference>
-      <name value="Target Facility Encounter"/>
-      <description value="This profile represents the current facility at which the patient is receiving treatment."/>
+      <name value="Practitioner"/>
+      <description value="The healthcare professional who has been assigned to a given lab task."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="Bundle/EMR"/>
+        <reference value="StructureDefinition/viral-load-specimen"/>
       </reference>
-      <name value="Example Bundle - EMR"/>
+      <name value="Viral Load Specimen"/>
+      <description value="The test sample that was collected for the initiated lab order."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hiv-lab-task"/>
+      </reference>
+      <name value="Lab Task"/>
+      <description value="Assists with tracking the state of the lab order and its completion status."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/HIVPatientExample"/>
+      </reference>
+      <name value="Example Patient - HIVPatientExample"/>
       <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Task"/>
+        <valueString value="Encounter"/>
       </extension>
       <reference>
-        <reference value="Task/HIVLabResultTaskExample"/>
+        <reference value="Encounter/TransferringFacilityEncounterExample"/>
       </reference>
-      <name value="Example Task - HIVLabResultTaskExample"/>
-      <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Task"/>
-      </extension>
-      <reference>
-        <reference value="Task/HIVLabOrderRejectionTaskExample"/>
-      </reference>
-      <name value="Example Task - HIVLabOrderRejectionTaskExample"/>
-      <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Task"/>
-      </extension>
-      <reference>
-        <reference value="Task/HIVLabOrderCancellationTaskExample"/>
-      </reference>
-      <name value="Example Task - HIVLabOrderCancellationTaskExample"/>
-      <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="DiagnosticReport"/>
-      </extension>
-      <reference>
-        <reference value="DiagnosticReport/HIVLabResultsDiagnosticReportExample"/>
-      </reference>
-      <name value="Example DiagnosticReport - HIVLabResultsDiagnosticReportExample"/>
-      <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-diagnostic-report"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-reason-sample-cancelled-or-rejected"/>
-      </reference>
-      <name value="Reasons why a lab order was cancelled or rejected"/>
-      <description value="Reasons why a lab order was cancelled or rejected."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ServiceRequest"/>
-      </extension>
-      <reference>
-        <reference value="ServiceRequest/HIVServiceRequestExample"/>
-      </reference>
-      <name value="Example ServiceRequest - HIVServiceRequestExample"/>
-      <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/HIV-lab-order"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/transferring-facility-encounter"/>
-      </reference>
-      <name value="Transferring Facility Encounter"/>
-      <description value="This profile represents the facility the patient is being transferred from."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-test-types"/>
-      </reference>
-      <name value="Test Types"/>
-      <description value="A list of HIV test types"/>
+      <name value="Example Encounter - TransferringFacilityEncounterExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/transferring-facility-encounter"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -911,23 +791,133 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="EpisodeOfCare"/>
+        <valueString value="Task"/>
       </extension>
       <reference>
-        <reference value="EpisodeOfCare/HIVEpisodeOfCareExample"/>
+        <reference value="Task/HIVLabOrderRejectionTaskExample"/>
       </reference>
-      <name value="Example EpisodeOfCare - HIVEpisodeOfCareExample"/>
-      <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-episode-of-care"/>
+      <name value="Example Task - HIVLabOrderRejectionTaskExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/HIVOrganizationExample"/>
+      </reference>
+      <name value="Example Organization - HIVOrganizationExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/LabRejection"/>
+      </reference>
+      <name value="Example Bundle - LabRejection"/>
+      <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/HIVLabOrderCancellationTaskExample"/>
+      </reference>
+      <name value="Example Task - HIVLabOrderCancellationTaskExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-reason-sample-cancelled-or-rejected"/>
+      </reference>
+      <name value="Reasons why a lab order was cancelled or rejected"/>
+      <description value="Reasons why a lab order was cancelled or rejected."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-specimen-type"/>
+      </reference>
+      <name value="Specimen Type Used In Viral Load testing"/>
+      <description value="A list of specimen types."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/viral-load-specimen"/>
+        <reference value="StructureDefinition/hiv-test-results"/>
       </reference>
-      <name value="Viral Load Specimen"/>
-      <description value="The test sample that was collected for the initiated lab order."/>
+      <name value="Lab Results"/>
+      <description value="The result of the lab test which determines whether the patient is infected with HIV or not."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/HIVTestResultExample"/>
+      </reference>
+      <name value="Example Observation - HIVTestResultExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-test-results"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/PractitionerExample"/>
+      </reference>
+      <name value="Example Practitioner - PractitionerExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hiv-episode-of-care"/>
+      </reference>
+      <name value="Patient Enrollment Type"/>
+      <description value="This profile is used to enrol the patient into HIV care."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hiv-diagnostic-report"/>
+      </reference>
+      <name value="Diagnostic Report"/>
+      <description value="A report as a result of the lab task being completed."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/HIVServiceRequestExample"/>
+      </reference>
+      <name value="Example ServiceRequest - HIVServiceRequestExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/HIV-lab-order"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/LabCancellation"/>
+      </reference>
+      <name value="Example Bundle - LabCancellation"/>
+      <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -938,6 +928,16 @@
       </reference>
       <name value="Example Specimen - VLSpecimenExample"/>
       <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/viral-load-specimen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/EMR"/>
+      </reference>
+      <name value="Example Bundle - EMR"/>
+      <exampleCanonical value="http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-patient"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
