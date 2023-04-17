@@ -11,9 +11,9 @@ Description: "A patient resource for an HIV Patient"
     NID 0..1 and
     MR 1..1
 * identifier[NID].value 0..1 MS
-* identifier[NID].system = "http://openhie.org/fhir/hiv-cbs/identifier/nid" (exactly)
+* identifier[NID].system = "http://openhie.org/fhir/training-solution-1/identifier/nid" (exactly)
 * identifier[MR].value 1..1
-* identifier[MR].system = "http://openhie.org/fhir/hiv-cbs/identifier/mr" (exactly)
+* identifier[MR].system = "http://openhie.org/fhir/training-solution-1/identifier/mr" (exactly)
 * identifier[MR].type.coding.code = #MR
 * identifier[MR].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier[MR].type.coding.display = "Medical record number"
@@ -60,7 +60,7 @@ Description: "Organization providing HIV Testing Services."
 * identifier contains
     XX 1..1
 * identifier[XX].value 1..1
-* identifier[XX].system = "http://openhie.org/fhir/hiv-cbs/identifier/hiv-organization" (exactly)
+* identifier[XX].system = "http://openhie.org/fhir/training-solution-1/identifier/hiv-organization" (exactly)
 * identifier[XX].type.coding.code = #XX
 * identifier[XX].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier[XX].type.coding.display = "Organization identifier"
@@ -113,7 +113,7 @@ Description: "This profile is used to enrol the patient into HIV care."
 * identifier contains
     PI 1..1
 * identifier[PI].value 1..1
-* identifier[PI].system = "http://openhie.org/fhir/hiv-cbs/identifier/enrollment-unique-id" (exactly)
+* identifier[PI].system = "http://openhie.org/fhir/training-solution-1/identifier/enrollment-unique-id" (exactly)
 * identifier[PI].type.coding.code = #PI
 * identifier[PI].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier[PI].type.coding.display = "Patient internal identifier"
@@ -137,7 +137,7 @@ Description: "This profile represents the confirmation of HIV diagnosis."
 * identifier contains
     PI 1..1
 * identifier[PI].value 1..1
-* identifier[PI].system = "http://openhie.org/fhir/hiv-cbs/identifier/hiv-diagnosis" (exactly)
+* identifier[PI].system = "http://openhie.org/fhir/training-solution-1/identifier/hiv-diagnosis" (exactly)
 * identifier[PI].type.coding.code = #PI
 * identifier[PI].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier[PI].type.coding.display = "Patient internal identifier"
