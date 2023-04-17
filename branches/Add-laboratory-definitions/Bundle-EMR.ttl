@@ -95,10 +95,10 @@
        ] ) ;
        fhir:text [ fhir:v "Patient folder number" ]
      ] ;
-     fhir:system [ fhir:v "http://openhie.org/fhir/hiv-cbs/identifier/mr"^^xsd:anyURI ] ;
+     fhir:system [ fhir:v "http://openhie.org/fhir/training-solution-1/identifier/mr"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "ORG1-0765712" ]
   ] [
-     fhir:system [ fhir:v "http://openhie.org/fhir/hiv-cbs/identifier/nid"^^xsd:anyURI ] ;
+     fhir:system [ fhir:v "http://openhie.org/fhir/training-solution-1/identifier/nid"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "NID1234567" ]
   ] ) ; # 
   fhir:name ( [
@@ -230,7 +230,7 @@
        ] ) ;
        fhir:text [ fhir:v "HIV positive testing identifier" ]
      ] ;
-     fhir:system [ fhir:v "http://openhie.org/fhir/hiv-cbs/identifier/hiv-diagnosis"^^xsd:anyURI ] ;
+     fhir:system [ fhir:v "http://openhie.org/fhir/training-solution-1/identifier/hiv-diagnosis"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "abc123" ]
   ] ) ; # 
   fhir:code [
@@ -323,7 +323,7 @@
        ] ) ;
        fhir:text [ fhir:v "Enrollment identifier" ]
      ] ;
-     fhir:system [ fhir:v "http://openhie.org/fhir/hiv-cbs/identifier/enrollment-unique-id"^^xsd:anyURI ] ;
+     fhir:system [ fhir:v "http://openhie.org/fhir/training-solution-1/identifier/enrollment-unique-id"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "abc123" ]
   ] ) ; # 
   fhir:status [ fhir:v "active"] ; # 

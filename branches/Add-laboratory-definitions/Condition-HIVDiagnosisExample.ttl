@@ -28,7 +28,7 @@
        ] ) ;
        fhir:text [ fhir:v "HIV positive testing identifier" ]
      ] ;
-     fhir:system [ fhir:v "http://openhie.org/fhir/hiv-cbs/identifier/hiv-diagnosis"^^xsd:anyURI ] ;
+     fhir:system [ fhir:v "http://openhie.org/fhir/training-solution-1/identifier/hiv-diagnosis"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "abc123" ]
   ] ) ; # 
   fhir:code [

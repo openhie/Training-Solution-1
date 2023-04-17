@@ -17,7 +17,7 @@
       }],
       "text" : "HIV Organization identifier"
     },
-    "system" : "http://openhie.org/fhir/hiv-cbs/identifier/hiv-organization",
+    "system" : "http://openhie.org/fhir/training-solution-1/identifier/hiv-organization",
     "value" : "facility1"
   }],
   "name" : "HIV Test Services Health Facility",
