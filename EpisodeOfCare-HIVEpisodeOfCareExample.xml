@@ -17,7 +17,7 @@
       </coding>
       <text value="Enrollment identifier"/>
     </type>
-    <system value="http://openhie.org/fhir/hiv-cbs/identifier/enrollment-unique-id"/>
+    <system value="http://openhie.org/fhir/training-solution-1/identifier/enrollment-unique-id"/>
     <value value="abc123"/>
   </identifier>
   <status value="active"/>

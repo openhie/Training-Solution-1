@@ -11,7 +11,7 @@
   "title" : "FHIR Training Solution 1",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-04-04T13:39:29+00:00",
+  "date" : "2023-04-17T11:49:04+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -619,13 +619,13 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Practitioner"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "Practitioner/PractitionerExample"
+        "reference" : "StructureDefinition/hiv-diagnosis"
       },
-      "name" : "Example Practitioner - PractitionerExample",
-      "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-practitioner"
+      "name" : "Diagnosis",
+      "description" : "This profile represents the confirmation of HIV diagnosis."
     },
     {
       "extension" : [{
@@ -633,65 +633,21 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-key-population-status"
+        "reference" : "ValueSet/vs-hiv-test-done"
       },
-      "name" : "Key Population Status",
-      "description" : "A list of key population types"
+      "name" : "HIV Test Done",
+      "description" : "Used by the observation to indicate that a HIV test was performed."
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "Task"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/hiv-patient"
+        "reference" : "Task/HIVLabOrderTaskExample"
       },
-      "name" : "Patient",
-      "description" : "A patient resource for an HIV Patient"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hiv-test-results"
-      },
-      "name" : "Lab Results",
-      "description" : "The result of the lab test which determines whether the patient is infected with HIV or not."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-vl-result-code"
-      },
-      "name" : "Viral Load Result Code",
-      "description" : "A code used to indicate the category for the lab result."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hiv-practitioner"
-      },
-      "name" : "Practitioner",
-      "description" : "The healthcare professional who has been assigned to a given lab task."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hiv-service-request-location"
-      },
-      "name" : "Lab Order Request Location",
-      "description" : "What is the location of the organization responsible for conducting the examination of the individual's sample?"
+      "name" : "Example Task - HIVLabOrderTaskExample",
+      "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task"
     },
     {
       "extension" : [{
@@ -703,6 +659,17 @@
       },
       "name" : "Next Appointment Date",
       "description" : "A date representing the patient's next scheduled appointment."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/transferring-facility-encounter"
+      },
+      "name" : "Transferring Facility Encounter",
+      "description" : "This profile represents the facility the patient is being transferred from."
     },
     {
       "extension" : [{
@@ -721,43 +688,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-specimen-type"
+        "reference" : "ValueSet/vs-reason-for-assessment-or-test-not-performed"
       },
-      "name" : "Specimen Type Used In Viral Load testing",
-      "description" : "A list of specimen types."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hiv-episode-of-care"
-      },
-      "name" : "Patient Enrollment Type",
-      "description" : "This profile is used to enrol the patient into HIV care."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
-      }],
-      "reference" : {
-        "reference" : "Organization/HIVOrganizationExample"
-      },
-      "name" : "Example Organization - HIVOrganizationExample",
-      "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-organization"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Encounter"
-      }],
-      "reference" : {
-        "reference" : "Encounter/TransferringFacilityEncounterExample"
-      },
-      "name" : "Example Encounter - TransferringFacilityEncounterExample",
-      "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/transferring-facility-encounter"
+      "name" : "Reason for Assessment or Test Not Performed",
+      "description" : "A list of reasons associated with the service request for the lab order."
     },
     {
       "extension" : [{
@@ -773,50 +707,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/date-hiv-test-done"
-      },
-      "name" : "Date HIV Test Done",
-      "description" : "This profile is to record the date when HIV test was done for a patient."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hiv-lab-task"
-      },
-      "name" : "Lab Task",
-      "description" : "Assists with tracking the state of the lab order and its completion status."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Encounter"
-      }],
-      "reference" : {
-        "reference" : "Encounter/TargetFacilityEncounterExample"
-      },
-      "name" : "Example Encounter - TargetFacilityEncounterExample",
-      "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/target-facility-encounter"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-reason-for-assessment-or-test-not-performed"
-      },
-      "name" : "Reason for Assessment or Test Not Performed",
-      "description" : "A list of reasons associated with the service request for the lab order."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
       }],
       "reference" : {
@@ -828,13 +718,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
+        "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "Bundle/LabRejection"
+        "reference" : "ValueSet/vs-test-types"
       },
-      "name" : "Example Bundle - LabRejection",
-      "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task"
+      "name" : "Test Types",
+      "description" : "A list of HIV test types"
     },
     {
       "extension" : [{
@@ -842,21 +732,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-hiv-test-done"
+        "reference" : "ValueSet/vs-key-population-status"
       },
-      "name" : "HIV Test Done",
-      "description" : "Used by the observation to indicate that a HIV test was performed."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/LabCancellation"
-      },
-      "name" : "Example Bundle - LabCancellation",
-      "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task"
+      "name" : "Key Population Status",
+      "description" : "A list of key population types"
     },
     {
       "extension" : [{
@@ -875,10 +754,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/hiv-organization"
+        "reference" : "StructureDefinition/HIV-lab-order"
       },
-      "name" : "HIV Organization",
-      "description" : "Organization providing HIV Testing Services."
+      "name" : "Lab Order",
+      "description" : "A service request that initiates the need for the lab to collect the test sample."
     },
     {
       "extension" : [{
@@ -890,6 +769,28 @@
       },
       "name" : "Example Organization - HIVServiceRequestLocationExample",
       "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-service-request-location"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/target-facility-encounter"
+      },
+      "name" : "Target Facility Encounter",
+      "description" : "This profile represents the current facility at which the patient is receiving treatment."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hiv-service-request-location"
+      },
+      "name" : "Lab Order Request Location",
+      "description" : "What is the location of the organization responsible for conducting the examination of the individual's sample?"
     },
     {
       "extension" : [{
@@ -908,32 +809,21 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/HIV-lab-order"
+        "reference" : "StructureDefinition/hiv-patient"
       },
-      "name" : "Lab Order",
-      "description" : "A service request that initiates the need for the lab to collect the test sample."
+      "name" : "Patient",
+      "description" : "A patient resource for an HIV Patient"
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
+        "valueString" : "DiagnosticReport"
       }],
       "reference" : {
-        "reference" : "Patient/HIVPatientExample"
+        "reference" : "DiagnosticReport/HIVLabResultsDiagnosticReportExample"
       },
-      "name" : "Example Patient - HIVPatientExample",
-      "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-patient"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hiv-diagnostic-report"
-      },
-      "name" : "Diagnostic Report",
-      "description" : "A report as a result of the lab task being completed."
+      "name" : "Example DiagnosticReport - HIVLabResultsDiagnosticReportExample",
+      "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-diagnostic-report"
     },
     {
       "extension" : [{
@@ -941,10 +831,43 @@
         "valueString" : "Task"
       }],
       "reference" : {
-        "reference" : "Task/HIVLabOrderTaskExample"
+        "reference" : "Task/HIVLabResultTaskExample"
       },
-      "name" : "Example Task - HIVLabOrderTaskExample",
+      "name" : "Example Task - HIVLabResultTaskExample",
       "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hiv-organization"
+      },
+      "name" : "HIV Organization",
+      "description" : "Organization providing HIV Testing Services."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/TargetFacilityEncounterExample"
+      },
+      "name" : "Example Encounter - TargetFacilityEncounterExample",
+      "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/target-facility-encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-vl-result-code"
+      },
+      "name" : "Viral Load Result Code",
+      "description" : "A code used to indicate the category for the lab result."
     },
     {
       "extension" : [{
@@ -963,21 +886,21 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/hiv-diagnosis"
+        "reference" : "StructureDefinition/date-hiv-test-done"
       },
-      "name" : "Diagnosis",
-      "description" : "This profile represents the confirmation of HIV diagnosis."
+      "name" : "Date HIV Test Done",
+      "description" : "This profile is to record the date when HIV test was done for a patient."
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
+        "valueString" : "EpisodeOfCare"
       }],
       "reference" : {
-        "reference" : "Observation/HIVTestResultExample"
+        "reference" : "EpisodeOfCare/HIVEpisodeOfCareExample"
       },
-      "name" : "Example Observation - HIVTestResultExample",
-      "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-test-results"
+      "name" : "Example EpisodeOfCare - HIVEpisodeOfCareExample",
+      "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-episode-of-care"
     },
     {
       "extension" : [{
@@ -985,109 +908,54 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/target-facility-encounter"
+        "reference" : "StructureDefinition/hiv-practitioner"
       },
-      "name" : "Target Facility Encounter",
-      "description" : "This profile represents the current facility at which the patient is receiving treatment."
+      "name" : "Practitioner",
+      "description" : "The healthcare professional who has been assigned to a given lab task."
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "Bundle/EMR"
+        "reference" : "StructureDefinition/viral-load-specimen"
       },
-      "name" : "Example Bundle - EMR",
+      "name" : "Viral Load Specimen",
+      "description" : "The test sample that was collected for the initiated lab order."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hiv-lab-task"
+      },
+      "name" : "Lab Task",
+      "description" : "Assists with tracking the state of the lab order and its completion status."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/HIVPatientExample"
+      },
+      "name" : "Example Patient - HIVPatientExample",
       "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-patient"
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Task"
+        "valueString" : "Encounter"
       }],
       "reference" : {
-        "reference" : "Task/HIVLabResultTaskExample"
+        "reference" : "Encounter/TransferringFacilityEncounterExample"
       },
-      "name" : "Example Task - HIVLabResultTaskExample",
-      "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Task"
-      }],
-      "reference" : {
-        "reference" : "Task/HIVLabOrderRejectionTaskExample"
-      },
-      "name" : "Example Task - HIVLabOrderRejectionTaskExample",
-      "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Task"
-      }],
-      "reference" : {
-        "reference" : "Task/HIVLabOrderCancellationTaskExample"
-      },
-      "name" : "Example Task - HIVLabOrderCancellationTaskExample",
-      "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "DiagnosticReport"
-      }],
-      "reference" : {
-        "reference" : "DiagnosticReport/HIVLabResultsDiagnosticReportExample"
-      },
-      "name" : "Example DiagnosticReport - HIVLabResultsDiagnosticReportExample",
-      "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-diagnostic-report"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-reason-sample-cancelled-or-rejected"
-      },
-      "name" : "Reasons why a lab order was cancelled or rejected",
-      "description" : "Reasons why a lab order was cancelled or rejected."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ServiceRequest"
-      }],
-      "reference" : {
-        "reference" : "ServiceRequest/HIVServiceRequestExample"
-      },
-      "name" : "Example ServiceRequest - HIVServiceRequestExample",
-      "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/HIV-lab-order"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/transferring-facility-encounter"
-      },
-      "name" : "Transferring Facility Encounter",
-      "description" : "This profile represents the facility the patient is being transferred from."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-test-types"
-      },
-      "name" : "Test Types",
-      "description" : "A list of HIV test types"
+      "name" : "Example Encounter - TransferringFacilityEncounterExample",
+      "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/transferring-facility-encounter"
     },
     {
       "extension" : [{
@@ -1114,13 +982,68 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "EpisodeOfCare"
+        "valueString" : "Task"
       }],
       "reference" : {
-        "reference" : "EpisodeOfCare/HIVEpisodeOfCareExample"
+        "reference" : "Task/HIVLabOrderRejectionTaskExample"
       },
-      "name" : "Example EpisodeOfCare - HIVEpisodeOfCareExample",
-      "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-episode-of-care"
+      "name" : "Example Task - HIVLabOrderRejectionTaskExample",
+      "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/HIVOrganizationExample"
+      },
+      "name" : "Example Organization - HIVOrganizationExample",
+      "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/LabRejection"
+      },
+      "name" : "Example Bundle - LabRejection",
+      "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Task"
+      }],
+      "reference" : {
+        "reference" : "Task/HIVLabOrderCancellationTaskExample"
+      },
+      "name" : "Example Task - HIVLabOrderCancellationTaskExample",
+      "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-reason-sample-cancelled-or-rejected"
+      },
+      "name" : "Reasons why a lab order was cancelled or rejected",
+      "description" : "Reasons why a lab order was cancelled or rejected."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-specimen-type"
+      },
+      "name" : "Specimen Type Used In Viral Load testing",
+      "description" : "A list of specimen types."
     },
     {
       "extension" : [{
@@ -1128,10 +1051,76 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/viral-load-specimen"
+        "reference" : "StructureDefinition/hiv-test-results"
       },
-      "name" : "Viral Load Specimen",
-      "description" : "The test sample that was collected for the initiated lab order."
+      "name" : "Lab Results",
+      "description" : "The result of the lab test which determines whether the patient is infected with HIV or not."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/HIVTestResultExample"
+      },
+      "name" : "Example Observation - HIVTestResultExample",
+      "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-test-results"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/PractitionerExample"
+      },
+      "name" : "Example Practitioner - PractitionerExample",
+      "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-practitioner"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hiv-episode-of-care"
+      },
+      "name" : "Patient Enrollment Type",
+      "description" : "This profile is used to enrol the patient into HIV care."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hiv-diagnostic-report"
+      },
+      "name" : "Diagnostic Report",
+      "description" : "A report as a result of the lab task being completed."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/HIVServiceRequestExample"
+      },
+      "name" : "Example ServiceRequest - HIVServiceRequestExample",
+      "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/HIV-lab-order"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/LabCancellation"
+      },
+      "name" : "Example Bundle - LabCancellation",
+      "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task"
     },
     {
       "extension" : [{
@@ -1143,6 +1132,17 @@
       },
       "name" : "Example Specimen - VLSpecimenExample",
       "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/viral-load-specimen"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/EMR"
+      },
+      "name" : "Example Bundle - EMR",
+      "exampleCanonical" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-patient"
     }],
     "page" : {
       "extension" : [{

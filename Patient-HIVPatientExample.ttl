@@ -41,10 +41,10 @@
        ] ) ;
        fhir:text [ fhir:v "Patient folder number" ]
      ] ;
-     fhir:system [ fhir:v "http://openhie.org/fhir/hiv-cbs/identifier/mr"^^xsd:anyURI ] ;
+     fhir:system [ fhir:v "http://openhie.org/fhir/training-solution-1/identifier/mr"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "ORG1-0765712" ]
   ] [
-     fhir:system [ fhir:v "http://openhie.org/fhir/hiv-cbs/identifier/nid"^^xsd:anyURI ] ;
+     fhir:system [ fhir:v "http://openhie.org/fhir/training-solution-1/identifier/nid"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "NID1234567" ]
   ] ) ; # 
   fhir:name ( [
