@@ -927,7 +927,7 @@
       "reference" : {
         "reference" : "ValueSet/vs-reason-for-assessment"
       },
-      "name" : "Reason for Assessment or Test Not Performed",
+      "name" : "Reason for Assessment",
       "description" : "A list of reasons associated with the service request for the lab order.",
       "exampleBoolean" : false
     },
