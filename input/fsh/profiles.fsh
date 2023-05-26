@@ -46,6 +46,8 @@ Description: "Populations who are at higher risk for HIV."
 * valueCodeableConcept from VSKeyPopulationSatus (required)
 * valueCodeableConcept.text = "HIV key population"
 * valueCodeableConcept.coding.display 1..1
+* ^context[0].type = #element
+* ^context[0].expression = "Patient"
 
 Profile: HIVOrganization
 Parent: Organization
@@ -78,7 +80,6 @@ Parent: Encounter
 Id: target-facility-encounter
 Title: "Target Facility Encounter" 
 Description: "This profile represents the current facility at which the patient is receiving treatment."
-* extension contains HIVCareNextAppointment named next-visit 0..1 MS
 * status 1..1
 * class 1..1
 * subject 1..1
@@ -86,11 +87,58 @@ Description: "This profile represents the current facility at which the patient 
 * partOf 0..1 MS
 * episodeOfCare 1..*
 
+Profile: ARVTreatment
+Parent: CarePlan
+Id: hiv-arv-treatment
+Title: "ARV Treatment"
+Description: "This profile is to record prescribed ARV regimen against a given therapeutic line."
+* status 1..1
+* intent 1..1
+* subject 1..1
+* encounter 1..1
+* period 1..1
+* activity 1..* 
+* activity.outcomeCodeableConcept 0..* MS
+* activity.outcomeCodeableConcept from VSCarePlanActivityOutcome (required)
+* activity.detail 0..1 MS
+* activity.detail.scheduledPeriod 0..1 MS
+* activity.detail.kind 0..1 MS
+* activity.detail.kind = #MedicationRequest
+* activity.detail.code 0..1 MS
+* activity.detail.code from VSARVMedicationRequest (required)
+* activity.detail.status 1..1
+* activity.detail.productCodeableConcept 0..1 MS
+* activity.detail.productCodeableConcept from VSARVRegimen (required)
+* activity.detail.extension contains ARTRegimenSwitchedOrSubstituted named artRegimenSwitchedOrSubstituted 0..1 MS
+* activity.detail.extension contains ARTRegimenLine named artRegimenLine 0..1 MS
+* activity.detail.extension contains HIVCareNextAppointment named next-visit 0..1 MS
+* note 0..* MS
+
 Extension: HIVCareNextAppointment
 Id: hiv-care-next-visit
 Title: "Next Appointment Date"
 Description: "A date representing the patient's next scheduled appointment."
 * value[x] only dateTime
+* ^context[0].type = #element
+* ^context[0].expression = "CarePlan.activity.detail"
+
+Extension: ARTRegimenLine
+Id: art-regimen-line
+Title: "ART Regimen Line"
+Description: "Therapeutic lines that are used to classify the patient's currently prescribed ARV regimen."
+* value[x] only CodeableConcept
+* valueCodeableConcept from VSARTRegimenLines (required)
+* ^context[0].type = #element
+* ^context[0].expression = "CarePlan.activity.detail"
+
+Extension: ARTRegimenSwitchedOrSubstituted
+Id: art-regimen-switched-or-substituted
+Title: "ART Regimen Switched Or Substituted"
+Description: "The ARV regimen has been switched to a new ARV regimen or has been substituted by another ARV regimen."
+* value[x] only CodeableConcept
+* valueCodeableConcept from VSARTRegimenChangeType (required)
+* ^context[0].type = #element
+* ^context[0].expression = "CarePlan.activity.detail"
 
 Profile: TransferringFacilityEncounter
 Parent: Encounter
