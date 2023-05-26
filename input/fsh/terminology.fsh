@@ -102,3 +102,70 @@ Title: "HIV Test Done"
 Description:  "Used by the observation to indicate that a HIV test was performed."
 * ^experimental = false
 * $SCT#315124004 "Human immunodeficiency virus viral load"
+
+ValueSet: VSCarePlanActivityOutcome
+Id: vs-careplan-outcome
+Title: "ARV treatment outcomes"
+Description: "A list of possible ARV treatment outcomes."
+* ^experimental = false
+* $SCT#737038009 "Declined consent for treatment"
+* $SCT#386473003 "Telephone follow-up"
+
+ValueSet: VSARVMedicationRequest
+Id: vs-arvtreatment-activity-type
+Title: "ARV Treatment Medication Request"
+Description: "Codes used to represent a medication request for ART."
+* ^experimental = false
+*  $LNC#45260-7 "HIV ART medication"
+
+ValueSet: VSARVRegimen
+Id: vs-arv-regimen
+Title: "A list of ARV regimen"
+Description: "A list of ARV regimen."
+* ^experimental = false
+* $SCT#387105006 "Didanosine"
+* $SCT#387005008 "Abacavir"
+* $SCT#772188001 "Product containing only abacavir and lamivudine"
+* $SCT#427314002 "Antiviral therapy"
+* $SCT#878898002 "Product containing only atazanavir and ritonavir"
+* $SCT#713464000 "Dolutegravir"
+* $SCT#387001004 "Efavirenz"
+* $SCT#404856006 "Emtricitabine"
+* $SCT#432121008 "Etravirine"
+* $SCT#386897000 "Lamivudine"
+* $SCT#776569000 "Product containing only lopinavir and ritonavir"
+* $SCT#386898005 "Nevirapine"
+* $SCT#429707008 "Raltegravir"
+* $SCT#703123005 "Rilpivirine"
+* $SCT#386896009 "Ritonavir"
+* $SCT#386895008 "Stavudine"
+* $SCT#422091007 "Tenofovir"
+* $SCT#421203005 "Tenofovir disoproxil"
+* $SCT#414090006 "Product containing emtricitabine and tenofovir"
+* $SCT#387151007 "Zidovudine"
+* $SCT#776469003 "Product containing only lamivudine and zidovudine"
+
+ValueSet: VSARTRegimenLines
+Id: vs-artregimen-lines
+Title: "ART Regimen Lines"
+Description: "A list of ART regimen therapeutic lines."
+* ^experimental = false
+* $SCT#708255002 "First line treatment"
+* $SCT#708256001 "Second line treatment"
+* $SCT#708257005 "Third line treatment"
+
+CodeSystem: CSARTRegimenChangeType
+Id: cs-art-regimen-change-type
+Title: "ART Regimen Change Types"
+Description: "A list of options to determine whether an ARV regimen was switched or substituted."
+* ^experimental = false
+* ^caseSensitive = true
+* #Switched "ARV Regimen Switched"
+* #Substituted "ARV Regimen Substituted"
+
+ValueSet: VSARTRegimenChangeType
+Id: vs-art-regimen-change-type
+Title: "ART Regimen Change Types"
+Description: "A list of options to determine whether an ARV regimen was switched or substituted."
+* ^experimental = false
+* include codes from system CSARTRegimenChangeType

@@ -68,7 +68,6 @@ InstanceOf: TargetFacilityEncounter
 Usage: #example
 Title: "Target Facility Encounter example" 
 Description: "Target Facility Encounter example"
-* extension[next-visit].valueDateTime = "2022-10-22"
 * status = #finished
 * class.code = #AMB
 * class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
@@ -352,5 +351,95 @@ Description: "Date HIV Test Done example"
 * encounter = Reference(TargetFacilityEncounterExample)
 * effectiveDateTime = "2022-12-10"
 * note.text = "Additional information regarding the HIV test"
+* note.authorReference = Reference(HIVOrganizationExample)
+* note.time = "2015-02-07T13:28:17-05:00"
+
+Instance: ARVTreatmentExample
+InstanceOf: ARVTreatment
+Usage: #example
+Title: "ARVCarePlan example"
+Description: "ARVCarePlan example"
+* status = #active
+* intent = #plan
+* subject = Reference(HIVPatientExample)
+* encounter = Reference(TargetFacilityEncounterExample)
+* period.start = "2022-12-01"
+* period.end = "2022-12-01"
+* activity.detail.kind = #MedicationRequest
+* activity.detail.code = $LNC#45260-7 
+* activity.detail.status = #in-progress
+* activity.detail.productCodeableConcept = $SCT#387005008
+* activity.detail.extension[artRegimenLine].valueCodeableConcept = $SCT#708255002
+* activity.detail.extension[next-visit].valueDateTime = "2023-02-01"
+* activity.detail.scheduledPeriod.start = "2023-01-01"
+* activity.detail.scheduledPeriod.end = "2023-01-01"
+* note.text = "Abacavir (ABC)"
+* note.authorReference = Reference(HIVOrganizationExample)
+* note.time = "2015-02-07T13:28:17-05:00"
+
+Instance: ARVTreatmentRegimenSwitchedOrSubstitutedExample
+InstanceOf: ARVTreatment
+Usage: #example
+Title: "ARV Regimen switched or substituted example"
+Description: "ARV Regimen switched or substituted example"
+* status = #active
+* intent = #plan
+* subject = Reference(HIVPatientExample)
+* encounter = Reference(TargetFacilityEncounterExample)
+* period.start = "2022-12-01"
+* period.end = "2022-12-01"
+* activity.detail.kind = #MedicationRequest
+* activity.detail.code = $LNC#45260-7 
+* activity.detail.status = #in-progress
+* activity.detail.productCodeableConcept = $SCT#387005008
+* activity.detail.extension[artRegimenLine].valueCodeableConcept = $SCT#708255002
+* activity.detail.extension[artRegimenSwitchedOrSubstituted].valueCodeableConcept.coding.code = #Switched
+* activity.detail.extension[artRegimenSwitchedOrSubstituted].valueCodeableConcept.coding.system = "http://openhie.org/fhir/training-solution-1/CodeSystem/cs-art-regimen-change-type"
+* activity.detail.extension[next-visit].valueDateTime = "2023-02-01"
+* activity.detail.scheduledPeriod.start = "2023-01-01"
+* activity.detail.scheduledPeriod.end = "2023-01-01"
+* note[+].text = "Prescribed Abacavir (ABC)"
+* note[=].authorReference = Reference(HIVOrganizationExample)
+* note[=].time = "2015-02-07T13:28:17-05:00"
+
+* note[+].text = "Additional informatiion regarding the regimen switch"
+* note[=].authorReference = Reference(HIVOrganizationExample)
+* note[=].time = "2015-02-07T13:28:17-05:00"
+
+Instance: ARVTreatmentRefusedExample
+InstanceOf: ARVTreatment
+Usage: #example
+Title: "ARV Treatment Refused Example"
+Description: "ARV Treatment Refused Example"
+* status = #completed
+* intent = #plan
+* subject = Reference(HIVPatientExample)
+* encounter = Reference(TargetFacilityEncounterExample)
+* period.start = "2022-12-01"
+* period.end = "2022-12-01"
+* activity.outcomeCodeableConcept = $SCT#737038009
+* activity.detail.status = #not-started
+* activity.detail.scheduledPeriod.start = "2023-01-01"
+* activity.detail.scheduledPeriod.end = "2023-01-01"
+* note.text = "Additional information regarding the patient's refusal for the prescribed ARV treatment"
+* note.authorReference = Reference(HIVOrganizationExample)
+* note.time = "2015-02-07T13:28:17-05:00"
+
+Instance: ARVTreatmentContactedExample
+InstanceOf: ARVTreatment
+Usage: #example
+Title: "Contacted For ARV Treatment Example"
+Description: "Contacted For ARV Treatment Example"
+* status = #completed
+* intent = #plan
+* subject = Reference(HIVPatientExample)
+* encounter = Reference(TargetFacilityEncounterExample)
+* period.start = "2022-12-01"
+* period.end = "2022-12-01"
+* activity.outcomeCodeableConcept = $SCT#386473003
+* activity.detail.status = #not-started
+* activity.detail.scheduledPeriod.start = "2023-01-01"
+* activity.detail.scheduledPeriod.end = "2023-01-01"
+* note.text = "Additional information in regards to contacting the patient for ARV treatment."
 * note.authorReference = Reference(HIVOrganizationExample)
 * note.time = "2015-02-07T13:28:17-05:00"

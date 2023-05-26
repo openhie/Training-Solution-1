@@ -39,3 +39,8 @@ Description: "HIV Submit EMR Bundle Example"
 * entry[=].resource = HIVTestResultExample
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Observation/HIVTestResultExample"
+
+* entry[+].fullUrl = "CarePlan/ARVTreatmentRegimenSwitchedOrSubstitutedExample"
+* entry[=].resource = ARVTreatmentRegimenSwitchedOrSubstitutedExample
+* entry[=].request.method = #PUT
+* entry[=].request.url = "CarePlan/ARVTreatmentRegimenSwitchedOrSubstitutedExample"
