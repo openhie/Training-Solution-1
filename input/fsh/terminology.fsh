@@ -22,7 +22,7 @@ Description: "A list of HIV test types"
 
 ValueSet: VSReasonForAssessment
 Id: vs-reason-for-assessment
-Title: "Reason for Assessment or Test Not Performed"
+Title: "Reason for Assessment"
 Description: "A list of reasons associated with the service request for the lab order."
 * ^experimental = false
 * $SCT#77386006 "Pregnancy"
