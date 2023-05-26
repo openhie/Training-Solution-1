@@ -210,11 +210,11 @@
     "name" : "VSKeyPopulationSatus"
   },
   {
-    "id" : "vs-reason-for-assessment-or-test-not-performed",
+    "id" : "vs-reason-for-assessment",
     "type" : "ValueSet",
-    "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-reason-for-assessment-or-test-not-performed",
+    "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-reason-for-assessment",
     "version" : "0.1.0",
-    "name" : "VSReasonForAssessmentOrTestNotPerformed"
+    "name" : "VSReasonForAssessment"
   },
   {
     "id" : "vs-reason-sample-cancelled-or-rejected",

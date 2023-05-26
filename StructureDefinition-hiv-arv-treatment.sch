@@ -18,11 +18,25 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:CarePlan/f:activity/f:outcomeCodeableConcept</sch:title>
+    <sch:rule context="f:CarePlan/f:activity/f:outcomeCodeableConcept">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:text) &lt;= 1">text: maximum cardinality of 'text' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>f:CarePlan/f:activity/f:detail</sch:title>
     <sch:rule context="f:CarePlan/f:activity/f:detail">
       <sch:assert test="count(f:extension[@url = 'http://openhie.org/fhir/training-solution-1/StructureDefinition/art-regimen-switched-or-substituted']) &lt;= 1">extension with URL = 'http://openhie.org/fhir/training-solution-1/StructureDefinition/art-regimen-switched-or-substituted': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://openhie.org/fhir/training-solution-1/StructureDefinition/art-regimen-line']) &lt;= 1">extension with URL = 'http://openhie.org/fhir/training-solution-1/StructureDefinition/art-regimen-line': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-care-next-visit']) &lt;= 1">extension with URL = 'http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-care-next-visit': maximum cardinality of 'extension' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:CarePlan/f:activity/f:detail/f:code</sch:title>
+    <sch:rule context="f:CarePlan/f:activity/f:detail/f:code">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:text) &lt;= 1">text: maximum cardinality of 'text' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>
