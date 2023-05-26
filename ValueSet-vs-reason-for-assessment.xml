@@ -8,10 +8,10 @@
   <url value="http://openhie.org/fhir/training-solution-1/ValueSet/vs-reason-for-assessment"/>
   <version value="0.1.0"/>
   <name value="VSReasonForAssessment"/>
-  <title value="Reason for Assessment or Test Not Performed"/>
+  <title value="Reason for Assessment"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2023-05-26T14:52:17+00:00"/>
+  <date value="2023-05-26T14:59:52+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <name value="Jembi Health Systems"/>

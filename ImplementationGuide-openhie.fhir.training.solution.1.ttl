@@ -842,7 +842,7 @@
          fhir:link <http://openhie.org/fhir/training-solution-1/ValueSet/vs-reason-for-assessment> ;
          fhir:reference [ fhir:v "ValueSet/vs-reason-for-assessment" ]
        ] ;
-       fhir:name [ fhir:v "Reason for Assessment or Test Not Performed" ] ;
+       fhir:name [ fhir:v "Reason for Assessment" ] ;
        fhir:description [ fhir:v "A list of reasons associated with the service request for the lab order." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [

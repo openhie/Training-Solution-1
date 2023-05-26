@@ -1,6 +1,6 @@
 {
   "version" : "0.1.0",
   "fhirVersion" : ["4.0.1"],
-  "date" : "20230526145118",
+  "date" : "20230526145854",
   "name" : "openhie.fhir.training.solution.1"
 }
