@@ -9,7 +9,7 @@
 
 id: openhie.fhir.training.solution.1
 canonical: http://openhie.org/fhir/training-solution-1
-url: http://openhie.org/fhir/rwanda-hiv/ImplementationGuide/openhie.fhir.training.solution.1
+url: http://openhie.org/fhir/training-solution-1/ImplementationGuide/openhie.fhir.training.solution.1
 name: TrainingSolution1
 title: "HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1"
 description: A FHIR Implementation Guide which represents the solution to a FHIR training hackathon (https://docs.google.com/document/d/1MYZHukPqMvZMSbtwm8SRcHnl7ee9bvC6NtZTwFQd45I).
