@@ -1,17 +1,24 @@
 [
   {
+    "id" : "openhie.fhir.training.solution.1",
+    "type" : "ImplementationGuide",
+    "url" : "http://openhie.org/fhir/rwanda-hiv/ImplementationGuide/openhie.fhir.training.solution.1",
+    "version" : "0.1.0",
+    "name" : "TrainingSolution1"
+  },
+  {
+    "id" : "cs-art-regimen-change-type",
+    "type" : "CodeSystem",
+    "url" : "http://openhie.org/fhir/training-solution-1/CodeSystem/cs-art-regimen-change-type",
+    "version" : "0.1.0",
+    "name" : "CSARTRegimenChangeType"
+  },
+  {
     "id" : "cs-key-population-status",
     "type" : "CodeSystem",
     "url" : "http://openhie.org/fhir/training-solution-1/CodeSystem/cs-key-population-status",
     "version" : "0.1.0",
     "name" : "CSKeyPopulationStatus"
-  },
-  {
-    "id" : "openhie.fhir.training.solution.1",
-    "type" : "ImplementationGuide",
-    "url" : "http://openhie.org/fhir/training-solution-1/ImplementationGuide/openhie.fhir.training.solution.1",
-    "version" : "0.1.0",
-    "name" : "TrainingSolution1"
   },
   {
     "id" : "HIV-lab-order",
@@ -21,11 +28,32 @@
     "name" : "HIVServiceRequest"
   },
   {
+    "id" : "art-regimen-line",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/art-regimen-line",
+    "version" : "0.1.0",
+    "name" : "ARTRegimenLine"
+  },
+  {
+    "id" : "art-regimen-switched-or-substituted",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/art-regimen-switched-or-substituted",
+    "version" : "0.1.0",
+    "name" : "ARTRegimenSwitchedOrSubstituted"
+  },
+  {
     "id" : "date-hiv-test-done",
     "type" : "StructureDefinition",
     "url" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/date-hiv-test-done",
     "version" : "0.1.0",
     "name" : "DateHIVTestDone"
+  },
+  {
+    "id" : "hiv-arv-treatment",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-arv-treatment",
+    "version" : "0.1.0",
+    "name" : "ARVTreatment"
   },
   {
     "id" : "hiv-care-next-visit",
@@ -124,6 +152,41 @@
     "url" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/viral-load-specimen",
     "version" : "0.1.0",
     "name" : "VLSpecimen"
+  },
+  {
+    "id" : "vs-art-regimen-change-type",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-art-regimen-change-type",
+    "version" : "0.1.0",
+    "name" : "VSARTRegimenChangeType"
+  },
+  {
+    "id" : "vs-artregimen-lines",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-artregimen-lines",
+    "version" : "0.1.0",
+    "name" : "VSARTRegimenLines"
+  },
+  {
+    "id" : "vs-arv-regimen",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-arv-regimen",
+    "version" : "0.1.0",
+    "name" : "VSARVRegimen"
+  },
+  {
+    "id" : "vs-arvtreatment-activity-type",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-arvtreatment-activity-type",
+    "version" : "0.1.0",
+    "name" : "VSARVMedicationRequest"
+  },
+  {
+    "id" : "vs-careplan-outcome",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-careplan-outcome",
+    "version" : "0.1.0",
+    "name" : "VSCarePlanActivityOutcome"
   },
   {
     "id" : "vs-condition",

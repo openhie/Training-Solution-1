@@ -28,9 +28,10 @@
   <name value="VLSpecimen"/>
   <title value="Viral Load Specimen"/>
   <status value="active"/>
-  <date value="2023-04-17T12:05:39+00:00"/>
+  <date value="2023-05-26T12:35:19+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
+    <name value="Jembi Health Systems"/>
     <telecom>
       <system value="url"/>
       <value value="https://www.jembi.org"/>
@@ -40,11 +41,20 @@
       <value value="info@jembi.org"/>
     </telecom>
   </contact>
+  <contact>
+    <name value="Richard Langford"/>
+    <telecom>
+      <system value="email"/>
+      <value value="richard.langford@jembi.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
   <description value="The test sample that was collected for the initiated lab order."/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
       <code value="001"/>
+      <display value="World"/>
     </coding>
   </jurisdiction>
   <fhirVersion value="4.0.1"/>

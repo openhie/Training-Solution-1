@@ -12,7 +12,6 @@
   <sch:pattern>
     <sch:title>f:Encounter</sch:title>
     <sch:rule context="f:Encounter">
-      <sch:assert test="count(f:extension[@url = 'http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-care-next-visit']) &lt;= 1">extension with URL = 'http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-care-next-visit': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:subject) &gt;= 1">subject: minimum cardinality of 'subject' is 1</sch:assert>
       <sch:assert test="count(f:episodeOfCare) &gt;= 1">episodeOfCare: minimum cardinality of 'episodeOfCare' is 1</sch:assert>
       <sch:assert test="count(f:period) &gt;= 1">period: minimum cardinality of 'period' is 1</sch:assert>
