@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/rwanda-hiv/EpisodeOfCare/HIVEpisodeOfCareExample> a fhir:EpisodeOfCare ;
+<http://openhie.org/fhir/training-solution-1/EpisodeOfCare/HIVEpisodeOfCareExample> a fhir:EpisodeOfCare ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "HIVEpisodeOfCareExample"] ; # 
   fhir:meta [
@@ -33,16 +33,16 @@
   fhir:status [ fhir:v "active"] ; # 
   fhir:diagnosis ( [
      fhir:condition [
-       fhir:link <http://openhie.org/fhir/rwanda-hiv/Condition/HIVDiagnosisExample> ;
+       fhir:link <http://openhie.org/fhir/training-solution-1/Condition/HIVDiagnosisExample> ;
        fhir:reference [ fhir:v "Condition/HIVDiagnosisExample" ]
      ]
   ] ) ; # 
   fhir:patient [
-     fhir:link <http://openhie.org/fhir/rwanda-hiv/Patient/HIVPatientExample> ;
+     fhir:link <http://openhie.org/fhir/training-solution-1/Patient/HIVPatientExample> ;
      fhir:reference [ fhir:v "Patient/HIVPatientExample" ]
   ] ; # 
   fhir:managingOrganization [
-     fhir:link <http://openhie.org/fhir/rwanda-hiv/Organization/HIVOrganizationExample> ;
+     fhir:link <http://openhie.org/fhir/training-solution-1/Organization/HIVOrganizationExample> ;
      fhir:reference [ fhir:v "Organization/HIVOrganizationExample" ]
   ] ; # 
   fhir:period [

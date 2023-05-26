@@ -3,10 +3,10 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="openhie.fhir.training.solution.1"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>TrainingSolution1</h2><p>The official URL for this implementation guide is: </p><pre>http://openhie.org/fhir/rwanda-hiv/ImplementationGuide/openhie.fhir.training.solution.1</pre><div><p>A FHIR Implementation Guide which represents the solution to a FHIR training hackathon (https://docs.google.com/document/d/1MYZHukPqMvZMSbtwm8SRcHnl7ee9bvC6NtZTwFQd45I).</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>TrainingSolution1</h2><p>The official URL for this implementation guide is: </p><pre>http://openhie.org/fhir/training-solution-1/ImplementationGuide/openhie.fhir.training.solution.1</pre><div><p>A FHIR Implementation Guide which represents the solution to a FHIR training hackathon (https://docs.google.com/document/d/1MYZHukPqMvZMSbtwm8SRcHnl7ee9bvC6NtZTwFQd45I).</p>
 </div></div>
   </text>
-  <url value="http://openhie.org/fhir/rwanda-hiv/ImplementationGuide/openhie.fhir.training.solution.1"/>
+  <url value="http://openhie.org/fhir/training-solution-1/ImplementationGuide/openhie.fhir.training.solution.1"/>
   <version value="0.1.0"/>
   <name value="TrainingSolution1"/>
   <title value="HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1"/>
@@ -137,7 +137,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://openhie.org/fhir/rwanda-hiv/history.html"/>
+        <valueString value="http://openhie.org/fhir/training-solution-1/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -332,7 +332,7 @@
         <valueCode value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://openhie.org/fhir/rwanda-hiv/history.html"/>
+        <valueString value="http://openhie.org/fhir/training-solution-1/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
