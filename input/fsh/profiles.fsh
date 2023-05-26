@@ -100,15 +100,18 @@ Description: "This profile is to record prescribed ARV regimen against a given t
 * activity 1..* 
 * activity.outcomeCodeableConcept 0..* MS
 * activity.outcomeCodeableConcept from VSCarePlanActivityOutcome (required)
+* activity.outcomeCodeableConcept.text = "Interruptions in treatment"
 * activity.detail 0..1 MS
 * activity.detail.scheduledPeriod 0..1 MS
 * activity.detail.kind 0..1 MS
 * activity.detail.kind = #MedicationRequest
 * activity.detail.code 0..1 MS
 * activity.detail.code from VSARVMedicationRequest (required)
+* activity.detail.code.text = "ARV medication request"
 * activity.detail.status 1..1
 * activity.detail.productCodeableConcept 0..1 MS
 * activity.detail.productCodeableConcept from VSARVRegimen (required)
+* activity.detail.productCodeableConcept.text = "ARV Regimen"
 * activity.detail.extension contains ARTRegimenSwitchedOrSubstituted named artRegimenSwitchedOrSubstituted 0..1 MS
 * activity.detail.extension contains ARTRegimenLine named artRegimenLine 0..1 MS
 * activity.detail.extension contains HIVCareNextAppointment named next-visit 0..1 MS
@@ -128,6 +131,8 @@ Title: "ART Regimen Line"
 Description: "Therapeutic lines that are used to classify the patient's currently prescribed ARV regimen."
 * value[x] only CodeableConcept
 * valueCodeableConcept from VSARTRegimenLines (required)
+* valueCodeableConcept.text = "ART therapeutic line"
+* valueCodeableConcept.coding.display 1..1
 * ^context[0].type = #element
 * ^context[0].expression = "CarePlan.activity.detail"
 
@@ -137,6 +142,8 @@ Title: "ART Regimen Switched Or Substituted"
 Description: "The ARV regimen has been switched to a new ARV regimen or has been substituted by another ARV regimen."
 * value[x] only CodeableConcept
 * valueCodeableConcept from VSARTRegimenChangeType (required)
+* valueCodeableConcept.text = "ARV regimen change"
+* valueCodeableConcept.coding.display 1..1
 * ^context[0].type = #element
 * ^context[0].expression = "CarePlan.activity.detail"
 
@@ -276,7 +283,7 @@ Description: "A service request that initiates the need for the lab to collect t
 * requester 1..1
 * performer 1..*
 * reasonCode 1..*
-* reasonCode from VSReasonForAssessmentOrTestNotPerformed (required)
+* reasonCode from VSReasonForAssessment (required)
 * reasonCode.text = "Reason"
 * specimen 1..1
 * note 0..* MS
