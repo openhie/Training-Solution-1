@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/training-solution-1/Task/HIVLabOrderCancellationTaskExample> a fhir:Task ;
+<http://openhie.org/fhir/rwanda-hiv/Task/HIVLabOrderCancellationTaskExample> a fhir:Task ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "HIVLabOrderCancellationTaskExample"] ; # 
   fhir:meta [
@@ -17,7 +17,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Task</b><a name=\"HIVLabOrderCancellationTaskExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Task &quot;HIVLabOrderCancellationTaskExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-lab-task.html\">Lab Task</a></p></div><p><b>identifier</b>: Filler Identifier: ORDER12345</p><p><b>basedOn</b>: <a href=\"ServiceRequest-HIVServiceRequestExample.html\">ServiceRequest/HIVServiceRequestExample</a></p><p><b>status</b>: cancelled</p><p><b>statusReason</b>: Reason For Canceling/Rejecting the Lab Order <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#281264009 &quot;Inappropriate bottle or container for sample (finding)&quot;)</span></p><p><b>intent</b>: order</p><p><b>executionPeriod</b>: ?? --&gt; 2022-07-30</p><p><b>lastModified</b>: 2022-07-30</p><p><b>requester</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> &quot;HIV Test Services Health Facility&quot;</p><p><b>owner</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> &quot;HIV Test Services Health Facility&quot;</p><p><b>note</b>: additional notes here (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Task</b><a name=\"HIVLabOrderCancellationTaskExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Task &quot;HIVLabOrderCancellationTaskExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-lab-task.html\">Lab Task</a></p></div><p><b>identifier</b>: Filler Identifier: ORDER12345</p><p><b>basedOn</b>: <a href=\"ServiceRequest-HIVServiceRequestExample.html\">ServiceRequest/HIVServiceRequestExample</a></p><p><b>status</b>: cancelled</p><p><b>statusReason</b>: Reason For Canceling/Rejecting the Lab Order <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#281264009 &quot;Inappropriate bottle or container for sample (finding)&quot;)</span></p><p><b>intent</b>: order</p><p><b>executionPeriod</b>: ?? --&gt; 2022-07-30</p><p><b>lastModified</b>: 2022-07-30</p><p><b>requester</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> &quot;HIV Test Services Health Facility&quot;</p><p><b>owner</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> &quot;HIV Test Services Health Facility&quot;</p><p><b>note</b>: additional notes here (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:type [
@@ -31,7 +31,7 @@
      fhir:value [ fhir:v "ORDER12345" ]
   ] ) ; # 
   fhir:basedOn ( [
-     fhir:link <http://openhie.org/fhir/training-solution-1/ServiceRequest/HIVServiceRequestExample> ;
+     fhir:link <http://openhie.org/fhir/rwanda-hiv/ServiceRequest/HIVServiceRequestExample> ;
      fhir:reference [ fhir:v "ServiceRequest/HIVServiceRequestExample" ]
   ] ) ; # 
   fhir:status [ fhir:v "cancelled"] ; # 
@@ -50,17 +50,17 @@
   ] ; # 
   fhir:lastModified [ fhir:v "2022-07-30"^^xsd:date] ; # 
   fhir:requester [
-     fhir:link <http://openhie.org/fhir/training-solution-1/Organization/HIVOrganizationExample> ;
+     fhir:link <http://openhie.org/fhir/rwanda-hiv/Organization/HIVOrganizationExample> ;
      fhir:reference [ fhir:v "Organization/HIVOrganizationExample" ]
   ] ; # 
   fhir:owner [
-     fhir:link <http://openhie.org/fhir/training-solution-1/Organization/HIVOrganizationExample> ;
+     fhir:link <http://openhie.org/fhir/rwanda-hiv/Organization/HIVOrganizationExample> ;
      fhir:reference [ fhir:v "Organization/HIVOrganizationExample" ]
   ] ; # 
   fhir:note ( [
      fhir:author [
        a fhir:Reference ;
-       fhir:link <http://openhie.org/fhir/training-solution-1/Organization/HIVOrganizationExample> ;
+       fhir:link <http://openhie.org/fhir/rwanda-hiv/Organization/HIVOrganizationExample> ;
        fhir:reference [ fhir:v "Organization/HIVOrganizationExample" ]
      ] ;
      fhir:time [ fhir:v "2015-02-07T13:28:17-05:00"^^xsd:dateTime ] ;

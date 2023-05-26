@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/training-solution-1/Organization/HIVServiceRequestLocationExample> a fhir:Organization ;
+<http://openhie.org/fhir/rwanda-hiv/Organization/HIVServiceRequestLocationExample> a fhir:Organization ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "HIVServiceRequestLocationExample"] ; # 
   fhir:meta [

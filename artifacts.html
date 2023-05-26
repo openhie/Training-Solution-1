@@ -32,10 +32,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -70,9 +70,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">FHIR Training Solution 1</span>
+          <p><span style="font-size:12pt;font-weight:bold">HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1</span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - CI Build
+            <span style="display:inline-block;">0.1.0 - STU1
 
 
 
@@ -161,7 +161,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">FHIR Training Solution 1, published by Jembi Health Systems. This is not an authorized publication; it is the continuous build for version 0.1.0). This version is based on the current content of <a href="https://github.com/openhie/Training-Solution-1">https://github.com/openhie/Training-Solution-1</a> and changes regularly. See the <a href="http://openhie.org/fhir/training-solution-1/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1, published by Jembi Health Systems. This is not an authorized publication; it is the continuous build for version 0.1.0). This version is based on the current content of <a href="https://github.com/openhie/Training-Solution-1">https://github.com/openhie/Training-Solution-1</a> and changes regularly. See the <a href="http://openhie.org/fhir/rwanda-hiv/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -204,65 +204,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-hiv-diagnosis.html"
-                     title="StructureDefinition/hiv-diagnosis">Diagnosis</a>
+                  <a href="StructureDefinition-hiv-arv-treatment.html"
+                     title="StructureDefinition/hiv-arv-treatment">ARV Treatment</a>
                </td>
                <td>
-<p>This profile represents the confirmation of HIV diagnosis.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-transferring-facility-encounter.html"
-                     title="StructureDefinition/transferring-facility-encounter">Transferring Facility Encounter</a>
-               </td>
-               <td>
-<p>This profile represents the facility the patient is being transferred from.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-HIV-lab-order.html"
-                     title="StructureDefinition/HIV-lab-order">Lab Order</a>
-               </td>
-               <td>
-<p>A service request that initiates the need for the lab to collect the test sample.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-target-facility-encounter.html"
-                     title="StructureDefinition/target-facility-encounter">Target Facility Encounter</a>
-               </td>
-               <td>
-<p>This profile represents the current facility at which the patient is receiving treatment.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-hiv-service-request-location.html"
-                     title="StructureDefinition/hiv-service-request-location">Lab Order Request Location</a>
-               </td>
-               <td>
-<p>What is the location of the organization responsible for conducting the examination of the individual’s sample?</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-hiv-patient.html"
-                     title="StructureDefinition/hiv-patient">Patient</a>
-               </td>
-               <td>
-<p>A patient resource for an HIV Patient</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-hiv-organization.html"
-                     title="StructureDefinition/hiv-organization">HIV Organization</a>
-               </td>
-               <td>
-<p>Organization providing HIV Testing Services.</p>
+<p>This profile is to record prescribed ARV regimen against a given therapeutic line.</p>
 </td>
             </tr>
             <tr>
@@ -276,38 +222,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-hiv-practitioner.html"
-                     title="StructureDefinition/hiv-practitioner">Practitioner</a>
+                  <a href="StructureDefinition-hiv-diagnosis.html"
+                     title="StructureDefinition/hiv-diagnosis">Diagnosis</a>
                </td>
                <td>
-<p>The healthcare professional who has been assigned to a given lab task.</p>
+<p>This profile represents the confirmation of HIV diagnosis.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-viral-load-specimen.html"
-                     title="StructureDefinition/viral-load-specimen">Viral Load Specimen</a>
+                  <a href="StructureDefinition-hiv-diagnostic-report.html"
+                     title="StructureDefinition/hiv-diagnostic-report">Diagnostic Report</a>
                </td>
                <td>
-<p>The test sample that was collected for the initiated lab order.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-hiv-lab-task.html"
-                     title="StructureDefinition/hiv-lab-task">Lab Task</a>
-               </td>
-               <td>
-<p>Assists with tracking the state of the lab order and its completion status.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-hiv-test-results.html"
-                     title="StructureDefinition/hiv-test-results">Lab Results</a>
-               </td>
-               <td>
-<p>The result of the lab test which determines whether the patient is infected with HIV or not.</p>
+<p>A report as a result of the lab task being completed.</p>
 </td>
             </tr>
             <tr>
@@ -321,11 +249,92 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-hiv-diagnostic-report.html"
-                     title="StructureDefinition/hiv-diagnostic-report">Diagnostic Report</a>
+                  <a href="StructureDefinition-hiv-lab-task.html"
+                     title="StructureDefinition/hiv-lab-task">Lab Task</a>
                </td>
                <td>
-<p>A report as a result of the lab task being completed.</p>
+<p>Assists with tracking the state of the lab order and its completion status.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-hiv-organization.html"
+                     title="StructureDefinition/hiv-organization">HIV Organization</a>
+               </td>
+               <td>
+<p>Organization providing HIV Testing Services.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-hiv-patient.html"
+                     title="StructureDefinition/hiv-patient">Patient</a>
+               </td>
+               <td>
+<p>A patient resource for an HIV Patient</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-hiv-practitioner.html"
+                     title="StructureDefinition/hiv-practitioner">Practitioner</a>
+               </td>
+               <td>
+<p>The healthcare professional who has been assigned to a given lab task.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-HIV-lab-order.html"
+                     title="StructureDefinition/HIV-lab-order">Lab Order</a>
+               </td>
+               <td>
+<p>A service request that initiates the need for the lab to collect the test sample.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-hiv-service-request-location.html"
+                     title="StructureDefinition/hiv-service-request-location">Lab Order Request Location</a>
+               </td>
+               <td>
+<p>What is the location of the organization responsible for conducting the examination of the individual’s sample?</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-hiv-test-results.html"
+                     title="StructureDefinition/hiv-test-results">Lab Results</a>
+               </td>
+               <td>
+<p>The result of the lab test which determines whether the patient is infected with HIV or not.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-target-facility-encounter.html"
+                     title="StructureDefinition/target-facility-encounter">Target Facility Encounter</a>
+               </td>
+               <td>
+<p>This profile represents the current facility at which the patient is receiving treatment.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-transferring-facility-encounter.html"
+                     title="StructureDefinition/transferring-facility-encounter">Transferring Facility Encounter</a>
+               </td>
+               <td>
+<p>This profile represents the facility the patient is being transferred from.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-viral-load-specimen.html"
+                     title="StructureDefinition/viral-load-specimen">Viral Load Specimen</a>
+               </td>
+               <td>
+<p>The test sample that was collected for the initiated lab order.</p>
 </td>
             </tr>
          </tbody>
@@ -340,6 +349,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <table class="grid">
          <col style="width:20%"/>
          <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-art-regimen-line.html"
+                     title="StructureDefinition/art-regimen-line">ART Regimen Line</a>
+               </td>
+               <td>
+<p>Therapeutic lines that are used to classify the patient’s currently prescribed ARV regimen.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-art-regimen-switched-or-substituted.html"
+                     title="StructureDefinition/art-regimen-switched-or-substituted">ART Regimen Switched Or Substituted</a>
+               </td>
+               <td>
+<p>The ARV regimen has been switched to a new ARV regimen or has been substituted by another ARV regimen.</p>
+</td>
+            </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-hiv-care-next-visit.html"
@@ -372,27 +399,62 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="ValueSet-vs-art-regimen-change-type.html"
+                     title="ValueSet/vs-art-regimen-change-type">ART Regimen Change Types</a>
+               </td>
+               <td>
+<p>A list of options to determine whether an ARV regimen was switched or substituted.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-artregimen-lines.html"
+                     title="ValueSet/vs-artregimen-lines">ART Regimen Lines</a>
+               </td>
+               <td>
+<p>A list of ART regimen therapeutic lines.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-arvtreatment-activity-type.html"
+                     title="ValueSet/vs-arvtreatment-activity-type">ARV Treatment Medication Request</a>
+               </td>
+               <td>
+<p>Codes used to represent a medication request for ART.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-arv-regimen.html" title="ValueSet/vs-arv-regimen">A list of ARV regimen</a>
+               </td>
+               <td>
+<p>A list of ARV regimen.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-careplan-outcome.html"
+                     title="ValueSet/vs-careplan-outcome">ARV treatment outcomes</a>
+               </td>
+               <td>
+<p>A list of possible ARV treatment outcomes.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-condition.html" title="ValueSet/vs-condition">Conditions</a>
+               </td>
+               <td>
+<p>A list of possible HIV conditions.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="ValueSet-vs-hiv-test-done.html" title="ValueSet/vs-hiv-test-done">HIV Test Done</a>
                </td>
                <td>
 <p>Used by the observation to indicate that a HIV test was performed.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-vs-reason-for-assessment-or-test-not-performed.html"
-                     title="ValueSet/vs-reason-for-assessment-or-test-not-performed">Reason for Assessment or Test Not Performed</a>
-               </td>
-               <td>
-<p>A list of reasons associated with the service request for the lab order.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-vs-test-types.html" title="ValueSet/vs-test-types">Test Types</a>
-               </td>
-               <td>
-<p>A list of HIV test types</p>
 </td>
             </tr>
             <tr>
@@ -406,28 +468,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-vs-vl-result-code.html"
-                     title="ValueSet/vs-vl-result-code">Viral Load Result Code</a>
+                  <a href="ValueSet-vs-reason-for-assessment-or-test-not-performed.html"
+                     title="ValueSet/vs-reason-for-assessment-or-test-not-performed">Reason for Assessment or Test Not Performed</a>
                </td>
                <td>
-<p>A code used to indicate the category for the lab result.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-vs-condition.html" title="ValueSet/vs-condition">Conditions</a>
-               </td>
-               <td>
-<p>A list of possible HIV conditions.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-vs-vl-suppression.html"
-                     title="ValueSet/vs-vl-suppression">Viral Load Suppressions Status</a>
-               </td>
-               <td>
-<p>Describes a patient’s current viral load status.</p>
+<p>A list of reasons associated with the service request for the lab order.</p>
 </td>
             </tr>
             <tr>
@@ -447,6 +492,32 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>A list of specimen types.</p>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-test-types.html" title="ValueSet/vs-test-types">Test Types</a>
+               </td>
+               <td>
+<p>A list of HIV test types</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-vl-result-code.html"
+                     title="ValueSet/vs-vl-result-code">Viral Load Result Code</a>
+               </td>
+               <td>
+<p>A code used to indicate the category for the lab result.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-vl-suppression.html"
+                     title="ValueSet/vs-vl-suppression">Viral Load Suppressions Status</a>
+               </td>
+               <td>
+<p>Describes a patient’s current viral load status.</p>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
@@ -459,6 +530,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <table class="grid">
          <col style="width:20%"/>
          <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-cs-art-regimen-change-type.html"
+                     title="CodeSystem/cs-art-regimen-change-type">ART Regimen Change Types</a>
+               </td>
+               <td>
+<p>A list of options to determine whether an ARV regimen was switched or substituted.</p>
+</td>
+            </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="CodeSystem-cs-key-population-status.html"
@@ -482,129 +562,231 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="Task-HIVLabOrderTaskExample.html"
-                     title="Task/HIVLabOrderTaskExample">Example Task - HIVLabOrderTaskExample</a>
+                  <a href="CarePlan-ARVTreatmentContactedExample.html"
+                     title="CarePlan/ARVTreatmentContactedExample">Contacted For ARV Treatment Example</a>
                </td>
+               <td>
+<p>Contacted For ARV Treatment Example</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Bundle-LabOrder.html" title="Bundle/LabOrder">Example Bundle - LabOrder</a>
+                  <a href="CarePlan-ARVTreatmentExample.html"
+                     title="CarePlan/ARVTreatmentExample">ARVCarePlan example</a>
                </td>
+               <td>
+<p>ARVCarePlan example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CarePlan-ARVTreatmentRefusedExample.html"
+                     title="CarePlan/ARVTreatmentRefusedExample">ARV Treatment Refused Example</a>
+               </td>
+               <td>
+<p>ARV Treatment Refused Example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CarePlan-ARVTreatmentRegimenSwitchedOrSubstitutedExample.html"
+                     title="CarePlan/ARVTreatmentRegimenSwitchedOrSubstitutedExample">ARV Regimen switched or substituted example</a>
+               </td>
+               <td>
+<p>ARV Regimen switched or substituted example</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Observation-DateHIVTestDoneExample.html"
-                     title="Observation/DateHIVTestDoneExample">Example Observation - DateHIVTestDoneExample</a>
+                     title="Observation/DateHIVTestDoneExample">Date HIV Test Done example</a>
                </td>
+               <td>
+<p>Date HIV Test Done example</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Organization-HIVServiceRequestLocationExample.html"
-                     title="Organization/HIVServiceRequestLocationExample">Example Organization - HIVServiceRequestLocationExample</a>
+                  <a href="Bundle-EMR.html" title="Bundle/EMR">HIV Submit EMR Bundle Example</a>
                </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Bundle-LabResult.html" title="Bundle/LabResult">Example Bundle - LabResult</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="DiagnosticReport-HIVLabResultsDiagnosticReportExample.html"
-                     title="DiagnosticReport/HIVLabResultsDiagnosticReportExample">Example DiagnosticReport - HIVLabResultsDiagnosticReportExample</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Task-HIVLabResultTaskExample.html"
-                     title="Task/HIVLabResultTaskExample">Example Task - HIVLabResultTaskExample</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Encounter-TargetFacilityEncounterExample.html"
-                     title="Encounter/TargetFacilityEncounterExample">Example Encounter - TargetFacilityEncounterExample</a>
-               </td>
+               <td>
+<p>HIV Submit EMR Bundle Example</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Condition-HIVDiagnosisExample.html"
-                     title="Condition/HIVDiagnosisExample">Example Condition - HIVDiagnosisExample</a>
+                     title="Condition/HIVDiagnosisExample">HIV Condition example</a>
                </td>
+               <td>
+<p>Showing a confirmed HIV diagnosis</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="EpisodeOfCare-HIVEpisodeOfCareExample.html"
-                     title="EpisodeOfCare/HIVEpisodeOfCareExample">Example EpisodeOfCare - HIVEpisodeOfCareExample</a>
+                     title="EpisodeOfCare/HIVEpisodeOfCareExample">HIV Episode Of Care</a>
                </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Patient-HIVPatientExample.html" title="Patient/HIVPatientExample">Example Patient - HIVPatientExample</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Encounter-TransferringFacilityEncounterExample.html"
-                     title="Encounter/TransferringFacilityEncounterExample">Example Encounter - TransferringFacilityEncounterExample</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Task-HIVLabOrderRejectionTaskExample.html"
-                     title="Task/HIVLabOrderRejectionTaskExample">Example Task - HIVLabOrderRejectionTaskExample</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Organization-HIVOrganizationExample.html"
-                     title="Organization/HIVOrganizationExample">Example Organization - HIVOrganizationExample</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Bundle-LabRejection.html" title="Bundle/LabRejection">Example Bundle - LabRejection</a>
-               </td>
+               <td>
+<p>This resource is used for Management of a Patient’s HIV Programme.</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Task-HIVLabOrderCancellationTaskExample.html"
-                     title="Task/HIVLabOrderCancellationTaskExample">Example Task - HIVLabOrderCancellationTaskExample</a>
+                     title="Task/HIVLabOrderCancellationTaskExample">HIV Lab Order Cancellation  example</a>
                </td>
+               <td>
+<p>HIV Lab Order Cancellation Task example</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-HIVTestResultExample.html"
-                     title="Observation/HIVTestResultExample">Example Observation - HIVTestResultExample</a>
+                  <a href="Task-HIVLabOrderRejectionTaskExample.html"
+                     title="Task/HIVLabOrderRejectionTaskExample">HIV Lab Order Rejection  example</a>
                </td>
+               <td>
+<p>HIV Lab Order Rejection Task example</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Practitioner-PractitionerExample.html"
-                     title="Practitioner/PractitionerExample">Example Practitioner - PractitionerExample</a>
+                  <a href="Task-HIVLabOrderTaskExample.html"
+                     title="Task/HIVLabOrderTaskExample">Lab Order example</a>
                </td>
+               <td>
+<p>Lab Order example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Task-HIVLabResultTaskExample.html"
+                     title="Task/HIVLabResultTaskExample">Lab Result Task example</a>
+               </td>
+               <td>
+<p>Lab Result Task example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="DiagnosticReport-HIVLabResultsDiagnosticReportExample.html"
+                     title="DiagnosticReport/HIVLabResultsDiagnosticReportExample">HIV Lab Results Diagnostic Report example</a>
+               </td>
+               <td>
+<p>HIV Lab Results Diagnostic Report example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-HIVOrganizationExample.html"
+                     title="Organization/HIVOrganizationExample">HIV Organization Example</a>
+               </td>
+               <td>
+<p>Organization example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-HIVPatientExample.html" title="Patient/HIVPatientExample">Patient example</a>
+               </td>
+               <td>
+<p>Patient example</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="ServiceRequest-HIVServiceRequestExample.html"
-                     title="ServiceRequest/HIVServiceRequestExample">Example ServiceRequest - HIVServiceRequestExample</a>
+                     title="ServiceRequest/HIVServiceRequestExample">HIV Lab Order example</a>
                </td>
+               <td>
+<p>HIV Lab Order example</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Bundle-LabCancellation.html" title="Bundle/LabCancellation">Example Bundle - LabCancellation</a>
+                  <a href="Organization-HIVServiceRequestLocationExample.html"
+                     title="Organization/HIVServiceRequestLocationExample">HIV Service Request Location example</a>
                </td>
+               <td>
+<p>HIV Service Request Location example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-HIVTestResultExample.html"
+                     title="Observation/HIVTestResultExample">Viral Load Suppression example</a>
+               </td>
+               <td>
+<p>Viral Load Suppression example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-LabCancellation.html" title="Bundle/LabCancellation">HIV Submit Lab Cancellation Bundle Example</a>
+               </td>
+               <td>
+<p>HIV Submit Lab Cancellation Bundle Example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-LabOrder.html" title="Bundle/LabOrder">HIV Submit Lab Order Bundle Example</a>
+               </td>
+               <td>
+<p>HIV Submit Lab Order Bundle Example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-LabRejection.html" title="Bundle/LabRejection">HIV Submit Lab Rejection Bundle Example</a>
+               </td>
+               <td>
+<p>HIV Submit Lab Rejection Bundle Example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-LabResult.html" title="Bundle/LabResult">HIV Submit Lab Result Bundle Example</a>
+               </td>
+               <td>
+<p>HIV Submit Lab Result Bundle Example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-PractitionerExample.html"
+                     title="Practitioner/PractitionerExample">Practitioner example</a>
+               </td>
+               <td>
+<p>Practitioner example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Encounter-TargetFacilityEncounterExample.html"
+                     title="Encounter/TargetFacilityEncounterExample">Target Facility Encounter example</a>
+               </td>
+               <td>
+<p>Target Facility Encounter example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Encounter-TransferringFacilityEncounterExample.html"
+                     title="Encounter/TransferringFacilityEncounterExample">Transferring Facility Encounter example</a>
+               </td>
+               <td>
+<p>Transferring Facility Encounter example</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Specimen-VLSpecimenExample.html"
-                     title="Specimen/VLSpecimenExample">Example Specimen - VLSpecimenExample</a>
+                     title="Specimen/VLSpecimenExample">Viral Load Specimen example</a>
                </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Bundle-EMR.html" title="Bundle/EMR">Example Bundle - EMR</a>
-               </td>
+               <td>
+<p>Viral Load Specimen example</p>
+</td>
             </tr>
          </tbody>
       </table>
@@ -634,13 +816,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.training.solution.1#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Apr 17, 2023 12:49+0000">2023-04-17</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.training.solution.1#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 26, 2023 12:35+0000">2023-05-26</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a> |
                  
-                 <a style="color: #81BEF7" target="_blank" href="http://openhie.org/fhir/training-solution-1/history.html">Version History</a> |
+                 <a style="color: #81BEF7" target="_blank" href="http://openhie.org/fhir/rwanda-hiv/history.html">Version History</a> |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
 

@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/training-solution-1/Encounter/TransferringFacilityEncounterExample> a fhir:Encounter ;
+<http://openhie.org/fhir/rwanda-hiv/Encounter/TransferringFacilityEncounterExample> a fhir:Encounter ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "TransferringFacilityEncounterExample"] ; # 
   fhir:meta [
@@ -24,7 +24,7 @@
      fhir:code [ fhir:v "AMB" ]
   ] ; # 
   fhir:serviceProvider [
-     fhir:link <http://openhie.org/fhir/training-solution-1/Organization/HIVOrganizationExample> ;
+     fhir:link <http://openhie.org/fhir/rwanda-hiv/Organization/HIVOrganizationExample> ;
      fhir:reference [ fhir:v "Organization/HIVOrganizationExample" ]
   ] . # 
 

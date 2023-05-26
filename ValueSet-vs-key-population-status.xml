@@ -11,9 +11,10 @@
   <title value="Key Population Status"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2023-04-17T12:49:16+00:00"/>
+  <date value="2023-05-26T12:35:19+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
+    <name value="Jembi Health Systems"/>
     <telecom>
       <system value="url"/>
       <value value="https://www.jembi.org"/>
@@ -23,11 +24,20 @@
       <value value="info@jembi.org"/>
     </telecom>
   </contact>
+  <contact>
+    <name value="Richard Langford"/>
+    <telecom>
+      <system value="email"/>
+      <value value="richard.langford@jembi.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
   <description value="A list of key population types"/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
       <code value="001"/>
+      <display value="World"/>
     </coding>
   </jurisdiction>
   <compose>

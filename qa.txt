@@ -1,21 +1,27 @@
 ﻿TrainingSolution1 : Validation Results
 =========================================
 
-err = 0, warn = 0, info = 0
-IG Publisher Version: 1.3.4
-Generated Mon Apr 17 12:51:10 UTC 2023. FHIR version 4.0.1 for openhie.fhir.training.solution.1#0.1.0 (canonical = http://openhie.org/fhir/training-solution-1)
+err = 70, warn = 0, info = 0
+IG Publisher Version: 1.3.12
+Generated Fri May 26 12:36:55 UTC 2023. FHIR version 4.0.1 for openhie.fhir.training.solution.1#0.1.0 (canonical = http://openhie.org/fhir/rwanda-hiv)
  Build Errors : 0 / 0 / 0
- /github/workspace/fsh-generated/resources/Bundle-EMR : 0 / 0 / 15
+ /github/workspace/fsh-generated/resources/Bundle-EMR : 0 / 0 / 17
  /github/workspace/fsh-generated/resources/Bundle-LabCancellation : 0 / 0 / 3
  /github/workspace/fsh-generated/resources/Bundle-LabOrder : 0 / 0 / 11
  /github/workspace/fsh-generated/resources/Bundle-LabRejection : 0 / 0 / 3
  /github/workspace/fsh-generated/resources/Bundle-LabResult : 0 / 0 / 11
- /github/workspace/fsh-generated/resources/CodeSystem-cs-key-population-status : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CarePlan-ARVTreatmentContactedExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CarePlan-ARVTreatmentExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CarePlan-ARVTreatmentRefusedExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CarePlan-ARVTreatmentRegimenSwitchedOrSubstitutedExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-cs-art-regimen-change-type : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-cs-key-population-status : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/Condition-HIVDiagnosisExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/DiagnosticReport-HIVLabResultsDiagnosticReportExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Encounter-TargetFacilityEncounterExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Encounter-TransferringFacilityEncounterExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/EpisodeOfCare-HIVEpisodeOfCareExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-openhie.fhir.training.solution.1 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-DateHIVTestDoneExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-HIVTestResultExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-HIVOrganizationExample : 0 / 0 / 1
@@ -24,36 +30,43 @@ Generated Mon Apr 17 12:51:10 UTC 2023. FHIR version 4.0.1 for openhie.fhir.trai
  /github/workspace/fsh-generated/resources/Practitioner-PractitionerExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-HIVServiceRequestExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Specimen-VLSpecimenExample : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-HIV-lab-order : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-date-hiv-test-done : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-hiv-care-next-visit : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-hiv-diagnosis : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-hiv-diagnostic-report : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-hiv-episode-of-care : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-hiv-lab-task : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-hiv-organization : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-hiv-practitioner : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-hiv-service-request-location : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-hiv-test-results : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-key-population-status : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-target-facility-encounter : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-transferring-facility-encounter : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-viral-load-specimen : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-HIV-lab-order : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-art-regimen-line : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-art-regimen-switched-or-substituted : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-date-hiv-test-done : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-arv-treatment : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-care-next-visit : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-diagnosis : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-diagnostic-report : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-episode-of-care : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-lab-task : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-organization : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-practitioner : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-service-request-location : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-test-results : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-key-population-status : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-target-facility-encounter : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-transferring-facility-encounter : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-viral-load-specimen : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/Task-HIVLabOrderCancellationTaskExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Task-HIVLabOrderRejectionTaskExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Task-HIVLabOrderTaskExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Task-HIVLabResultTaskExample : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-condition : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-test-done : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-key-population-status : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-reason-for-assessment-or-test-not-performed : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-reason-sample-cancelled-or-rejected : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-specimen-type : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-test-types : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-vl-result-code : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-vl-suppression : 0 / 0 / 1
- /github/workspace/input/training-solution-1 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-art-regimen-change-type : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-artregimen-lines : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-arv-regimen : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-arvtreatment-activity-type : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-careplan-outcome : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-condition : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-test-done : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-key-population-status : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-reason-for-assessment-or-test-not-performed : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-reason-sample-cancelled-or-rejected : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-specimen-type : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-test-types : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-vl-result-code : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-vl-suppression : 2 / 0 / 1
 </table>
 == n/a ==
 == fsh-generated/resources/Bundle-EMR.json ==
@@ -61,12 +74,22 @@ Generated Mon Apr 17 12:51:10 UTC 2023. FHIR version 4.0.1 for openhie.fhir.trai
 == fsh-generated/resources/Bundle-LabOrder.json ==
 == fsh-generated/resources/Bundle-LabRejection.json ==
 == fsh-generated/resources/Bundle-LabResult.json ==
+== fsh-generated/resources/CarePlan-ARVTreatmentContactedExample.json ==
+== fsh-generated/resources/CarePlan-ARVTreatmentExample.json ==
+== fsh-generated/resources/CarePlan-ARVTreatmentRefusedExample.json ==
+== fsh-generated/resources/CarePlan-ARVTreatmentRegimenSwitchedOrSubstitutedExample.json ==
+== fsh-generated/resources/CodeSystem-cs-art-regimen-change-type.json ==
+ERROR: CodeSystem.where(url = 'http://openhie.org/fhir/training-solution-1/CodeSystem/cs-art-regimen-change-type'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-cs-art-regimen-change-type.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/CodeSystem/cs-art-regimen-change-type) does not match the URL (http://openhie.org/fhir/training-solution-1/CodeSystem/cs-art-regimen-change-type)
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-cs-art-regimen-change-type: URL Mismatch http://openhie.org/fhir/rwanda-hiv/CodeSystem/cs-art-regimen-change-type vs http://openhie.org/fhir/training-solution-1/CodeSystem/cs-art-regimen-change-type
 == fsh-generated/resources/CodeSystem-cs-key-population-status.json ==
+ERROR: CodeSystem.where(url = 'http://openhie.org/fhir/training-solution-1/CodeSystem/cs-key-population-status'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-cs-key-population-status.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/CodeSystem/cs-key-population-status) does not match the URL (http://openhie.org/fhir/training-solution-1/CodeSystem/cs-key-population-status)
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-cs-key-population-status: URL Mismatch http://openhie.org/fhir/rwanda-hiv/CodeSystem/cs-key-population-status vs http://openhie.org/fhir/training-solution-1/CodeSystem/cs-key-population-status
 == fsh-generated/resources/Condition-HIVDiagnosisExample.json ==
 == fsh-generated/resources/DiagnosticReport-HIVLabResultsDiagnosticReportExample.json ==
 == fsh-generated/resources/Encounter-TargetFacilityEncounterExample.json ==
 == fsh-generated/resources/Encounter-TransferringFacilityEncounterExample.json ==
 == fsh-generated/resources/EpisodeOfCare-HIVEpisodeOfCareExample.json ==
+== fsh-generated/resources/ImplementationGuide-openhie.fhir.training.solution.1.json ==
 == fsh-generated/resources/Observation-DateHIVTestDoneExample.json ==
 == fsh-generated/resources/Observation-HIVTestResultExample.json ==
 == fsh-generated/resources/Organization-HIVOrganizationExample.json ==
@@ -76,32 +99,105 @@ Generated Mon Apr 17 12:51:10 UTC 2023. FHIR version 4.0.1 for openhie.fhir.trai
 == fsh-generated/resources/ServiceRequest-HIVServiceRequestExample.json ==
 == fsh-generated/resources/Specimen-VLSpecimenExample.json ==
 == fsh-generated/resources/StructureDefinition-HIV-lab-order.json ==
+ERROR: StructureDefinition.where(url = 'http://openhie.org/fhir/training-solution-1/StructureDefinition/HIV-lab-order'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-HIV-lab-order.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/StructureDefinition/HIV-lab-order) does not match the URL (http://openhie.org/fhir/training-solution-1/StructureDefinition/HIV-lab-order)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-HIV-lab-order: URL Mismatch http://openhie.org/fhir/rwanda-hiv/StructureDefinition/HIV-lab-order vs http://openhie.org/fhir/training-solution-1/StructureDefinition/HIV-lab-order
+== fsh-generated/resources/StructureDefinition-art-regimen-line.json ==
+ERROR: StructureDefinition.where(url = 'http://openhie.org/fhir/training-solution-1/StructureDefinition/art-regimen-line'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-art-regimen-line.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/StructureDefinition/art-regimen-line) does not match the URL (http://openhie.org/fhir/training-solution-1/StructureDefinition/art-regimen-line)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-art-regimen-line: URL Mismatch http://openhie.org/fhir/rwanda-hiv/StructureDefinition/art-regimen-line vs http://openhie.org/fhir/training-solution-1/StructureDefinition/art-regimen-line
+== fsh-generated/resources/StructureDefinition-art-regimen-switched-or-substituted.json ==
+ERROR: StructureDefinition.where(url = 'http://openhie.org/fhir/training-solution-1/StructureDefinition/art-regimen-switched-or-substituted'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-art-regimen-switched-or-substituted.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/StructureDefinition/art-regimen-switched-or-substituted) does not match the URL (http://openhie.org/fhir/training-solution-1/StructureDefinition/art-regimen-switched-or-substituted)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-art-regimen-switched-or-substituted: URL Mismatch http://openhie.org/fhir/rwanda-hiv/StructureDefinition/art-regimen-switched-or-substituted vs http://openhie.org/fhir/training-solution-1/StructureDefinition/art-regimen-switched-or-substituted
 == fsh-generated/resources/StructureDefinition-date-hiv-test-done.json ==
+ERROR: StructureDefinition.where(url = 'http://openhie.org/fhir/training-solution-1/StructureDefinition/date-hiv-test-done'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-date-hiv-test-done.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/StructureDefinition/date-hiv-test-done) does not match the URL (http://openhie.org/fhir/training-solution-1/StructureDefinition/date-hiv-test-done)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-date-hiv-test-done: URL Mismatch http://openhie.org/fhir/rwanda-hiv/StructureDefinition/date-hiv-test-done vs http://openhie.org/fhir/training-solution-1/StructureDefinition/date-hiv-test-done
+== fsh-generated/resources/StructureDefinition-hiv-arv-treatment.json ==
+ERROR: StructureDefinition.where(url = 'http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-arv-treatment'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-hiv-arv-treatment.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/StructureDefinition/hiv-arv-treatment) does not match the URL (http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-arv-treatment)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-hiv-arv-treatment: URL Mismatch http://openhie.org/fhir/rwanda-hiv/StructureDefinition/hiv-arv-treatment vs http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-arv-treatment
 == fsh-generated/resources/StructureDefinition-hiv-care-next-visit.json ==
+ERROR: StructureDefinition.where(url = 'http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-care-next-visit'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-hiv-care-next-visit.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/StructureDefinition/hiv-care-next-visit) does not match the URL (http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-care-next-visit)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-hiv-care-next-visit: URL Mismatch http://openhie.org/fhir/rwanda-hiv/StructureDefinition/hiv-care-next-visit vs http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-care-next-visit
 == fsh-generated/resources/StructureDefinition-hiv-diagnosis.json ==
+ERROR: StructureDefinition.where(url = 'http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-diagnosis'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-hiv-diagnosis.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/StructureDefinition/hiv-diagnosis) does not match the URL (http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-diagnosis)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-hiv-diagnosis: URL Mismatch http://openhie.org/fhir/rwanda-hiv/StructureDefinition/hiv-diagnosis vs http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-diagnosis
 == fsh-generated/resources/StructureDefinition-hiv-diagnostic-report.json ==
+ERROR: StructureDefinition.where(url = 'http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-diagnostic-report'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-hiv-diagnostic-report.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/StructureDefinition/hiv-diagnostic-report) does not match the URL (http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-diagnostic-report)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-hiv-diagnostic-report: URL Mismatch http://openhie.org/fhir/rwanda-hiv/StructureDefinition/hiv-diagnostic-report vs http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-diagnostic-report
 == fsh-generated/resources/StructureDefinition-hiv-episode-of-care.json ==
+ERROR: StructureDefinition.where(url = 'http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-episode-of-care'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-hiv-episode-of-care.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/StructureDefinition/hiv-episode-of-care) does not match the URL (http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-episode-of-care)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-hiv-episode-of-care: URL Mismatch http://openhie.org/fhir/rwanda-hiv/StructureDefinition/hiv-episode-of-care vs http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-episode-of-care
 == fsh-generated/resources/StructureDefinition-hiv-lab-task.json ==
+ERROR: StructureDefinition.where(url = 'http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-hiv-lab-task.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/StructureDefinition/hiv-lab-task) does not match the URL (http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-hiv-lab-task: URL Mismatch http://openhie.org/fhir/rwanda-hiv/StructureDefinition/hiv-lab-task vs http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task
 == fsh-generated/resources/StructureDefinition-hiv-organization.json ==
+ERROR: StructureDefinition.where(url = 'http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-organization'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-hiv-organization.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/StructureDefinition/hiv-organization) does not match the URL (http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-organization)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-hiv-organization: URL Mismatch http://openhie.org/fhir/rwanda-hiv/StructureDefinition/hiv-organization vs http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-organization
 == fsh-generated/resources/StructureDefinition-hiv-patient.json ==
+ERROR: StructureDefinition.where(url = 'http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-patient'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/StructureDefinition/hiv-patient) does not match the URL (http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-patient)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient: URL Mismatch http://openhie.org/fhir/rwanda-hiv/StructureDefinition/hiv-patient vs http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-patient
 == fsh-generated/resources/StructureDefinition-hiv-practitioner.json ==
+ERROR: StructureDefinition.where(url = 'http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-practitioner'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-hiv-practitioner.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/StructureDefinition/hiv-practitioner) does not match the URL (http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-practitioner)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-hiv-practitioner: URL Mismatch http://openhie.org/fhir/rwanda-hiv/StructureDefinition/hiv-practitioner vs http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-practitioner
 == fsh-generated/resources/StructureDefinition-hiv-service-request-location.json ==
+ERROR: StructureDefinition.where(url = 'http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-service-request-location'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-hiv-service-request-location.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/StructureDefinition/hiv-service-request-location) does not match the URL (http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-service-request-location)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-hiv-service-request-location: URL Mismatch http://openhie.org/fhir/rwanda-hiv/StructureDefinition/hiv-service-request-location vs http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-service-request-location
 == fsh-generated/resources/StructureDefinition-hiv-test-results.json ==
+ERROR: StructureDefinition.where(url = 'http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-test-results'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-hiv-test-results.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/StructureDefinition/hiv-test-results) does not match the URL (http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-test-results)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-hiv-test-results: URL Mismatch http://openhie.org/fhir/rwanda-hiv/StructureDefinition/hiv-test-results vs http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-test-results
 == fsh-generated/resources/StructureDefinition-key-population-status.json ==
+ERROR: StructureDefinition.where(url = 'http://openhie.org/fhir/training-solution-1/StructureDefinition/key-population-status'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-key-population-status.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/StructureDefinition/key-population-status) does not match the URL (http://openhie.org/fhir/training-solution-1/StructureDefinition/key-population-status)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-key-population-status: URL Mismatch http://openhie.org/fhir/rwanda-hiv/StructureDefinition/key-population-status vs http://openhie.org/fhir/training-solution-1/StructureDefinition/key-population-status
 == fsh-generated/resources/StructureDefinition-target-facility-encounter.json ==
+ERROR: StructureDefinition.where(url = 'http://openhie.org/fhir/training-solution-1/StructureDefinition/target-facility-encounter'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-target-facility-encounter.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/StructureDefinition/target-facility-encounter) does not match the URL (http://openhie.org/fhir/training-solution-1/StructureDefinition/target-facility-encounter)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-target-facility-encounter: URL Mismatch http://openhie.org/fhir/rwanda-hiv/StructureDefinition/target-facility-encounter vs http://openhie.org/fhir/training-solution-1/StructureDefinition/target-facility-encounter
 == fsh-generated/resources/StructureDefinition-transferring-facility-encounter.json ==
+ERROR: StructureDefinition.where(url = 'http://openhie.org/fhir/training-solution-1/StructureDefinition/transferring-facility-encounter'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-transferring-facility-encounter.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/StructureDefinition/transferring-facility-encounter) does not match the URL (http://openhie.org/fhir/training-solution-1/StructureDefinition/transferring-facility-encounter)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-transferring-facility-encounter: URL Mismatch http://openhie.org/fhir/rwanda-hiv/StructureDefinition/transferring-facility-encounter vs http://openhie.org/fhir/training-solution-1/StructureDefinition/transferring-facility-encounter
 == fsh-generated/resources/StructureDefinition-viral-load-specimen.json ==
+ERROR: StructureDefinition.where(url = 'http://openhie.org/fhir/training-solution-1/StructureDefinition/viral-load-specimen'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-viral-load-specimen.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/StructureDefinition/viral-load-specimen) does not match the URL (http://openhie.org/fhir/training-solution-1/StructureDefinition/viral-load-specimen)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-viral-load-specimen: URL Mismatch http://openhie.org/fhir/rwanda-hiv/StructureDefinition/viral-load-specimen vs http://openhie.org/fhir/training-solution-1/StructureDefinition/viral-load-specimen
 == fsh-generated/resources/Task-HIVLabOrderCancellationTaskExample.json ==
 == fsh-generated/resources/Task-HIVLabOrderRejectionTaskExample.json ==
 == fsh-generated/resources/Task-HIVLabOrderTaskExample.json ==
 == fsh-generated/resources/Task-HIVLabResultTaskExample.json ==
+== fsh-generated/resources/ValueSet-vs-art-regimen-change-type.json ==
+ERROR: ValueSet.where(url = 'http://openhie.org/fhir/training-solution-1/ValueSet/vs-art-regimen-change-type'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-vs-art-regimen-change-type.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-art-regimen-change-type) does not match the URL (http://openhie.org/fhir/training-solution-1/ValueSet/vs-art-regimen-change-type)
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-vs-art-regimen-change-type: URL Mismatch http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-art-regimen-change-type vs http://openhie.org/fhir/training-solution-1/ValueSet/vs-art-regimen-change-type
+== fsh-generated/resources/ValueSet-vs-artregimen-lines.json ==
+ERROR: ValueSet.where(url = 'http://openhie.org/fhir/training-solution-1/ValueSet/vs-artregimen-lines'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-vs-artregimen-lines.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-artregimen-lines) does not match the URL (http://openhie.org/fhir/training-solution-1/ValueSet/vs-artregimen-lines)
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-vs-artregimen-lines: URL Mismatch http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-artregimen-lines vs http://openhie.org/fhir/training-solution-1/ValueSet/vs-artregimen-lines
+== fsh-generated/resources/ValueSet-vs-arv-regimen.json ==
+ERROR: ValueSet.where(url = 'http://openhie.org/fhir/training-solution-1/ValueSet/vs-arv-regimen'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-vs-arv-regimen.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-arv-regimen) does not match the URL (http://openhie.org/fhir/training-solution-1/ValueSet/vs-arv-regimen)
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-vs-arv-regimen: URL Mismatch http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-arv-regimen vs http://openhie.org/fhir/training-solution-1/ValueSet/vs-arv-regimen
+== fsh-generated/resources/ValueSet-vs-arvtreatment-activity-type.json ==
+ERROR: ValueSet.where(url = 'http://openhie.org/fhir/training-solution-1/ValueSet/vs-arvtreatment-activity-type'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-vs-arvtreatment-activity-type.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-arvtreatment-activity-type) does not match the URL (http://openhie.org/fhir/training-solution-1/ValueSet/vs-arvtreatment-activity-type)
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-vs-arvtreatment-activity-type: URL Mismatch http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-arvtreatment-activity-type vs http://openhie.org/fhir/training-solution-1/ValueSet/vs-arvtreatment-activity-type
+== fsh-generated/resources/ValueSet-vs-careplan-outcome.json ==
+ERROR: ValueSet.where(url = 'http://openhie.org/fhir/training-solution-1/ValueSet/vs-careplan-outcome'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-vs-careplan-outcome.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-careplan-outcome) does not match the URL (http://openhie.org/fhir/training-solution-1/ValueSet/vs-careplan-outcome)
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-vs-careplan-outcome: URL Mismatch http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-careplan-outcome vs http://openhie.org/fhir/training-solution-1/ValueSet/vs-careplan-outcome
 == fsh-generated/resources/ValueSet-vs-condition.json ==
+ERROR: ValueSet.where(url = 'http://openhie.org/fhir/training-solution-1/ValueSet/vs-condition'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-vs-condition.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-condition) does not match the URL (http://openhie.org/fhir/training-solution-1/ValueSet/vs-condition)
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-vs-condition: URL Mismatch http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-condition vs http://openhie.org/fhir/training-solution-1/ValueSet/vs-condition
 == fsh-generated/resources/ValueSet-vs-hiv-test-done.json ==
+ERROR: ValueSet.where(url = 'http://openhie.org/fhir/training-solution-1/ValueSet/vs-hiv-test-done'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-test-done.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-hiv-test-done) does not match the URL (http://openhie.org/fhir/training-solution-1/ValueSet/vs-hiv-test-done)
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-test-done: URL Mismatch http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-hiv-test-done vs http://openhie.org/fhir/training-solution-1/ValueSet/vs-hiv-test-done
 == fsh-generated/resources/ValueSet-vs-key-population-status.json ==
+ERROR: ValueSet.where(url = 'http://openhie.org/fhir/training-solution-1/ValueSet/vs-key-population-status'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-vs-key-population-status.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-key-population-status) does not match the URL (http://openhie.org/fhir/training-solution-1/ValueSet/vs-key-population-status)
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-vs-key-population-status: URL Mismatch http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-key-population-status vs http://openhie.org/fhir/training-solution-1/ValueSet/vs-key-population-status
 == fsh-generated/resources/ValueSet-vs-reason-for-assessment-or-test-not-performed.json ==
+ERROR: ValueSet.where(url = 'http://openhie.org/fhir/training-solution-1/ValueSet/vs-reason-for-assessment-or-test-not-performed'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-vs-reason-for-assessment-or-test-not-performed.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-reason-for-assessment-or-test-not-performed) does not match the URL (http://openhie.org/fhir/training-solution-1/ValueSet/vs-reason-for-assessment-or-test-not-performed)
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-vs-reason-for-assessment-or-test-not-performed: URL Mismatch http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-reason-for-assessment-or-test-not-performed vs http://openhie.org/fhir/training-solution-1/ValueSet/vs-reason-for-assessment-or-test-not-performed
 == fsh-generated/resources/ValueSet-vs-reason-sample-cancelled-or-rejected.json ==
+ERROR: ValueSet.where(url = 'http://openhie.org/fhir/training-solution-1/ValueSet/vs-reason-sample-cancelled-or-rejected'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-vs-reason-sample-cancelled-or-rejected.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-reason-sample-cancelled-or-rejected) does not match the URL (http://openhie.org/fhir/training-solution-1/ValueSet/vs-reason-sample-cancelled-or-rejected)
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-vs-reason-sample-cancelled-or-rejected: URL Mismatch http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-reason-sample-cancelled-or-rejected vs http://openhie.org/fhir/training-solution-1/ValueSet/vs-reason-sample-cancelled-or-rejected
 == fsh-generated/resources/ValueSet-vs-specimen-type.json ==
+ERROR: ValueSet.where(url = 'http://openhie.org/fhir/training-solution-1/ValueSet/vs-specimen-type'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-vs-specimen-type.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-specimen-type) does not match the URL (http://openhie.org/fhir/training-solution-1/ValueSet/vs-specimen-type)
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-vs-specimen-type: URL Mismatch http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-specimen-type vs http://openhie.org/fhir/training-solution-1/ValueSet/vs-specimen-type
 == fsh-generated/resources/ValueSet-vs-test-types.json ==
+ERROR: ValueSet.where(url = 'http://openhie.org/fhir/training-solution-1/ValueSet/vs-test-types'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-vs-test-types.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-test-types) does not match the URL (http://openhie.org/fhir/training-solution-1/ValueSet/vs-test-types)
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-vs-test-types: URL Mismatch http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-test-types vs http://openhie.org/fhir/training-solution-1/ValueSet/vs-test-types
 == fsh-generated/resources/ValueSet-vs-vl-result-code.json ==
+ERROR: ValueSet.where(url = 'http://openhie.org/fhir/training-solution-1/ValueSet/vs-vl-result-code'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-vs-vl-result-code.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-vl-result-code) does not match the URL (http://openhie.org/fhir/training-solution-1/ValueSet/vs-vl-result-code)
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-vs-vl-result-code: URL Mismatch http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-vl-result-code vs http://openhie.org/fhir/training-solution-1/ValueSet/vs-vl-result-code
 == fsh-generated/resources/ValueSet-vs-vl-suppression.json ==
-== input/training-solution-1.xml ==
+ERROR: ValueSet.where(url = 'http://openhie.org/fhir/training-solution-1/ValueSet/vs-vl-suppression'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-vs-vl-suppression.json - the canonical URL (http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-vl-suppression) does not match the URL (http://openhie.org/fhir/training-solution-1/ValueSet/vs-vl-suppression)
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-vs-vl-suppression: URL Mismatch http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-vl-suppression vs http://openhie.org/fhir/training-solution-1/ValueSet/vs-vl-suppression

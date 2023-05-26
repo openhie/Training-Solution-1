@@ -11,9 +11,10 @@
   "title" : "Conditions",
   "status" : "active",
   "experimental" : false,
-  "date" : "2023-04-17T12:49:16+00:00",
+  "date" : "2023-05-26T12:35:19+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
+    "name" : "Jembi Health Systems",
     "telecom" : [{
       "system" : "url",
       "value" : "https://www.jembi.org"
@@ -22,12 +23,21 @@
       "system" : "email",
       "value" : "info@jembi.org"
     }]
+  },
+  {
+    "name" : "Richard Langford",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "richard.langford@jembi.org",
+      "use" : "work"
+    }]
   }],
   "description" : "A list of possible HIV conditions.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-      "code" : "001"
+      "code" : "001",
+      "display" : "World"
     }]
   }],
   "compose" : {

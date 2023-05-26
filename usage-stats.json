@@ -5,6 +5,22 @@
   "jurisdiction": "001",
   "extensions": [
     {
+      "url": "http://openhie.org/fhir/training-solution-1/StructureDefinition/art-regimen-line",
+      "title": "ART Regimen Line",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://openhie.org/fhir/training-solution-1/StructureDefinition/art-regimen-switched-or-substituted",
+      "title": "ART Regimen Switched Or Substituted",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
       "url": "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-care-next-visit",
       "title": "Next Appointment Date",
       "types": [
@@ -42,6 +58,12 @@
       {
         "url": "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-test-results",
         "title": "Lab Results"
+      }
+    ],
+    "CarePlan": [
+      {
+        "url": "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-arv-treatment",
+        "title": "ARV Treatment"
       }
     ],
     "Condition": [
@@ -140,6 +162,9 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
       "StructureDefinition.snapshot.element"
     ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
       "ImplementationGuide.definition.page",
       "ImplementationGuide.definition.page.page"
@@ -153,9 +178,17 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
+    "http://openhie.org/fhir/training-solution-1/StructureDefinition/art-regimen-line": [
+      "Bundle.entry.resource.activity.detail",
+      "CarePlan.activity.detail"
+    ],
+    "http://openhie.org/fhir/training-solution-1/StructureDefinition/art-regimen-switched-or-substituted": [
+      "Bundle.entry.resource.activity.detail",
+      "CarePlan.activity.detail"
+    ],
     "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-care-next-visit": [
-      "Bundle.entry.resource",
-      "Encounter"
+      "Bundle.entry.resource.activity.detail",
+      "CarePlan.activity.detail"
     ],
     "http://openhie.org/fhir/training-solution-1/StructureDefinition/key-population-status": [
       "Bundle.entry.resource",
