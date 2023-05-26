@@ -749,9 +749,9 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/vs-reason-for-assessment-or-test-not-performed"/>
+        <reference value="ValueSet/vs-reason-for-assessment"/>
       </reference>
-      <name value="Reason for Assessment or Test Not Performed"/>
+      <name value="Reason for Assessment"/>
       <description value="A list of reasons associated with the service request for the lab order."/>
       <exampleBoolean value="false"/>
     </resource>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="cf385bb0-9060-420f-997a-673291799796"/>
+  <id value="3f40c949-d2df-4c3f-a30c-558938a320b8"/>
   <meta>
-    <lastUpdated value="2023-05-26T13:09:55.592+00:00"/>
+    <lastUpdated value="2023-05-26T15:10:57.391+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -52,7 +52,7 @@
         <title value="ARV treatment outcomes"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-05-26T13:09:55+00:00"/>
+        <date value="2023-05-26T15:10:57+00:00"/>
         <jurisdiction>
           <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -61,8 +61,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2abc5b9d-1a8c-4154-b6e4-9136e948f164"/>
-          <timestamp value="2023-05-26T13:10:33+00:00"/>
+          <identifier value="urn:uuid:8de2c8f7-d2ed-4b06-b82d-2369ac2e047d"/>
+          <timestamp value="2023-05-26T15:11:42+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -85,6 +85,168 @@
             <system value="http://snomed.info/sct"/>
             <code value="386473003"/>
             <display value="Telephone follow-up"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://openhie.org/fhir/training-solution-1/ValueSet/vs-reason-for-assessment"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 8 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2023</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-77386006"> </a>  
+                  <a href="http://snomed.info/id/77386006">77386006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pregnancy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-428450006"> </a>  
+                  <a href="http://snomed.info/id/428450006">428450006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Repeat laboratory specimen sent</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-171111007"> </a>  
+                  <a href="http://snomed.info/id/171111007">171111007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Screened - no result yet</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-266721009"> </a>  
+                  <a href="http://snomed.info/id/266721009">266721009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Absent response to treatment</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-170564007"> </a>  
+                  <a href="http://snomed.info/id/170564007">170564007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic disease - treatment changed</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-413712001"> </a>  
+                  <a href="http://snomed.info/id/413712001">413712001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Breastfeeding (mother)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-315124004"> </a>  
+                  <a href="http://snomed.info/id/315124004">315124004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Human immunodeficiency virus viral load</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-2528003"> </a>  
+                  <a href="http://snomed.info/id/2528003">2528003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Viremia</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://openhie.org/fhir/training-solution-1/ValueSet/vs-reason-for-assessment"/>
+        <version value="0.1.0"/>
+        <name value="VSReasonForAssessment"/>
+        <title value="Reason for Assessment"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-05-26T15:10:57+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:f8f3317d-1e6f-4e05-8fdb-30f82bdf5798"/>
+          <timestamp value="2023-05-26T15:11:43+00:00"/>
+          <total value="8"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230131"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="77386006"/>
+            <display value="Pregnancy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="428450006"/>
+            <display value="Repeat laboratory specimen sent"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="171111007"/>
+            <display value="Screened - no result yet"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="266721009"/>
+            <display value="Absent response to treatment"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="170564007"/>
+            <display value="Chronic disease - treatment changed"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="413712001"/>
+            <display value="Breastfeeding (mother)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="315124004"/>
+            <display value="Human immunodeficiency virus viral load"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="2528003"/>
+            <display value="Viremia"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -128,7 +290,7 @@
         <title value="Viral Load Result Code"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-05-26T13:09:55+00:00"/>
+        <date value="2023-05-26T15:10:57+00:00"/>
         <jurisdiction>
           <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -137,8 +299,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0ba4a715-abd2-43db-9809-f13b5fb8a096"/>
-          <timestamp value="2023-05-26T13:10:35+00:00"/>
+          <identifier value="urn:uuid:f3e3196e-b529-48be-988c-15e1df3ba3ca"/>
+          <timestamp value="2023-05-26T15:11:45+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -255,7 +417,7 @@
         <title value="Key Population Status"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-05-26T13:09:55+00:00"/>
+        <date value="2023-05-26T15:10:57+00:00"/>
         <jurisdiction>
           <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -264,8 +426,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:47a737ee-cef2-4528-b8f2-d28b125be226"/>
-          <timestamp value="2023-05-26T13:10:41+00:00"/>
+          <identifier value="urn:uuid:d682b3b5-d5b3-4d71-a7ec-04f281429f9a"/>
+          <timestamp value="2023-05-26T15:11:52+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -329,7 +491,7 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 3 concepts</p>
+            <p>This value set contains 7 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2023</p>
             <table class="codes">
               <tr>
@@ -345,6 +507,30 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-441510007"> </a>  
+                  <a href="http://snomed.info/id/441510007">441510007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Blood specimen with anticoagulant</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-123840003"> </a>  
+                  <a href="http://snomed.info/id/123840003">123840003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Sample contaminated</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-397933008"> </a>  
+                  <a href="http://snomed.info/id/397933008">397933008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Equipment error/failure</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-281264009"> </a>  
                   <a href="http://snomed.info/id/281264009">281264009</a>
                 </td>
@@ -353,19 +539,27 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-281266006"> </a>  
-                  <a href="http://snomed.info/id/281266006">281266006</a>
+                  <a name="http---snomed.info-sct-281268007"> </a>  
+                  <a href="http://snomed.info/id/281268007">281268007</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>No sample received</td>
+                <td>Insufficient sample</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-135839007"> </a>  
-                  <a href="http://snomed.info/id/135839007">135839007</a>
+                  <a name="http---snomed.info-sct-281265005"> </a>  
+                  <a href="http://snomed.info/id/281265005">281265005</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Sample rejected</td>
+                <td>Sample incorrectly labeled</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-419182006"> </a>  
+                  <a href="http://snomed.info/id/419182006">419182006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Supplies not available</td>
               </tr>
             </table>
           </div>
@@ -376,7 +570,7 @@
         <title value="Reasons why a lab order was cancelled or rejected"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-05-26T13:09:55+00:00"/>
+        <date value="2023-05-26T15:10:57+00:00"/>
         <jurisdiction>
           <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -385,9 +579,9 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b244e305-76b2-42d9-9fbb-5b1ea63ace62"/>
-          <timestamp value="2023-05-26T13:10:41+00:00"/>
-          <total value="3"/>
+          <identifier value="urn:uuid:f90bb766-ed54-4da4-adb9-cb3cc97a67ce"/>
+          <timestamp value="2023-05-26T15:11:52+00:00"/>
+          <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -402,18 +596,38 @@
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <code value="441510007"/>
+            <display value="Blood specimen with anticoagulant"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="123840003"/>
+            <display value="Sample contaminated"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="397933008"/>
+            <display value="Equipment error/failure"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
             <code value="281264009"/>
             <display value="Inappropriate bottle or container for sample"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="281266006"/>
-            <display value="No sample received"/>
+            <code value="281268007"/>
+            <display value="Insufficient sample"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="135839007"/>
-            <display value="Sample rejected"/>
+            <code value="281265005"/>
+            <display value="Sample incorrectly labeled"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="419182006"/>
+            <display value="Supplies not available"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -473,7 +687,7 @@
         <title value="Viral Load Suppressions Status"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-05-26T13:09:55+00:00"/>
+        <date value="2023-05-26T15:10:57+00:00"/>
         <jurisdiction>
           <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -482,8 +696,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:07529473-14c1-4e60-a1a6-c3ac06e6ed07"/>
-          <timestamp value="2023-05-26T13:10:41+00:00"/>
+          <identifier value="urn:uuid:305c6b98-e8a0-49ac-b4a4-4d0edc7d6afd"/>
+          <timestamp value="2023-05-26T15:11:52+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -570,7 +784,7 @@
         <title value="ART Regimen Lines"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-05-26T13:09:55+00:00"/>
+        <date value="2023-05-26T15:10:57+00:00"/>
         <jurisdiction>
           <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -579,8 +793,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:48a71869-ea3d-464e-8dcb-2deb773b4d0a"/>
-          <timestamp value="2023-05-26T13:10:42+00:00"/>
+          <identifier value="urn:uuid:57dce489-4d7e-44e2-ab1c-6b7c1e15b3dc"/>
+          <timestamp value="2023-05-26T15:11:54+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -651,7 +865,7 @@
         <title value="HIV Test Done"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-05-26T13:09:55+00:00"/>
+        <date value="2023-05-26T15:10:57+00:00"/>
         <jurisdiction>
           <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -660,8 +874,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fdb6c10a-6685-4454-9493-b86fb83be7f1"/>
-          <timestamp value="2023-05-26T13:10:46+00:00"/>
+          <identifier value="urn:uuid:797f5409-eea1-4563-af5b-4aaae6e60c92"/>
+          <timestamp value="2023-05-26T15:11:58+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -722,7 +936,7 @@
         <title value="ARV Treatment Medication Request"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-05-26T13:09:55+00:00"/>
+        <date value="2023-05-26T15:10:57+00:00"/>
         <jurisdiction>
           <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -731,8 +945,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b4e00717-d144-422d-8c81-5f2bda9c8996"/>
-          <timestamp value="2023-05-26T13:10:46+00:00"/>
+          <identifier value="urn:uuid:5d2ca6fd-16ff-4279-975d-16ec073d148d"/>
+          <timestamp value="2023-05-26T15:11:58+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -953,7 +1167,7 @@
         <title value="A list of ARV regimen"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-05-26T13:09:55+00:00"/>
+        <date value="2023-05-26T15:10:57+00:00"/>
         <jurisdiction>
           <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -962,8 +1176,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:60c4c040-9575-4af0-acf0-e9a8d5ba40ba"/>
-          <timestamp value="2023-05-26T13:10:48+00:00"/>
+          <identifier value="urn:uuid:1c6f47d7-7e45-405c-ae2c-49c057539ea9"/>
+          <timestamp value="2023-05-26T15:12:01+00:00"/>
           <total value="21"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1124,7 +1338,7 @@
         <title value="Conditions"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-05-26T13:09:55+00:00"/>
+        <date value="2023-05-26T15:10:57+00:00"/>
         <jurisdiction>
           <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -1133,8 +1347,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:afd6c8cc-42da-4de1-8d95-2f7079478fdb"/>
-          <timestamp value="2023-05-26T13:10:48+00:00"/>
+          <identifier value="urn:uuid:c413f936-bcc5-4e71-8ace-984dba1b9691"/>
+          <timestamp value="2023-05-26T15:12:01+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1152,259 +1366,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="86406008"/>
             <display value="Human immunodeficiency virus infection"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://openhie.org/fhir/training-solution-1/ValueSet/vs-reason-for-assessment-or-test-not-performed"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 15 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2023</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-77386006"> </a>  
-                  <a href="http://snomed.info/id/77386006">77386006</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Pregnancy</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-428450006"> </a>  
-                  <a href="http://snomed.info/id/428450006">428450006</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Repeat laboratory specimen sent</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-171111007"> </a>  
-                  <a href="http://snomed.info/id/171111007">171111007</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Screened - no result yet</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-266721009"> </a>  
-                  <a href="http://snomed.info/id/266721009">266721009</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Absent response to treatment</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-170564007"> </a>  
-                  <a href="http://snomed.info/id/170564007">170564007</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Chronic disease - treatment changed</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-413712001"> </a>  
-                  <a href="http://snomed.info/id/413712001">413712001</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Breastfeeding (mother)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-315124004"> </a>  
-                  <a href="http://snomed.info/id/315124004">315124004</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Human immunodeficiency virus viral load</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-2528003"> </a>  
-                  <a href="http://snomed.info/id/2528003">2528003</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Viremia</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-441510007"> </a>  
-                  <a href="http://snomed.info/id/441510007">441510007</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Blood specimen with anticoagulant</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-123840003"> </a>  
-                  <a href="http://snomed.info/id/123840003">123840003</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Sample contaminated</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-397933008"> </a>  
-                  <a href="http://snomed.info/id/397933008">397933008</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Equipment error/failure</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-281264009"> </a>  
-                  <a href="http://snomed.info/id/281264009">281264009</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Inappropriate bottle or container for sample</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-281268007"> </a>  
-                  <a href="http://snomed.info/id/281268007">281268007</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Insufficient sample</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-281265005"> </a>  
-                  <a href="http://snomed.info/id/281265005">281265005</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Sample incorrectly labeled</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-419182006"> </a>  
-                  <a href="http://snomed.info/id/419182006">419182006</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Supplies not available</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://openhie.org/fhir/training-solution-1/ValueSet/vs-reason-for-assessment-or-test-not-performed"/>
-        <version value="0.1.0"/>
-        <name value="VSReasonForAssessmentOrTestNotPerformed"/>
-        <title value="Reason for Assessment or Test Not Performed"/>
-        <status value="active"/>
-        <experimental value="false"/>
-        <date value="2023-05-26T13:09:55+00:00"/>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-            <display value="World"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:28549196-4875-4450-a06f-b3f69b349936"/>
-          <timestamp value="2023-05-26T13:10:49+00:00"/>
-          <total value="15"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230131"/>
-          </parameter>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="77386006"/>
-            <display value="Pregnancy"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="428450006"/>
-            <display value="Repeat laboratory specimen sent"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="171111007"/>
-            <display value="Screened - no result yet"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="266721009"/>
-            <display value="Absent response to treatment"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="170564007"/>
-            <display value="Chronic disease - treatment changed"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="413712001"/>
-            <display value="Breastfeeding (mother)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="315124004"/>
-            <display value="Human immunodeficiency virus viral load"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="2528003"/>
-            <display value="Viremia"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="441510007"/>
-            <display value="Blood specimen with anticoagulant"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="123840003"/>
-            <display value="Sample contaminated"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="397933008"/>
-            <display value="Equipment error/failure"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="281264009"/>
-            <display value="Inappropriate bottle or container for sample"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="281268007"/>
-            <display value="Insufficient sample"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="281265005"/>
-            <display value="Sample incorrectly labeled"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="419182006"/>
-            <display value="Supplies not available"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -1458,7 +1419,7 @@
         <title value="ART Regimen Change Types"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-05-26T13:09:55+00:00"/>
+        <date value="2023-05-26T15:10:57+00:00"/>
         <jurisdiction>
           <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -1467,8 +1428,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:960819b9-6f22-4152-9f95-339887b53a37"/>
-          <timestamp value="2023-05-26T13:10:50+00:00"/>
+          <identifier value="urn:uuid:16971d06-96d6-4726-8607-302c7eed37c4"/>
+          <timestamp value="2023-05-26T15:12:03+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1538,7 +1499,7 @@
         <title value="Test Types"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-05-26T13:09:55+00:00"/>
+        <date value="2023-05-26T15:10:57+00:00"/>
         <jurisdiction>
           <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -1547,8 +1508,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e2e7eef8-aa06-45aa-b66d-2824dcdf1ac8"/>
-          <timestamp value="2023-05-26T13:10:50+00:00"/>
+          <identifier value="urn:uuid:3d672f1c-e9ff-485c-918b-7634fb621466"/>
+          <timestamp value="2023-05-26T15:12:03+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1646,7 +1607,7 @@
         <title value="Specimen Type Used In Viral Load testing"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-05-26T13:09:55+00:00"/>
+        <date value="2023-05-26T15:10:57+00:00"/>
         <jurisdiction>
           <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -1655,8 +1616,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:59d8e52f-d3af-4929-b325-c25029d350a6"/>
-          <timestamp value="2023-05-26T13:10:51+00:00"/>
+          <identifier value="urn:uuid:ca7792f8-1b99-4449-b394-637e599af6d2"/>
+          <timestamp value="2023-05-26T15:12:04+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>

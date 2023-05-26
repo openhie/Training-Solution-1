@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "cf385bb0-9060-420f-997a-673291799796",
+  "id" : "3f40c949-d2df-4c3f-a30c-558938a320b8",
   "meta" : {
-    "lastUpdated" : "2023-05-26T13:09:55.592+00:00"
+    "lastUpdated" : "2023-05-26T15:10:57.391+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "title" : "ARV treatment outcomes",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-05-26T13:09:55+00:00",
+      "date" : "2023-05-26T15:10:57+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -28,8 +28,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:2abc5b9d-1a8c-4154-b6e4-9136e948f164",
-        "timestamp" : "2023-05-26T13:10:33+00:00",
+        "identifier" : "urn:uuid:8de2c8f7-d2ed-4b06-b82d-2369ac2e047d",
+        "timestamp" : "2023-05-26T15:11:42+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -57,6 +57,87 @@
     }
   },
   {
+    "fullUrl" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-reason-for-assessment",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 8 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jan 2023</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-77386006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/77386006\">77386006</a></td><td>http://snomed.info/sct</td><td>Pregnancy</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-428450006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/428450006\">428450006</a></td><td>http://snomed.info/sct</td><td>Repeat laboratory specimen sent</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-171111007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/171111007\">171111007</a></td><td>http://snomed.info/sct</td><td>Screened - no result yet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-266721009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/266721009\">266721009</a></td><td>http://snomed.info/sct</td><td>Absent response to treatment</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-170564007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/170564007\">170564007</a></td><td>http://snomed.info/sct</td><td>Chronic disease - treatment changed</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-413712001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/413712001\">413712001</a></td><td>http://snomed.info/sct</td><td>Breastfeeding (mother)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-315124004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/315124004\">315124004</a></td><td>http://snomed.info/sct</td><td>Human immunodeficiency virus viral load</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-2528003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/2528003\">2528003</a></td><td>http://snomed.info/sct</td><td>Viremia</td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-reason-for-assessment",
+      "version" : "0.1.0",
+      "name" : "VSReasonForAssessment",
+      "title" : "Reason for Assessment",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2023-05-26T15:10:57+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:f8f3317d-1e6f-4e05-8fdb-30f82bdf5798",
+        "timestamp" : "2023-05-26T15:11:43+00:00",
+        "total" : 8,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230131"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "77386006",
+          "display" : "Pregnancy"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "428450006",
+          "display" : "Repeat laboratory specimen sent"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "171111007",
+          "display" : "Screened - no result yet"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "266721009",
+          "display" : "Absent response to treatment"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "170564007",
+          "display" : "Chronic disease - treatment changed"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "413712001",
+          "display" : "Breastfeeding (mother)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "315124004",
+          "display" : "Human immunodeficiency virus viral load"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "2528003",
+          "display" : "Viremia"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-vl-result-code",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -70,7 +151,7 @@
       "title" : "Viral Load Result Code",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-05-26T13:09:55+00:00",
+      "date" : "2023-05-26T15:10:57+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -79,8 +160,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:0ba4a715-abd2-43db-9809-f13b5fb8a096",
-        "timestamp" : "2023-05-26T13:10:35+00:00",
+        "identifier" : "urn:uuid:f3e3196e-b529-48be-988c-15e1df3ba3ca",
+        "timestamp" : "2023-05-26T15:11:45+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -116,7 +197,7 @@
       "title" : "Key Population Status",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-05-26T13:09:55+00:00",
+      "date" : "2023-05-26T15:10:57+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -125,8 +206,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:47a737ee-cef2-4528-b8f2-d28b125be226",
-        "timestamp" : "2023-05-26T13:10:41+00:00",
+        "identifier" : "urn:uuid:d682b3b5-d5b3-4d71-a7ec-04f281429f9a",
+        "timestamp" : "2023-05-26T15:11:52+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -188,7 +269,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jan 2023</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-281264009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/281264009\">281264009</a></td><td>http://snomed.info/sct</td><td>Inappropriate bottle or container for sample</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-281266006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/281266006\">281266006</a></td><td>http://snomed.info/sct</td><td>No sample received</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-135839007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/135839007\">135839007</a></td><td>http://snomed.info/sct</td><td>Sample rejected</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jan 2023</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-441510007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/441510007\">441510007</a></td><td>http://snomed.info/sct</td><td>Blood specimen with anticoagulant</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-123840003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/123840003\">123840003</a></td><td>http://snomed.info/sct</td><td>Sample contaminated</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-397933008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/397933008\">397933008</a></td><td>http://snomed.info/sct</td><td>Equipment error/failure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-281264009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/281264009\">281264009</a></td><td>http://snomed.info/sct</td><td>Inappropriate bottle or container for sample</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-281268007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/281268007\">281268007</a></td><td>http://snomed.info/sct</td><td>Insufficient sample</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-281265005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/281265005\">281265005</a></td><td>http://snomed.info/sct</td><td>Sample incorrectly labeled</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-419182006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/419182006\">419182006</a></td><td>http://snomed.info/sct</td><td>Supplies not available</td></tr></table></div>"
       },
       "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-reason-sample-cancelled-or-rejected",
       "version" : "0.1.0",
@@ -196,7 +277,7 @@
       "title" : "Reasons why a lab order was cancelled or rejected",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-05-26T13:09:55+00:00",
+      "date" : "2023-05-26T15:10:57+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -205,9 +286,9 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b244e305-76b2-42d9-9fbb-5b1ea63ace62",
-        "timestamp" : "2023-05-26T13:10:41+00:00",
-        "total" : 3,
+        "identifier" : "urn:uuid:f90bb766-ed54-4da4-adb9-cb3cc97a67ce",
+        "timestamp" : "2023-05-26T15:11:52+00:00",
+        "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -222,18 +303,38 @@
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
+          "code" : "441510007",
+          "display" : "Blood specimen with anticoagulant"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "123840003",
+          "display" : "Sample contaminated"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "397933008",
+          "display" : "Equipment error/failure"
+        },
+        {
+          "system" : "http://snomed.info/sct",
           "code" : "281264009",
           "display" : "Inappropriate bottle or container for sample"
         },
         {
           "system" : "http://snomed.info/sct",
-          "code" : "281266006",
-          "display" : "No sample received"
+          "code" : "281268007",
+          "display" : "Insufficient sample"
         },
         {
           "system" : "http://snomed.info/sct",
-          "code" : "135839007",
-          "display" : "Sample rejected"
+          "code" : "281265005",
+          "display" : "Sample incorrectly labeled"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "419182006",
+          "display" : "Supplies not available"
         }]
       }
     }
@@ -252,7 +353,7 @@
       "title" : "Viral Load Suppressions Status",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-05-26T13:09:55+00:00",
+      "date" : "2023-05-26T15:10:57+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -261,8 +362,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:07529473-14c1-4e60-a1a6-c3ac06e6ed07",
-        "timestamp" : "2023-05-26T13:10:41+00:00",
+        "identifier" : "urn:uuid:305c6b98-e8a0-49ac-b4a4-4d0edc7d6afd",
+        "timestamp" : "2023-05-26T15:11:52+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -308,7 +409,7 @@
       "title" : "ART Regimen Lines",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-05-26T13:09:55+00:00",
+      "date" : "2023-05-26T15:10:57+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -317,8 +418,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:48a71869-ea3d-464e-8dcb-2deb773b4d0a",
-        "timestamp" : "2023-05-26T13:10:42+00:00",
+        "identifier" : "urn:uuid:57dce489-4d7e-44e2-ab1c-6b7c1e15b3dc",
+        "timestamp" : "2023-05-26T15:11:54+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -364,7 +465,7 @@
       "title" : "HIV Test Done",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-05-26T13:09:55+00:00",
+      "date" : "2023-05-26T15:10:57+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -373,8 +474,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:fdb6c10a-6685-4454-9493-b86fb83be7f1",
-        "timestamp" : "2023-05-26T13:10:46+00:00",
+        "identifier" : "urn:uuid:797f5409-eea1-4563-af5b-4aaae6e60c92",
+        "timestamp" : "2023-05-26T15:11:58+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -410,7 +511,7 @@
       "title" : "ARV Treatment Medication Request",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-05-26T13:09:55+00:00",
+      "date" : "2023-05-26T15:10:57+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -419,8 +520,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b4e00717-d144-422d-8c81-5f2bda9c8996",
-        "timestamp" : "2023-05-26T13:10:46+00:00",
+        "identifier" : "urn:uuid:5d2ca6fd-16ff-4279-975d-16ec073d148d",
+        "timestamp" : "2023-05-26T15:11:58+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -456,7 +557,7 @@
       "title" : "A list of ARV regimen",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-05-26T13:09:55+00:00",
+      "date" : "2023-05-26T15:10:57+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -465,8 +566,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:60c4c040-9575-4af0-acf0-e9a8d5ba40ba",
-        "timestamp" : "2023-05-26T13:10:48+00:00",
+        "identifier" : "urn:uuid:1c6f47d7-7e45-405c-ae2c-49c057539ea9",
+        "timestamp" : "2023-05-26T15:12:01+00:00",
         "total" : 21,
         "parameter" : [{
           "name" : "excludeNested",
@@ -602,7 +703,7 @@
       "title" : "Conditions",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-05-26T13:09:55+00:00",
+      "date" : "2023-05-26T15:10:57+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -611,8 +712,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:afd6c8cc-42da-4de1-8d95-2f7079478fdb",
-        "timestamp" : "2023-05-26T13:10:48+00:00",
+        "identifier" : "urn:uuid:c413f936-bcc5-4e71-8ace-984dba1b9691",
+        "timestamp" : "2023-05-26T15:12:01+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -635,122 +736,6 @@
     }
   },
   {
-    "fullUrl" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-reason-for-assessment-or-test-not-performed",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 15 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jan 2023</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-77386006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/77386006\">77386006</a></td><td>http://snomed.info/sct</td><td>Pregnancy</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-428450006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/428450006\">428450006</a></td><td>http://snomed.info/sct</td><td>Repeat laboratory specimen sent</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-171111007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/171111007\">171111007</a></td><td>http://snomed.info/sct</td><td>Screened - no result yet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-266721009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/266721009\">266721009</a></td><td>http://snomed.info/sct</td><td>Absent response to treatment</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-170564007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/170564007\">170564007</a></td><td>http://snomed.info/sct</td><td>Chronic disease - treatment changed</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-413712001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/413712001\">413712001</a></td><td>http://snomed.info/sct</td><td>Breastfeeding (mother)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-315124004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/315124004\">315124004</a></td><td>http://snomed.info/sct</td><td>Human immunodeficiency virus viral load</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-2528003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/2528003\">2528003</a></td><td>http://snomed.info/sct</td><td>Viremia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-441510007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/441510007\">441510007</a></td><td>http://snomed.info/sct</td><td>Blood specimen with anticoagulant</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-123840003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/123840003\">123840003</a></td><td>http://snomed.info/sct</td><td>Sample contaminated</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-397933008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/397933008\">397933008</a></td><td>http://snomed.info/sct</td><td>Equipment error/failure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-281264009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/281264009\">281264009</a></td><td>http://snomed.info/sct</td><td>Inappropriate bottle or container for sample</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-281268007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/281268007\">281268007</a></td><td>http://snomed.info/sct</td><td>Insufficient sample</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-281265005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/281265005\">281265005</a></td><td>http://snomed.info/sct</td><td>Sample incorrectly labeled</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-419182006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/419182006\">419182006</a></td><td>http://snomed.info/sct</td><td>Supplies not available</td></tr></table></div>"
-      },
-      "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-reason-for-assessment-or-test-not-performed",
-      "version" : "0.1.0",
-      "name" : "VSReasonForAssessmentOrTestNotPerformed",
-      "title" : "Reason for Assessment or Test Not Performed",
-      "status" : "active",
-      "experimental" : false,
-      "date" : "2023-05-26T13:09:55+00:00",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001",
-          "display" : "World"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:28549196-4875-4450-a06f-b3f69b349936",
-        "timestamp" : "2023-05-26T13:10:49+00:00",
-        "total" : 15,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230131"
-        }],
-        "contains" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "77386006",
-          "display" : "Pregnancy"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "428450006",
-          "display" : "Repeat laboratory specimen sent"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "171111007",
-          "display" : "Screened - no result yet"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "266721009",
-          "display" : "Absent response to treatment"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "170564007",
-          "display" : "Chronic disease - treatment changed"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "413712001",
-          "display" : "Breastfeeding (mother)"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "315124004",
-          "display" : "Human immunodeficiency virus viral load"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "2528003",
-          "display" : "Viremia"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "441510007",
-          "display" : "Blood specimen with anticoagulant"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "123840003",
-          "display" : "Sample contaminated"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "397933008",
-          "display" : "Equipment error/failure"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "281264009",
-          "display" : "Inappropriate bottle or container for sample"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "281268007",
-          "display" : "Insufficient sample"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "281265005",
-          "display" : "Sample incorrectly labeled"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "419182006",
-          "display" : "Supplies not available"
-        }]
-      }
-    }
-  },
-  {
     "fullUrl" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-art-regimen-change-type",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -764,7 +749,7 @@
       "title" : "ART Regimen Change Types",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-05-26T13:09:55+00:00",
+      "date" : "2023-05-26T15:10:57+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -773,8 +758,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:960819b9-6f22-4152-9f95-339887b53a37",
-        "timestamp" : "2023-05-26T13:10:50+00:00",
+        "identifier" : "urn:uuid:16971d06-96d6-4726-8607-302c7eed37c4",
+        "timestamp" : "2023-05-26T15:12:03+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -811,7 +796,7 @@
       "title" : "Test Types",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-05-26T13:09:55+00:00",
+      "date" : "2023-05-26T15:10:57+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -820,8 +805,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:e2e7eef8-aa06-45aa-b66d-2824dcdf1ac8",
-        "timestamp" : "2023-05-26T13:10:50+00:00",
+        "identifier" : "urn:uuid:3d672f1c-e9ff-485c-918b-7634fb621466",
+        "timestamp" : "2023-05-26T15:12:03+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -862,7 +847,7 @@
       "title" : "Specimen Type Used In Viral Load testing",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-05-26T13:09:55+00:00",
+      "date" : "2023-05-26T15:10:57+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -871,8 +856,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:59d8e52f-d3af-4929-b325-c25029d350a6",
-        "timestamp" : "2023-05-26T13:10:51+00:00",
+        "identifier" : "urn:uuid:ca7792f8-1b99-4449-b394-637e599af6d2",
+        "timestamp" : "2023-05-26T15:12:04+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
