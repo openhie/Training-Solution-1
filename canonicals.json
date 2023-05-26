@@ -1,12 +1,5 @@
 [
   {
-    "id" : "openhie.fhir.training.solution.1",
-    "type" : "ImplementationGuide",
-    "url" : "http://openhie.org/fhir/rwanda-hiv/ImplementationGuide/openhie.fhir.training.solution.1",
-    "version" : "0.1.0",
-    "name" : "TrainingSolution1"
-  },
-  {
     "id" : "cs-art-regimen-change-type",
     "type" : "CodeSystem",
     "url" : "http://openhie.org/fhir/training-solution-1/CodeSystem/cs-art-regimen-change-type",
@@ -19,6 +12,13 @@
     "url" : "http://openhie.org/fhir/training-solution-1/CodeSystem/cs-key-population-status",
     "version" : "0.1.0",
     "name" : "CSKeyPopulationStatus"
+  },
+  {
+    "id" : "openhie.fhir.training.solution.1",
+    "type" : "ImplementationGuide",
+    "url" : "http://openhie.org/fhir/training-solution-1/ImplementationGuide/openhie.fhir.training.solution.1",
+    "version" : "0.1.0",
+    "name" : "TrainingSolution1"
   },
   {
     "id" : "HIV-lab-order",

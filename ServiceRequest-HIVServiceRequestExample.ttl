@@ -7,7 +7,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/rwanda-hiv/ServiceRequest/HIVServiceRequestExample> a fhir:ServiceRequest ;
+<http://openhie.org/fhir/training-solution-1/ServiceRequest/HIVServiceRequestExample> a fhir:ServiceRequest ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "HIVServiceRequestExample"] ; # 
   fhir:meta [
@@ -44,20 +44,20 @@
      fhir:text [ fhir:v "Test Type" ]
   ] ; # 
   fhir:subject [
-     fhir:link <http://openhie.org/fhir/rwanda-hiv/Patient/HIVPatientExample> ;
+     fhir:link <http://openhie.org/fhir/training-solution-1/Patient/HIVPatientExample> ;
      fhir:reference [ fhir:v "Patient/HIVPatientExample" ]
   ] ; # 
   fhir:encounter [
-     fhir:link <http://openhie.org/fhir/rwanda-hiv/Encounter/TargetFacilityEncounterExample> ;
+     fhir:link <http://openhie.org/fhir/training-solution-1/Encounter/TargetFacilityEncounterExample> ;
      fhir:reference [ fhir:v "Encounter/TargetFacilityEncounterExample" ]
   ] ; # 
   fhir:occurrence [ fhir:v "2012-01-05"^^xsd:date] ; # 
   fhir:requester [
-     fhir:link <http://openhie.org/fhir/rwanda-hiv/Practitioner/PractitionerExample> ;
+     fhir:link <http://openhie.org/fhir/training-solution-1/Practitioner/PractitionerExample> ;
      fhir:reference [ fhir:v "Practitioner/PractitionerExample" ]
   ] ; # 
   fhir:performer ( [
-     fhir:link <http://openhie.org/fhir/rwanda-hiv/Organization/HIVServiceRequestLocationExample> ;
+     fhir:link <http://openhie.org/fhir/training-solution-1/Organization/HIVServiceRequestLocationExample> ;
      fhir:reference [ fhir:v "Organization/HIVServiceRequestLocationExample" ]
   ] ) ; # 
   fhir:reasonCode ( [
@@ -70,13 +70,13 @@
      fhir:text [ fhir:v "Reason" ]
   ] ) ; # 
   fhir:specimen ( [
-     fhir:link <http://openhie.org/fhir/rwanda-hiv/Specimen/VLSpecimenExample> ;
+     fhir:link <http://openhie.org/fhir/training-solution-1/Specimen/VLSpecimenExample> ;
      fhir:reference [ fhir:v "Specimen/VLSpecimenExample" ]
   ] ) ; # 
   fhir:note ( [
      fhir:author [
        a fhir:Reference ;
-       fhir:link <http://openhie.org/fhir/rwanda-hiv/Organization/HIVOrganizationExample> ;
+       fhir:link <http://openhie.org/fhir/training-solution-1/Organization/HIVOrganizationExample> ;
        fhir:reference [ fhir:v "Organization/HIVOrganizationExample" ]
      ] ;
      fhir:time [ fhir:v "2015-02-07T13:28:17-05:00"^^xsd:dateTime ] ;

@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/rwanda-hiv/Patient/HIVPatientExample> a fhir:Patient ;
+<http://openhie.org/fhir/training-solution-1/Patient/HIVPatientExample> a fhir:Patient ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "HIVPatientExample"] ; # 
   fhir:meta [
@@ -91,7 +91,7 @@
      ] )
   ] ) ; # 
   fhir:managingOrganization [
-     fhir:link <http://openhie.org/fhir/rwanda-hiv/Organization/HIVOrganizationExample> ;
+     fhir:link <http://openhie.org/fhir/training-solution-1/Organization/HIVOrganizationExample> ;
      fhir:reference [ fhir:v "Organization/HIVOrganizationExample" ]
   ] . # 
 

@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/rwanda-hiv/ImplementationGuide/openhie.fhir.training.solution.1> a fhir:ImplementationGuide ;
+<http://openhie.org/fhir/training-solution-1/ImplementationGuide/openhie.fhir.training.solution.1> a fhir:ImplementationGuide ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "openhie.fhir.training.solution.1"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TrainingSolution1</h2><p>The official URL for this implementation guide is: </p><pre>http://openhie.org/fhir/rwanda-hiv/ImplementationGuide/openhie.fhir.training.solution.1</pre><div><p>A FHIR Implementation Guide which represents the solution to a FHIR training hackathon (https://docs.google.com/document/d/1MYZHukPqMvZMSbtwm8SRcHnl7ee9bvC6NtZTwFQd45I).</p>\n</div></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TrainingSolution1</h2><p>The official URL for this implementation guide is: </p><pre>http://openhie.org/fhir/training-solution-1/ImplementationGuide/openhie.fhir.training.solution.1</pre><div><p>A FHIR Implementation Guide which represents the solution to a FHIR training hackathon (https://docs.google.com/document/d/1MYZHukPqMvZMSbtwm8SRcHnl7ee9bvC6NtZTwFQd45I).</p>\n</div></div>"
   ] ; # 
-  fhir:url [ fhir:v "http://openhie.org/fhir/rwanda-hiv/ImplementationGuide/openhie.fhir.training.solution.1"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "http://openhie.org/fhir/training-solution-1/ImplementationGuide/openhie.fhir.training.solution.1"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "TrainingSolution1"] ; # 
   fhir:title [ fhir:v "HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1"] ; # 
@@ -160,7 +160,7 @@
          fhir:value [ fhir:v "path-history" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "http://openhie.org/fhir/rwanda-hiv/history.html" ]
+         fhir:value [ fhir:v "http://openhie.org/fhir/training-solution-1/history.html" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -379,7 +379,7 @@
          fhir:value [ fhir:v "path-history" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "http://openhie.org/fhir/rwanda-hiv/history.html" ]
+         fhir:value [ fhir:v "http://openhie.org/fhir/training-solution-1/history.html" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -515,7 +515,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/StructureDefinition/hiv-arv-treatment> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-arv-treatment> ;
          fhir:reference [ fhir:v "StructureDefinition/hiv-arv-treatment" ]
        ] ;
        fhir:name [ fhir:v "ARV Treatment" ] ;
@@ -527,7 +527,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/StructureDefinition/date-hiv-test-done> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/date-hiv-test-done> ;
          fhir:reference [ fhir:v "StructureDefinition/date-hiv-test-done" ]
        ] ;
        fhir:name [ fhir:v "Date HIV Test Done" ] ;
@@ -539,7 +539,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/StructureDefinition/hiv-diagnosis> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-diagnosis> ;
          fhir:reference [ fhir:v "StructureDefinition/hiv-diagnosis" ]
        ] ;
        fhir:name [ fhir:v "Diagnosis" ] ;
@@ -551,7 +551,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/StructureDefinition/hiv-diagnostic-report> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-diagnostic-report> ;
          fhir:reference [ fhir:v "StructureDefinition/hiv-diagnostic-report" ]
        ] ;
        fhir:name [ fhir:v "Diagnostic Report" ] ;
@@ -563,7 +563,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/StructureDefinition/hiv-episode-of-care> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-episode-of-care> ;
          fhir:reference [ fhir:v "StructureDefinition/hiv-episode-of-care" ]
        ] ;
        fhir:name [ fhir:v "Patient Enrollment Type" ] ;
@@ -575,7 +575,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/StructureDefinition/hiv-lab-task> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task> ;
          fhir:reference [ fhir:v "StructureDefinition/hiv-lab-task" ]
        ] ;
        fhir:name [ fhir:v "Lab Task" ] ;
@@ -587,7 +587,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/StructureDefinition/hiv-organization> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-organization> ;
          fhir:reference [ fhir:v "StructureDefinition/hiv-organization" ]
        ] ;
        fhir:name [ fhir:v "HIV Organization" ] ;
@@ -599,7 +599,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/StructureDefinition/hiv-patient> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-patient> ;
          fhir:reference [ fhir:v "StructureDefinition/hiv-patient" ]
        ] ;
        fhir:name [ fhir:v "Patient" ] ;
@@ -611,7 +611,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/StructureDefinition/hiv-practitioner> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-practitioner> ;
          fhir:reference [ fhir:v "StructureDefinition/hiv-practitioner" ]
        ] ;
        fhir:name [ fhir:v "Practitioner" ] ;
@@ -623,7 +623,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/StructureDefinition/HIV-lab-order> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/HIV-lab-order> ;
          fhir:reference [ fhir:v "StructureDefinition/HIV-lab-order" ]
        ] ;
        fhir:name [ fhir:v "Lab Order" ] ;
@@ -635,7 +635,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/StructureDefinition/hiv-service-request-location> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-service-request-location> ;
          fhir:reference [ fhir:v "StructureDefinition/hiv-service-request-location" ]
        ] ;
        fhir:name [ fhir:v "Lab Order Request Location" ] ;
@@ -647,7 +647,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/StructureDefinition/hiv-test-results> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-test-results> ;
          fhir:reference [ fhir:v "StructureDefinition/hiv-test-results" ]
        ] ;
        fhir:name [ fhir:v "Lab Results" ] ;
@@ -659,7 +659,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/StructureDefinition/target-facility-encounter> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/target-facility-encounter> ;
          fhir:reference [ fhir:v "StructureDefinition/target-facility-encounter" ]
        ] ;
        fhir:name [ fhir:v "Target Facility Encounter" ] ;
@@ -671,7 +671,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/StructureDefinition/transferring-facility-encounter> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/transferring-facility-encounter> ;
          fhir:reference [ fhir:v "StructureDefinition/transferring-facility-encounter" ]
        ] ;
        fhir:name [ fhir:v "Transferring Facility Encounter" ] ;
@@ -683,7 +683,7 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/StructureDefinition/viral-load-specimen> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/viral-load-specimen> ;
          fhir:reference [ fhir:v "StructureDefinition/viral-load-specimen" ]
        ] ;
        fhir:name [ fhir:v "Viral Load Specimen" ] ;
@@ -695,7 +695,7 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/StructureDefinition/art-regimen-line> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/art-regimen-line> ;
          fhir:reference [ fhir:v "StructureDefinition/art-regimen-line" ]
        ] ;
        fhir:name [ fhir:v "ART Regimen Line" ] ;
@@ -707,7 +707,7 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/StructureDefinition/art-regimen-switched-or-substituted> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/art-regimen-switched-or-substituted> ;
          fhir:reference [ fhir:v "StructureDefinition/art-regimen-switched-or-substituted" ]
        ] ;
        fhir:name [ fhir:v "ART Regimen Switched Or Substituted" ] ;
@@ -719,7 +719,7 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/StructureDefinition/hiv-care-next-visit> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-care-next-visit> ;
          fhir:reference [ fhir:v "StructureDefinition/hiv-care-next-visit" ]
        ] ;
        fhir:name [ fhir:v "Next Appointment Date" ] ;
@@ -731,7 +731,7 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/StructureDefinition/key-population-status> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/key-population-status> ;
          fhir:reference [ fhir:v "StructureDefinition/key-population-status" ]
        ] ;
        fhir:name [ fhir:v "Key HIV Population" ] ;
@@ -743,7 +743,7 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-art-regimen-change-type> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/ValueSet/vs-art-regimen-change-type> ;
          fhir:reference [ fhir:v "ValueSet/vs-art-regimen-change-type" ]
        ] ;
        fhir:name [ fhir:v "ART Regimen Change Types" ] ;
@@ -755,7 +755,7 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-artregimen-lines> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/ValueSet/vs-artregimen-lines> ;
          fhir:reference [ fhir:v "ValueSet/vs-artregimen-lines" ]
        ] ;
        fhir:name [ fhir:v "ART Regimen Lines" ] ;
@@ -767,7 +767,7 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-arvtreatment-activity-type> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/ValueSet/vs-arvtreatment-activity-type> ;
          fhir:reference [ fhir:v "ValueSet/vs-arvtreatment-activity-type" ]
        ] ;
        fhir:name [ fhir:v "ARV Treatment Medication Request" ] ;
@@ -779,7 +779,7 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-arv-regimen> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/ValueSet/vs-arv-regimen> ;
          fhir:reference [ fhir:v "ValueSet/vs-arv-regimen" ]
        ] ;
        fhir:name [ fhir:v "A list of ARV regimen" ] ;
@@ -791,7 +791,7 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-careplan-outcome> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/ValueSet/vs-careplan-outcome> ;
          fhir:reference [ fhir:v "ValueSet/vs-careplan-outcome" ]
        ] ;
        fhir:name [ fhir:v "ARV treatment outcomes" ] ;
@@ -803,7 +803,7 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-condition> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/ValueSet/vs-condition> ;
          fhir:reference [ fhir:v "ValueSet/vs-condition" ]
        ] ;
        fhir:name [ fhir:v "Conditions" ] ;
@@ -815,7 +815,7 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-hiv-test-done> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/ValueSet/vs-hiv-test-done> ;
          fhir:reference [ fhir:v "ValueSet/vs-hiv-test-done" ]
        ] ;
        fhir:name [ fhir:v "HIV Test Done" ] ;
@@ -827,7 +827,7 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-key-population-status> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/ValueSet/vs-key-population-status> ;
          fhir:reference [ fhir:v "ValueSet/vs-key-population-status" ]
        ] ;
        fhir:name [ fhir:v "Key Population Status" ] ;
@@ -839,7 +839,7 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-reason-for-assessment-or-test-not-performed> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/ValueSet/vs-reason-for-assessment-or-test-not-performed> ;
          fhir:reference [ fhir:v "ValueSet/vs-reason-for-assessment-or-test-not-performed" ]
        ] ;
        fhir:name [ fhir:v "Reason for Assessment or Test Not Performed" ] ;
@@ -851,7 +851,7 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-reason-sample-cancelled-or-rejected> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/ValueSet/vs-reason-sample-cancelled-or-rejected> ;
          fhir:reference [ fhir:v "ValueSet/vs-reason-sample-cancelled-or-rejected" ]
        ] ;
        fhir:name [ fhir:v "Reasons why a lab order was cancelled or rejected" ] ;
@@ -863,7 +863,7 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-specimen-type> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/ValueSet/vs-specimen-type> ;
          fhir:reference [ fhir:v "ValueSet/vs-specimen-type" ]
        ] ;
        fhir:name [ fhir:v "Specimen Type Used In Viral Load testing" ] ;
@@ -875,7 +875,7 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-test-types> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/ValueSet/vs-test-types> ;
          fhir:reference [ fhir:v "ValueSet/vs-test-types" ]
        ] ;
        fhir:name [ fhir:v "Test Types" ] ;
@@ -887,7 +887,7 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-vl-result-code> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/ValueSet/vs-vl-result-code> ;
          fhir:reference [ fhir:v "ValueSet/vs-vl-result-code" ]
        ] ;
        fhir:name [ fhir:v "Viral Load Result Code" ] ;
@@ -899,7 +899,7 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/ValueSet/vs-vl-suppression> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/ValueSet/vs-vl-suppression> ;
          fhir:reference [ fhir:v "ValueSet/vs-vl-suppression" ]
        ] ;
        fhir:name [ fhir:v "Viral Load Suppressions Status" ] ;
@@ -911,7 +911,7 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/CodeSystem/cs-art-regimen-change-type> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/CodeSystem/cs-art-regimen-change-type> ;
          fhir:reference [ fhir:v "CodeSystem/cs-art-regimen-change-type" ]
        ] ;
        fhir:name [ fhir:v "ART Regimen Change Types" ] ;
@@ -923,7 +923,7 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/CodeSystem/cs-key-population-status> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/CodeSystem/cs-key-population-status> ;
          fhir:reference [ fhir:v "CodeSystem/cs-key-population-status" ]
        ] ;
        fhir:name [ fhir:v "Key Population Status" ] ;
@@ -935,7 +935,7 @@
          fhir:value [ fhir:v "CarePlan" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/CarePlan/ARVTreatmentContactedExample> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/CarePlan/ARVTreatmentContactedExample> ;
          fhir:reference [ fhir:v "CarePlan/ARVTreatmentContactedExample" ]
        ] ;
        fhir:name [ fhir:v "Contacted For ARV Treatment Example" ] ;
@@ -950,7 +950,7 @@
          fhir:value [ fhir:v "CarePlan" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/CarePlan/ARVTreatmentExample> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/CarePlan/ARVTreatmentExample> ;
          fhir:reference [ fhir:v "CarePlan/ARVTreatmentExample" ]
        ] ;
        fhir:name [ fhir:v "ARVCarePlan example" ] ;
@@ -965,7 +965,7 @@
          fhir:value [ fhir:v "CarePlan" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/CarePlan/ARVTreatmentRefusedExample> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/CarePlan/ARVTreatmentRefusedExample> ;
          fhir:reference [ fhir:v "CarePlan/ARVTreatmentRefusedExample" ]
        ] ;
        fhir:name [ fhir:v "ARV Treatment Refused Example" ] ;
@@ -980,7 +980,7 @@
          fhir:value [ fhir:v "CarePlan" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/CarePlan/ARVTreatmentRegimenSwitchedOrSubstitutedExample> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/CarePlan/ARVTreatmentRegimenSwitchedOrSubstitutedExample> ;
          fhir:reference [ fhir:v "CarePlan/ARVTreatmentRegimenSwitchedOrSubstitutedExample" ]
        ] ;
        fhir:name [ fhir:v "ARV Regimen switched or substituted example" ] ;
@@ -995,7 +995,7 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/Observation/DateHIVTestDoneExample> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/Observation/DateHIVTestDoneExample> ;
          fhir:reference [ fhir:v "Observation/DateHIVTestDoneExample" ]
        ] ;
        fhir:name [ fhir:v "Date HIV Test Done example" ] ;
@@ -1010,7 +1010,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/Bundle/EMR> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/Bundle/EMR> ;
          fhir:reference [ fhir:v "Bundle/EMR" ]
        ] ;
        fhir:name [ fhir:v "HIV Submit EMR Bundle Example" ] ;
@@ -1022,7 +1022,7 @@
          fhir:value [ fhir:v "Condition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/Condition/HIVDiagnosisExample> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/Condition/HIVDiagnosisExample> ;
          fhir:reference [ fhir:v "Condition/HIVDiagnosisExample" ]
        ] ;
        fhir:name [ fhir:v "HIV Condition example" ] ;
@@ -1037,7 +1037,7 @@
          fhir:value [ fhir:v "EpisodeOfCare" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/EpisodeOfCare/HIVEpisodeOfCareExample> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/EpisodeOfCare/HIVEpisodeOfCareExample> ;
          fhir:reference [ fhir:v "EpisodeOfCare/HIVEpisodeOfCareExample" ]
        ] ;
        fhir:name [ fhir:v "HIV Episode Of Care" ] ;
@@ -1052,7 +1052,7 @@
          fhir:value [ fhir:v "Task" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/Task/HIVLabOrderCancellationTaskExample> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/Task/HIVLabOrderCancellationTaskExample> ;
          fhir:reference [ fhir:v "Task/HIVLabOrderCancellationTaskExample" ]
        ] ;
        fhir:name [ fhir:v "HIV Lab Order Cancellation  example" ] ;
@@ -1067,7 +1067,7 @@
          fhir:value [ fhir:v "Task" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/Task/HIVLabOrderRejectionTaskExample> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/Task/HIVLabOrderRejectionTaskExample> ;
          fhir:reference [ fhir:v "Task/HIVLabOrderRejectionTaskExample" ]
        ] ;
        fhir:name [ fhir:v "HIV Lab Order Rejection  example" ] ;
@@ -1082,7 +1082,7 @@
          fhir:value [ fhir:v "Task" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/Task/HIVLabOrderTaskExample> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/Task/HIVLabOrderTaskExample> ;
          fhir:reference [ fhir:v "Task/HIVLabOrderTaskExample" ]
        ] ;
        fhir:name [ fhir:v "Lab Order example" ] ;
@@ -1097,7 +1097,7 @@
          fhir:value [ fhir:v "Task" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/Task/HIVLabResultTaskExample> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/Task/HIVLabResultTaskExample> ;
          fhir:reference [ fhir:v "Task/HIVLabResultTaskExample" ]
        ] ;
        fhir:name [ fhir:v "Lab Result Task example" ] ;
@@ -1112,7 +1112,7 @@
          fhir:value [ fhir:v "DiagnosticReport" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/DiagnosticReport/HIVLabResultsDiagnosticReportExample> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/DiagnosticReport/HIVLabResultsDiagnosticReportExample> ;
          fhir:reference [ fhir:v "DiagnosticReport/HIVLabResultsDiagnosticReportExample" ]
        ] ;
        fhir:name [ fhir:v "HIV Lab Results Diagnostic Report example" ] ;
@@ -1127,7 +1127,7 @@
          fhir:value [ fhir:v "Organization" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/Organization/HIVOrganizationExample> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/Organization/HIVOrganizationExample> ;
          fhir:reference [ fhir:v "Organization/HIVOrganizationExample" ]
        ] ;
        fhir:name [ fhir:v "HIV Organization Example" ] ;
@@ -1142,7 +1142,7 @@
          fhir:value [ fhir:v "Patient" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/Patient/HIVPatientExample> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/Patient/HIVPatientExample> ;
          fhir:reference [ fhir:v "Patient/HIVPatientExample" ]
        ] ;
        fhir:name [ fhir:v "Patient example" ] ;
@@ -1157,7 +1157,7 @@
          fhir:value [ fhir:v "ServiceRequest" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/ServiceRequest/HIVServiceRequestExample> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/ServiceRequest/HIVServiceRequestExample> ;
          fhir:reference [ fhir:v "ServiceRequest/HIVServiceRequestExample" ]
        ] ;
        fhir:name [ fhir:v "HIV Lab Order example" ] ;
@@ -1172,7 +1172,7 @@
          fhir:value [ fhir:v "Organization" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/Organization/HIVServiceRequestLocationExample> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/Organization/HIVServiceRequestLocationExample> ;
          fhir:reference [ fhir:v "Organization/HIVServiceRequestLocationExample" ]
        ] ;
        fhir:name [ fhir:v "HIV Service Request Location example" ] ;
@@ -1187,7 +1187,7 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/Observation/HIVTestResultExample> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/Observation/HIVTestResultExample> ;
          fhir:reference [ fhir:v "Observation/HIVTestResultExample" ]
        ] ;
        fhir:name [ fhir:v "Viral Load Suppression example" ] ;
@@ -1202,7 +1202,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/Bundle/LabCancellation> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/Bundle/LabCancellation> ;
          fhir:reference [ fhir:v "Bundle/LabCancellation" ]
        ] ;
        fhir:name [ fhir:v "HIV Submit Lab Cancellation Bundle Example" ] ;
@@ -1214,7 +1214,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/Bundle/LabOrder> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/Bundle/LabOrder> ;
          fhir:reference [ fhir:v "Bundle/LabOrder" ]
        ] ;
        fhir:name [ fhir:v "HIV Submit Lab Order Bundle Example" ] ;
@@ -1226,7 +1226,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/Bundle/LabRejection> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/Bundle/LabRejection> ;
          fhir:reference [ fhir:v "Bundle/LabRejection" ]
        ] ;
        fhir:name [ fhir:v "HIV Submit Lab Rejection Bundle Example" ] ;
@@ -1238,7 +1238,7 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/Bundle/LabResult> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/Bundle/LabResult> ;
          fhir:reference [ fhir:v "Bundle/LabResult" ]
        ] ;
        fhir:name [ fhir:v "HIV Submit Lab Result Bundle Example" ] ;
@@ -1250,7 +1250,7 @@
          fhir:value [ fhir:v "Practitioner" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/Practitioner/PractitionerExample> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/Practitioner/PractitionerExample> ;
          fhir:reference [ fhir:v "Practitioner/PractitionerExample" ]
        ] ;
        fhir:name [ fhir:v "Practitioner example" ] ;
@@ -1265,7 +1265,7 @@
          fhir:value [ fhir:v "Encounter" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/Encounter/TargetFacilityEncounterExample> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/Encounter/TargetFacilityEncounterExample> ;
          fhir:reference [ fhir:v "Encounter/TargetFacilityEncounterExample" ]
        ] ;
        fhir:name [ fhir:v "Target Facility Encounter example" ] ;
@@ -1280,7 +1280,7 @@
          fhir:value [ fhir:v "Encounter" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/Encounter/TransferringFacilityEncounterExample> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/Encounter/TransferringFacilityEncounterExample> ;
          fhir:reference [ fhir:v "Encounter/TransferringFacilityEncounterExample" ]
        ] ;
        fhir:name [ fhir:v "Transferring Facility Encounter example" ] ;
@@ -1295,7 +1295,7 @@
          fhir:value [ fhir:v "Specimen" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://openhie.org/fhir/rwanda-hiv/Specimen/VLSpecimenExample> ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/Specimen/VLSpecimenExample> ;
          fhir:reference [ fhir:v "Specimen/VLSpecimenExample" ]
        ] ;
        fhir:name [ fhir:v "Viral Load Specimen example" ] ;

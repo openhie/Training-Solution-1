@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/rwanda-hiv/StructureDefinition/date-hiv-test-done> a fhir:StructureDefinition ;
+<http://openhie.org/fhir/training-solution-1/StructureDefinition/date-hiv-test-done> a fhir:StructureDefinition ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "date-hiv-test-done"] ; # 
   fhir:text [
@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "DateHIVTestDone"] ; # 
   fhir:title [ fhir:v "Date HIV Test Done"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-05-26T12:35:50+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-05-26T12:45:45+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Jembi Health Systems"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Jembi Health Systems" ] ;

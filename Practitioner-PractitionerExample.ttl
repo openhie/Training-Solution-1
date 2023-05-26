@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/rwanda-hiv/Practitioner/PractitionerExample> a fhir:Practitioner ;
+<http://openhie.org/fhir/training-solution-1/Practitioner/PractitionerExample> a fhir:Practitioner ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "PractitionerExample"] ; # 
   fhir:meta [

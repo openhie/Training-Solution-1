@@ -3,9 +3,9 @@
   "id" : "openhie.fhir.training.solution.1",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TrainingSolution1</h2><p>The official URL for this implementation guide is: </p><pre>http://openhie.org/fhir/rwanda-hiv/ImplementationGuide/openhie.fhir.training.solution.1</pre><div><p>A FHIR Implementation Guide which represents the solution to a FHIR training hackathon (https://docs.google.com/document/d/1MYZHukPqMvZMSbtwm8SRcHnl7ee9bvC6NtZTwFQd45I).</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TrainingSolution1</h2><p>The official URL for this implementation guide is: </p><pre>http://openhie.org/fhir/training-solution-1/ImplementationGuide/openhie.fhir.training.solution.1</pre><div><p>A FHIR Implementation Guide which represents the solution to a FHIR training hackathon (https://docs.google.com/document/d/1MYZHukPqMvZMSbtwm8SRcHnl7ee9bvC6NtZTwFQd45I).</p>\n</div></div>"
   },
-  "url" : "http://openhie.org/fhir/rwanda-hiv/ImplementationGuide/openhie.fhir.training.solution.1",
+  "url" : "http://openhie.org/fhir/training-solution-1/ImplementationGuide/openhie.fhir.training.solution.1",
   "version" : "0.1.0",
   "name" : "TrainingSolution1",
   "title" : "HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1",
@@ -169,7 +169,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "http://openhie.org/fhir/rwanda-hiv/history.html"
+        "valueString" : "http://openhie.org/fhir/training-solution-1/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -437,7 +437,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "http://openhie.org/fhir/rwanda-hiv/history.html"
+        "valueString" : "http://openhie.org/fhir/training-solution-1/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },

@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/rwanda-hiv/Specimen/VLSpecimenExample> a fhir:Specimen ;
+<http://openhie.org/fhir/training-solution-1/Specimen/VLSpecimenExample> a fhir:Specimen ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "VLSpecimenExample"] ; # 
   fhir:meta [
@@ -41,7 +41,7 @@
      fhir:text [ fhir:v "Specimen Type" ]
   ] ; # 
   fhir:subject [
-     fhir:link <http://openhie.org/fhir/rwanda-hiv/Patient/HIVPatientExample> ;
+     fhir:link <http://openhie.org/fhir/training-solution-1/Patient/HIVPatientExample> ;
      fhir:reference [ fhir:v "Patient/HIVPatientExample" ]
   ] ; # 
   fhir:collection [
@@ -50,7 +50,7 @@
   fhir:note ( [
      fhir:author [
        a fhir:Reference ;
-       fhir:link <http://openhie.org/fhir/rwanda-hiv/Organization/HIVOrganizationExample> ;
+       fhir:link <http://openhie.org/fhir/training-solution-1/Organization/HIVOrganizationExample> ;
        fhir:reference [ fhir:v "Organization/HIVOrganizationExample" ]
      ] ;
      fhir:time [ fhir:v "2015-02-07T13:28:17-05:00"^^xsd:dateTime ] ;

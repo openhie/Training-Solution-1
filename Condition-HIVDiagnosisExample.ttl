@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/rwanda-hiv/Condition/HIVDiagnosisExample> a fhir:Condition ;
+<http://openhie.org/fhir/training-solution-1/Condition/HIVDiagnosisExample> a fhir:Condition ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "HIVDiagnosisExample"] ; # 
   fhir:meta [
@@ -41,18 +41,18 @@
      fhir:text [ fhir:v "Diagnosis" ]
   ] ; # 
   fhir:subject [
-     fhir:link <http://openhie.org/fhir/rwanda-hiv/Patient/HIVPatientExample> ;
+     fhir:link <http://openhie.org/fhir/training-solution-1/Patient/HIVPatientExample> ;
      fhir:reference [ fhir:v "Patient/HIVPatientExample" ]
   ] ; # 
   fhir:encounter [
-     fhir:link <http://openhie.org/fhir/rwanda-hiv/Encounter/TargetFacilityEncounterExample> ;
+     fhir:link <http://openhie.org/fhir/training-solution-1/Encounter/TargetFacilityEncounterExample> ;
      fhir:reference [ fhir:v "Encounter/TargetFacilityEncounterExample" ]
   ] ; # 
   fhir:recordedDate [ fhir:v "2021-05-18"^^xsd:date] ; # 
   fhir:note ( [
      fhir:author [
        a fhir:Reference ;
-       fhir:link <http://openhie.org/fhir/rwanda-hiv/Organization/HIVOrganizationExample> ;
+       fhir:link <http://openhie.org/fhir/training-solution-1/Organization/HIVOrganizationExample> ;
        fhir:reference [ fhir:v "Organization/HIVOrganizationExample" ]
      ] ;
      fhir:time [ fhir:v "2015-02-07T13:28:17-05:00"^^xsd:dateTime ] ;
