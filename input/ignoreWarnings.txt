@@ -1,3 +1,1 @@
 == Suppressed Messages ==
-# Not conerned about these warnings because we did not construct resources using xml becuase Sushi was used to generate the JSON FHIR resource examples
-%Unable to find ImplementationGuide.definition.resource.description for the resource%
