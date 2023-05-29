@@ -4,9 +4,11 @@ Id: hiv-patient
 Title: "Patient"
 Description: "A patient resource for an HIV Patient"
 * identifier 1..*
-* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #openAtEnd
+* identifier ^slicing.rules = #open
+* identifier ^slicing.ordered = false
+* identifier ^slicing.description = "Slice based on the type of identifier."
 * identifier contains
     NID 0..1 and
     MR 1..1
@@ -55,9 +57,10 @@ Id: hiv-organization
 Title: "HIV Organization"
 Description: "Organization providing HIV Testing Services."
 * identifier 1..*
-* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #openAtEnd
+* identifier ^slicing.rules = #open
+* identifier ^slicing.ordered = false
 * identifier ^slicing.description = "Slice based on the type of identifier."
 * identifier contains
     XX 1..1
@@ -162,9 +165,11 @@ Id: hiv-episode-of-care
 Title: "Patient Enrollment Type"
 Description: "This profile is used to enrol the patient into HIV care."
 * identifier 1..*
-* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #openAtEnd
+* identifier ^slicing.rules = #open
+* identifier ^slicing.ordered = false
+* identifier ^slicing.description = "Slice based on the type of identifier."
 * identifier contains
     PI 1..1
 * identifier[PI].value 1..1
@@ -186,9 +191,11 @@ Id: hiv-diagnosis
 Title: "Diagnosis"
 Description: "This profile represents the confirmation of HIV diagnosis."
 * identifier 1..*
-* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #openAtEnd
+* identifier ^slicing.rules = #open
+* identifier ^slicing.ordered = false
+* identifier ^slicing.description = "Slice based on the type of identifier."
 * identifier contains
     PI 1..1
 * identifier[PI].value 1..1
@@ -211,9 +218,11 @@ Id: viral-load-specimen
 Title: "Viral Load Specimen"
 Description: "The test sample that was collected for the initiated lab order."
 * identifier 1..*
-* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #openAtEnd
+* identifier ^slicing.rules = #open
+* identifier ^slicing.ordered = false
+* identifier ^slicing.description = "Slice based on the type of identifier."
 * identifier contains
     USID 1..1
 * identifier[USID].value 1..1
@@ -235,9 +244,10 @@ Id: hiv-service-request-location
 Title: "Lab Order Request Location"
 Description: "What is the location of the organization responsible for conducting the examination of the individual's sample?"
 * identifier 1..*
-* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #openAtEnd
+* identifier ^slicing.rules = #open
+* identifier ^slicing.ordered = false
 * identifier ^slicing.description = "Slice based on the type of identifier."
 * identifier contains
     XX 1..1
@@ -260,10 +270,11 @@ Id: HIV-lab-order
 Title: "Lab Order"
 Description: "A service request that initiates the need for the lab to collect the test sample."
 * identifier 1..*
-* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #openAtEnd
-* identifier ^slicing.description = "Slice based on the type of identifier"
+* identifier ^slicing.rules = #open
+* identifier ^slicing.ordered = false
+* identifier ^slicing.description = "Slice based on the type of identifier."
 * identifier contains
     PLAC 1..1 
 * identifier[PLAC].value 1..1
@@ -323,9 +334,10 @@ Id: hiv-lab-task
 Title: "Lab Task"
 Description: "Assists with tracking the state of the lab order and its completion status."
 * identifier 1..*
-* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #openAtEnd
+* identifier ^slicing.rules = #open
+* identifier ^slicing.ordered = false
 * identifier ^slicing.description = "Slice based on the type of identifier."
 * identifier contains
     FILL 1..1
