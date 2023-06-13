@@ -9,7 +9,6 @@
       "title": "ART Regimen Line",
       "types": [
         "CodeableConcept",
-        "CodeableConcept",
         "string",
         "Extension",
         "Coding",
@@ -27,7 +26,6 @@
       "url": "http://openhie.org/fhir/training-solution-1/StructureDefinition/art-regimen-switched-or-substituted",
       "title": "ART Regimen Switched Or Substituted",
       "types": [
-        "CodeableConcept",
         "CodeableConcept",
         "string",
         "Extension",
@@ -53,7 +51,6 @@
       "url": "http://openhie.org/fhir/training-solution-1/StructureDefinition/key-population-status",
       "title": "Key HIV Population",
       "types": [
-        "CodeableConcept",
         "CodeableConcept",
         "string",
         "Extension",
