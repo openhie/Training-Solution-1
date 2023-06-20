@@ -1,5 +1,4 @@
 @prefix fhir: <http://hl7.org/fhir/> .
-@prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sct: <http://snomed.info/id/> .
@@ -126,7 +125,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: DiagnosticReport</b><a name=\"HIVLabResultsDiagnosticReportExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource DiagnosticReport &quot;HIVLabResultsDiagnosticReportExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-diagnostic-report.html\">Diagnostic Report</a></p></div><p><b>basedOn</b>: <a href=\"ServiceRequest-HIVServiceRequestExample.html\">ServiceRequest/HIVServiceRequestExample</a></p><p><b>status</b>: final</p><p><b>code</b>: Test Type <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#25836-8 &quot;HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><p><b>encounter</b>: <a href=\"Encounter-TargetFacilityEncounterExample.html\">Encounter/TargetFacilityEncounterExample</a></p><p><b>performer</b>: <a href=\"#Practitioner_PractitionerExample\">See above (Practitioner/PractitionerExample)</a></p><p><b>result</b>: <a href=\"#Observation_HIVTestResultExample\">See above (Observation/HIVTestResultExample)</a></p><p><b>conclusion</b>: Some conclusion text</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: DiagnosticReport</b><a name=\"HIVLabResultsDiagnosticReportExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource DiagnosticReport &quot;HIVLabResultsDiagnosticReportExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-diagnostic-report.html\">Diagnostic Report</a></p></div><p><b>basedOn</b>: <a href=\"ServiceRequest-HIVServiceRequestExample.html\">ServiceRequest/HIVServiceRequestExample</a></p><p><b>status</b>: final</p><p><b>code</b>: Test Type <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-cs-test-types.html\">Test Types</a>#25836-8 &quot;HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><p><b>encounter</b>: <a href=\"Encounter-TargetFacilityEncounterExample.html\">Encounter/TargetFacilityEncounterExample</a></p><p><b>performer</b>: <a href=\"#Practitioner_PractitionerExample\">See above (Practitioner/PractitionerExample)</a></p><p><b>result</b>: <a href=\"#Observation_HIVTestResultExample\">See above (Observation/HIVTestResultExample)</a></p><p><b>conclusion</b>: Some conclusion text</p></div>"
   ] ; # 
   fhir:basedOn ( [
      fhir:link <http://openhie.org/fhir/training-solution-1/ServiceRequest/HIVServiceRequestExample> ;
@@ -135,8 +134,7 @@
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [
      fhir:coding ( [
-       a loinc:25836-8 ;
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [ fhir:v "http://openhie.org/fhir/training-solution-1/CodeSystem/cs-test-types"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "25836-8" ] ;
        fhir:display [ fhir:v "HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection" ]
      ] ) ;

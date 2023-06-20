@@ -706,6 +706,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-arvtreatment-activity-type"
+      },
+      "name" : "ARV Treatment Medication Request",
+      "description" : "Codes used to represent a medication request for ART.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -1238,6 +1250,18 @@
       }],
       "reference" : {
         "reference" : "ValueSet/vs-test-types"
+      },
+      "name" : "Test Types",
+      "description" : "A list of HIV test types",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-test-types"
       },
       "name" : "Test Types",
       "description" : "A list of HIV test types",

@@ -7,11 +7,25 @@
     "name" : "CSARTRegimenChangeType"
   },
   {
+    "id" : "cs-arvtreatment-activity-type",
+    "type" : "CodeSystem",
+    "url" : "http://openhie.org/fhir/training-solution-1/CodeSystem/cs-arvtreatment-activity-type",
+    "version" : "0.1.0",
+    "name" : "CSARVMedicationRequest"
+  },
+  {
     "id" : "cs-key-population-status",
     "type" : "CodeSystem",
     "url" : "http://openhie.org/fhir/training-solution-1/CodeSystem/cs-key-population-status",
     "version" : "0.1.0",
     "name" : "CSKeyPopulationStatus"
+  },
+  {
+    "id" : "cs-test-types",
+    "type" : "CodeSystem",
+    "url" : "http://openhie.org/fhir/training-solution-1/CodeSystem/cs-test-types",
+    "version" : "0.1.0",
+    "name" : "CSTestTypes"
   },
   {
     "id" : "openhie.fhir.training.solution.1",
