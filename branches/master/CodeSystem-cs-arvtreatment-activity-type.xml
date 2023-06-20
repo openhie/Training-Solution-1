@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-arvtreatment-activity-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://openhie.org/fhir/training-solution-1/CodeSystem/cs-arvtreatment-activity-type</code> defines the following code:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">45260-7<a name="cs-arvtreatment-activity-type-45260-7"> </a></td><td>HIV ART medication</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/training-solution-1/CodeSystem/cs-arvtreatment-activity-type"/>
+  <version value="0.1.0"/>
+  <name value="CSARVMedicationRequest"/>
+  <title value="ARV Treatment Medication Request"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-06-20T13:53:42+00:00"/>
+  <publisher value="Jembi Health Systems"/>
+  <contact>
+    <name value="Jembi Health Systems"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.jembi.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@jembi.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Richard Langford"/>
+    <telecom>
+      <system value="email"/>
+      <value value="richard.langford@jembi.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Codes used to represent a medication request for ART."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="1"/>
+  <concept>
+    <code value="45260-7"/>
+    <display value="HIV ART medication"/>
+  </concept>
+</CodeSystem>
