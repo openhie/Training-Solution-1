@@ -623,6 +623,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/CodeSystem/cs-arvtreatment-activity-type> ;
+         fhir:reference [ fhir:v "CodeSystem/cs-arvtreatment-activity-type" ]
+       ] ;
+       fhir:name [ fhir:v "ARV Treatment Medication Request" ] ;
+       fhir:description [ fhir:v "Codes used to represent a medication request for ART." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
@@ -1207,6 +1219,18 @@
        fhir:reference [
          fhir:link <http://openhie.org/fhir/training-solution-1/ValueSet/vs-test-types> ;
          fhir:reference [ fhir:v "ValueSet/vs-test-types" ]
+       ] ;
+       fhir:name [ fhir:v "Test Types" ] ;
+       fhir:description [ fhir:v "A list of HIV test types" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/CodeSystem/cs-test-types> ;
+         fhir:reference [ fhir:v "CodeSystem/cs-test-types" ]
        ] ;
        fhir:name [ fhir:v "Test Types" ] ;
        fhir:description [ fhir:v "A list of HIV test types" ] ;
