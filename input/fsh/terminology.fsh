@@ -12,24 +12,13 @@ Description:  "A list of specimen types."
 * $SCT#258580003 "Whole blood specimen"
 * $SCT#119364003 "Serum specimen"
 
-//Temporary untl the LOINC issue has been resolved when using HAPI FHIR.
-CodeSystem: CSTestTypes
-Id: cs-test-types
-Title: "Test Types"
-Description: "A list of HIV test types"
-* ^experimental = false
-* ^caseSensitive = true
-* #25842-6 "HIV 2 proviral DNA [Presence] in Specimen by NAA with probe detection"   
-* #25836-8 "HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection"
-
 ValueSet: VSTestTypes
 Id: vs-test-types
 Title: "Test Types"
 Description: "A list of HIV test types"
 * ^experimental = false
-* include codes from system CSTestTypes
-//* $LNC#25842-6 "HIV 2 proviral DNA [Presence] in Specimen by NAA with probe detection"   
-//* $LNC#25836-8 "HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection"
+* $LNC#25842-6 "HIV 2 proviral DNA [Presence] in Specimen by NAA with probe detection"   
+* $LNC#25836-8 "HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection"
 
 ValueSet: VSReasonForAssessment
 Id: vs-reason-for-assessment
@@ -117,22 +106,12 @@ Description: "A list of possible ARV treatment outcomes."
 * $SCT#737038009 "Declined consent for treatment"
 * $SCT#386473003 "Telephone follow-up"
 
-//Temporary untl the LOINC issue has been resolved when using HAPI FHIR.
-CodeSystem: CSARVMedicationRequest
-Id: cs-arvtreatment-activity-type
-Title: "ARV Treatment Medication Request"
-Description: "Codes used to represent a medication request for ART."
-* ^experimental = false
-* ^caseSensitive = true
-*  #45260-7 "HIV ART medication"
-
 ValueSet: VSARVMedicationRequest
 Id: vs-arvtreatment-activity-type
 Title: "ARV Treatment Medication Request"
 Description: "Codes used to represent a medication request for ART."
 * ^experimental = false
-* include codes from system CSARVMedicationRequest
-//*  $LNC#45260-7 "HIV ART medication"
+*  $LNC#45260-7 "HIV ART medication"
 
 ValueSet: VSARVRegimen
 Id: vs-arv-regimen

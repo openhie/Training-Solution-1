@@ -190,8 +190,7 @@ Description: "HIV Lab Order example"
 * identifier[PLAC].type.text = "HIV lab service request identifier"
 * status = #completed
 * intent = #order
-* code.coding.code = #25836-8
-* code.coding.system = "http://openhie.org/fhir/training-solution-1/CodeSystem/cs-test-types"
+* code = $LNC#25836-8
 * code.text = "Test Type"
 * code.coding.display = "HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection"
 * subject = Reference(HIVPatientExample)
@@ -309,8 +308,7 @@ Title: "HIV Lab Results Diagnostic Report example"
 Description: "HIV Lab Results Diagnostic Report example"
 * basedOn = Reference(HIVServiceRequestExample)
 * status = #final
-* code.coding.code = #25836-8 
-* code.coding.system = "http://openhie.org/fhir/training-solution-1/CodeSystem/cs-test-types"
+* code = $LNC#25836-8
 * code.text = "Test Type"
 * code.coding.display = "HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection"
 * subject = Reference(HIVPatientExample)
@@ -368,8 +366,7 @@ Description: "ARVCarePlan example"
 * period.start = "2022-12-01"
 * period.end = "2022-12-01"
 * activity.detail.kind = #MedicationRequest
-* activity.detail.code.coding.code = #45260-7 
-* activity.detail.code.coding.system = "http://openhie.org/fhir/training-solution-1/CodeSystem/cs-arvtreatment-activity-type"
+* activity.detail.code = $LNC#45260-7 
 * activity.detail.code.text = "ARV medication request"
 * activity.detail.code.coding.display = "HIV ART medication"
 * activity.detail.status = #in-progress
@@ -398,8 +395,7 @@ Description: "ARV Regimen switched or substituted example"
 * period.start = "2022-12-01"
 * period.end = "2022-12-01"
 * activity.detail.kind = #MedicationRequest
-* activity.detail.code.coding.code = #45260-7 
-* activity.detail.code.coding.system = "http://openhie.org/fhir/training-solution-1/CodeSystem/cs-arvtreatment-activity-type"
+* activity.detail.code = $LNC#45260-7 
 * activity.detail.code.text = "ARV medication request"
 * activity.detail.code.coding.display = "HIV ART medication"
 * activity.detail.status = #in-progress
