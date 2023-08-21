@@ -32,6 +32,7 @@ Description: "A patient resource for an HIV Patient"
 * address.state 1..1
 * address.country 1..1
 * contact 0..* MS
+* contact.address 0..0
 * contact.name.given 1..*
 * contact.name.family 1..1
 * contact.telecom 0..* MS
