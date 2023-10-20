@@ -1,6 +1,6 @@
 Invariant: Medical-Record-Number-Shall-Exist
 Description: "If Patient.identifier:NID exists, then Patient.identifier:MR SHALL also exist"
-Expression: "Patient.identifier:NID.exists() implies Patient.identifier:MR.exists()"
+Expression: "Patient.identifier.exists(slice = NID) implies Patient.identifier.exists(slice = MR)"
 Severity: #error
 
 Profile: HIVPatient
