@@ -63,6 +63,19 @@ Description: "Patient example"
 * extension[KPS].valueCodeableConcept.coding.system = "http://snomed.info/sct"
 * extension[KPS].valueCodeableConcept.coding.display = "Current drug user"
 
+
+* extension[PN].extension[code].valueCodeableConcept.text = "Nationality"
+* extension[PN].extension[code].valueCodeableConcept.coding.code = #ZA
+* extension[PN].extension[code].valueCodeableConcept.coding.display = "South Africa"
+* extension[PN].extension[code].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
+* extension[PN].extension[period].valuePeriod.start = "1983-05-22"
+
+* extension[PC].extension[code].valueCodeableConcept.text = "Citizenship"
+* extension[PC].extension[code].valueCodeableConcept.coding.code = #ZA
+* extension[PC].extension[code].valueCodeableConcept.coding.display = "South Africa"
+* extension[PC].extension[code].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
+* extension[PC].extension[period].valuePeriod.start = "1983-05-22"
+
 Instance: TargetFacilityEncounterExample
 InstanceOf: TargetFacilityEncounter
 Usage: #example

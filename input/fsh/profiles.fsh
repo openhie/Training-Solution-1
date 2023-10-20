@@ -1,8 +1,16 @@
+Invariant: Medical-Record-Number-Shall-Exist
+Description: "If Patient.identifier:NID exists, then Patient.identifier:MR SHALL also exist"
+Expression: 
+    "Patient.identifier.exists(system = 'http://openhie.org/fhir/training-solution-1/identifier/nid') 
+    implies Patient.identifier.exists(system = 'http://openhie.org/fhir/training-solution-1/identifier/mr')"
+Severity: #error
+
 Profile: HIVPatient
 Parent: Patient
 Id: hiv-patient
 Title: "Patient"
 Description: "A patient resource for an HIV Patient"
+* obeys Medical-Record-Number-Shall-Exist
 * identifier 1..*
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
@@ -11,10 +19,10 @@ Description: "A patient resource for an HIV Patient"
 * identifier ^slicing.description = "Slice based on the type of identifier."
 * identifier contains
     NID 0..1 and
-    MR 1..1
-* identifier[NID].value 0..1 MS
+    MR 0..1
+* identifier[NID].value 1..1 MS
 * identifier[NID].system = "http://openhie.org/fhir/training-solution-1/identifier/nid" (exactly)
-* identifier[MR].value 1..1
+* identifier[MR].value 1..1 MS
 * identifier[MR].system = "http://openhie.org/fhir/training-solution-1/identifier/mr" (exactly)
 * identifier[MR].type.coding.code = #MR
 * identifier[MR].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
@@ -40,6 +48,8 @@ Description: "A patient resource for an HIV Patient"
 * maritalStatus 1..1 
 * managingOrganization 1..1
 * extension contains KeyPopulationStatus named KPS 1..1
+* extension contains patient-nationality named PN 1..1
+* extension contains patient-citizenship named PC 1..1
 
 Extension: KeyPopulationStatus
 Id: key-population-status
