@@ -1,8 +1,14 @@
+Invariant: Medical-Record-Number-Shall-Exist
+Description: "If Patient.identifier[NID] exists, then Patient.identifier[MR] SHALL also exist"
+Expression: "Patient.identifier[NID].exists() implies Patient.identifier[MR].exists()"
+Severity: #error
+
 Profile: HIVPatient
 Parent: Patient
 Id: hiv-patient
 Title: "Patient"
 Description: "A patient resource for an HIV Patient"
+* obeys Medical-Record-Number-Shall-Exist
 * identifier 1..*
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
@@ -40,6 +46,8 @@ Description: "A patient resource for an HIV Patient"
 * maritalStatus 1..1 
 * managingOrganization 1..1
 * extension contains KeyPopulationStatus named KPS 1..1
+* extension contains patient-nationality named PN 1..1
+* extension contains patient-citizenship named PC 1..1
 
 Extension: KeyPopulationStatus
 Id: key-population-status
