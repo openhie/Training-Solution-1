@@ -19,10 +19,10 @@ Description: "A patient resource for an HIV Patient"
 * identifier ^slicing.description = "Slice based on the type of identifier."
 * identifier contains
     NID 0..1 and
-    MR 1..1
-* identifier[NID].value 0..1 MS
+    MR 0..1
+* identifier[NID].value 1..1 MS
 * identifier[NID].system = "http://openhie.org/fhir/training-solution-1/identifier/nid" (exactly)
-* identifier[MR].value 1..1
+* identifier[MR].value 1..1 MS
 * identifier[MR].system = "http://openhie.org/fhir/training-solution-1/identifier/mr" (exactly)
 * identifier[MR].type.coding.code = #MR
 * identifier[MR].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
