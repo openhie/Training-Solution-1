@@ -24,6 +24,7 @@ InstanceOf: HIVPatient
 Usage: #example
 Title: "Patient example"
 Description: "Patient example"
+//* meta.profile[+] = Canonical(IHE.PDQm.Patient)
 * identifier[NID].value = "NID1234567"
 * identifier[NID].system = "http://openhie.org/fhir/training-solution-1/identifier/nid"
 * identifier[MR].value = "ORG1-0765712"
@@ -125,6 +126,8 @@ Description: "Showing a confirmed HIV diagnosis"
 * note.text = "Additional information regarding the HIV diagnosis"
 * note.authorReference = Reference(HIVOrganizationExample)
 * note.time = "2015-02-07T13:28:17-05:00"
+* clinicalStatus.coding.code = #active
+* clinicalStatus.coding.system = "http://terminology.hl7.org/CodeSystem/condition-clinical"
 
 Instance: VLSpecimenExample
 InstanceOf: VLSpecimen
@@ -139,7 +142,7 @@ Description: "Viral Load Specimen example"
 * identifier[USID].type.text = "Specimen identifier"
 * type = $SCT#119361006
 * type.text = "Specimen Type"
-* type.coding.display = "Plasma specimen (specimen)"
+* type.coding.display = "Plasma specimen"
 * subject = Reference(HIVPatientExample)
 * collection.collectedDateTime = "2022-07-28"
 * note.authorReference = Reference(HIVOrganizationExample)
@@ -267,7 +270,7 @@ Description: "HIV Lab Order Cancellation Task example"
 * status = #cancelled
 * statusReason = $SCT#281264009
 * statusReason.text = "Reason For Canceling/Rejecting the Lab Order"
-* statusReason.coding.display = "Inappropriate bottle or container for sample (finding)"
+* statusReason.coding.display = "Inappropriate bottle or container for sample"
 * intent = #order
 * executionPeriod.end = "2022-07-30"
 * lastModified = "2022-07-30"
@@ -353,6 +356,7 @@ Description: "Date HIV Test Done example"
 * note.text = "Additional information regarding the HIV test"
 * note.authorReference = Reference(HIVOrganizationExample)
 * note.time = "2015-02-07T13:28:17-05:00"
+* performer = Reference(HIVOrganizationExample)
 
 Instance: ARVTreatmentExample
 InstanceOf: ARVTreatment
