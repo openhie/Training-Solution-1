@@ -1,5 +1,5 @@
 Profile: HIVPatient
-Parent: Patient
+Parent: IHE.PDQm.Patient
 Id: hiv-patient
 Title: "Patient"
 Description: "A patient resource for an HIV Patient"

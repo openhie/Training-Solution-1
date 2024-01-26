@@ -24,6 +24,7 @@ InstanceOf: HIVPatient
 Usage: #example
 Title: "Patient example"
 Description: "Patient example"
+//* meta.profile[+] = Canonical(IHE.PDQm.Patient)
 * identifier[NID].value = "NID1234567"
 * identifier[NID].system = "http://openhie.org/fhir/training-solution-1/identifier/nid"
 * identifier[MR].value = "ORG1-0765712"
