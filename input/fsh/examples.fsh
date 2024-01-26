@@ -126,7 +126,8 @@ Description: "Showing a confirmed HIV diagnosis"
 * note.text = "Additional information regarding the HIV diagnosis"
 * note.authorReference = Reference(HIVOrganizationExample)
 * note.time = "2015-02-07T13:28:17-05:00"
-* clinicalStatus = #active
+* clinicalStatus.coding.code = #active
+* clinicalStatus.coding.system = "http://terminology.hl7.org/CodeSystem/condition-clinical"
 
 Instance: VLSpecimenExample
 InstanceOf: VLSpecimen
