@@ -1,7 +1,7 @@
 Profile: PDQmPatient
 Parent: IHE.PDQm.Patient
 Id: pdqm-patient
-Title: "PDQmP Patient"
+Title: "PDQm Patient"
 Description: "A patient resource for an HIV Patient"
 * name.given 1..*
 * name.family 1..1
