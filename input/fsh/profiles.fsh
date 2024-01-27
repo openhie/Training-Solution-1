@@ -1,5 +1,89 @@
-Profile: HIVPatient
+Profile: PDQmPatient
 Parent: IHE.PDQm.Patient
+Id: pdqm-patient
+Title: "PDQmP Patient"
+Description: "A patient resource for an HIV Patient"
+* name.given 1..*
+* name.family 1..1
+* telecom 0..* MS
+* gender 1..1
+* birthDate 1..1
+* address 0..* MS
+* address.city 1..1
+* address.line 1..*
+* address.district 1..1
+* address.state 1..1
+* address.country 1..1
+
+Profile: PIXmPatient
+Parent: IHE.PIXm.Patient
+Id: pixm-patient
+Title: "PIXm Patient"
+Description: "A patient resource for an HIV Patient"
+* identifier 1..*
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier ^slicing.ordered = false
+* identifier ^slicing.description = "Slice based on the type of identifier."
+* identifier contains
+    NID 0..1 and
+    MR 1..1
+* identifier[NID].value 0..1 MS
+* identifier[NID].system = "http://openhie.org/fhir/training-solution-1/identifier/nid" (exactly)
+* identifier[MR].value 1..1
+* identifier[MR].system = "http://openhie.org/fhir/training-solution-1/identifier/mr" (exactly)
+* identifier[MR].type.coding.code = #MR
+* identifier[MR].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* identifier[MR].type.coding.display = "Medical record number"
+* identifier[MR].type.text = "Patient folder number"
+* name.given 1..*
+* name.family 1..1
+* telecom 0..* MS
+* gender 1..1
+* address 0..* MS
+* address.city 1..1
+* address.line 1..*
+* address.district 1..1
+* address.state 1..1
+* address.country 1..1
+
+Profile: PIXmPatientBirthDateRequired
+Parent: IHE.PIXm.Patient.BirthDateRequired
+Id: pixm-patient-birthate-required
+Title: "PIXm Patient - BirthDate Required"
+Description: "A patient resource for an HIV Patient"
+* identifier 1..*
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier ^slicing.ordered = false
+* identifier ^slicing.description = "Slice based on the type of identifier."
+* identifier contains
+    NID 0..1 and
+    MR 1..1
+* identifier[NID].value 0..1 MS
+* identifier[NID].system = "http://openhie.org/fhir/training-solution-1/identifier/nid" (exactly)
+* identifier[MR].value 1..1
+* identifier[MR].system = "http://openhie.org/fhir/training-solution-1/identifier/mr" (exactly)
+* identifier[MR].type.coding.code = #MR
+* identifier[MR].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* identifier[MR].type.coding.display = "Medical record number"
+* identifier[MR].type.text = "Patient folder number"
+* name.given 1..*
+* name.family 1..1
+* telecom 0..* MS
+* gender 1..1
+* birthDate 1..1
+* address 0..* MS
+* address.city 1..1
+* address.line 1..*
+* address.district 1..1
+* address.state 1..1
+* address.country 1..1
+
+Profile: HIVPatient
+Parent: Patient
 Id: hiv-patient
 Title: "Patient"
 Description: "A patient resource for an HIV Patient"
