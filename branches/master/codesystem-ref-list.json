@@ -1,0 +1,61 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://loinc.org",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "LOINC",
+      "title" : "Logical Observation Identifiers, Names and Codes (LOINC)",
+      "description" : "LOINC provides a set of universal names and ID codes for identifying laboratory and clinical test results.1,2 LOINC facilitates the exchange and pooling of results, such as blood hemoglobin, serum potassium, or vital signs, for clinical care, outcomes management, and research. LOINC's universal identifiers (names and codes) can be used in the context of order and observation exchanges between information systems that use syntax standards such as HL73, CEN TC251, ISO TC215, ASTM4, and DICOM. Specifically, the identifier can be used as the coded value for an observation in any other standard that uses the observation/observation value paradigm, whether messages, documents, application programming interface (API), etc. For example, LOINC codes are used widely in the OBX segment Observation Identifier field (OBX-3) of an ORU HL7 (HL7 version 2.x or ASTM 1238-9410) message that may be sent between a Clinical Laboratory Information Management Systems (LIMS) and Electronic Health Record Systems (EHR).5, 6 In this way, LOINC codes provide universal identifiers that allow the exchange of clinical data between heterogeneous computing environments.",
+      "oids" : ["2.16.840.1.113883.6.1"],
+      "uses" : {
+      },
+      "ValueSet-vs-test-types.html" : "Test Types",
+      "ValueSet-vs-arvtreatment-activity-type.html" : "ARV Treatment Medication Request"
+    },
+    {
+      "url" : "http://openhie.org/fhir/training-solution-1/CodeSystem/cs-art-regimen-change-type",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "CSARTRegimenChangeType",
+      "title" : "ART Regimen Change Types",
+      "description" : "A list of options to determine whether an ARV regimen was switched or substituted.",
+      "uses" : {
+      },
+      "ValueSet-vs-art-regimen-change-type.html" : "ART Regimen Change Types"
+    },
+    {
+      "url" : "http://openhie.org/fhir/training-solution-1/CodeSystem/cs-key-population-status",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "CSKeyPopulationStatus",
+      "title" : "Key Population Status",
+      "description" : "A list of key population types",
+      "uses" : {
+      },
+      "ValueSet-vs-key-population-status.html" : "Key Population Status"
+    },
+    {
+      "url" : "http://snomed.info/sct",
+      "version" : null,
+      "status" : "active",
+      "name" : "SNOMED_CT",
+      "title" : "SNOMED CT (all versions)",
+      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+      "oids" : ["2.16.840.1.113883.6.96"],
+      "uses" : {
+      },
+      "ValueSet-vs-artregimen-lines.html" : "ART Regimen Lines",
+      "ValueSet-vs-condition.html" : "Conditions",
+      "ValueSet-vs-vl-suppression.html" : "Viral Load Suppressions Status",
+      "ValueSet-vs-hiv-test-done.html" : "HIV Test Done",
+      "ValueSet-vs-specimen-type.html" : "Specimen Type Used In Viral Load testing",
+      "ValueSet-vs-arv-regimen.html" : "A list of ARV regimen",
+      "ValueSet-vs-key-population-status.html" : "Key Population Status",
+      "ValueSet-vs-reason-sample-cancelled-or-rejected.html" : "Reasons why a lab order was cancelled or rejected",
+      "ValueSet-vs-careplan-outcome.html" : "ARV treatment outcomes",
+      "ValueSet-vs-vl-result-code.html" : "Viral Load Result Code",
+      "ValueSet-vs-reason-for-assessment.html" : "Reason for Assessment"
+    }
+  ]
+}

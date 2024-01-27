@@ -1,0 +1,119 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/training-solution-1/ValueSet/vs-arv-regimen> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "vs-arv-regimen"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/387105006\">387105006</a></td><td>Didanosine</td></tr><tr><td><a href=\"http://snomed.info/id/387005008\">387005008</a></td><td>Abacavir</td></tr><tr><td><a href=\"http://snomed.info/id/772188001\">772188001</a></td><td>Product containing only abacavir and lamivudine</td></tr><tr><td><a href=\"http://snomed.info/id/427314002\">427314002</a></td><td>Antiviral therapy</td></tr><tr><td><a href=\"http://snomed.info/id/878898002\">878898002</a></td><td>Product containing only atazanavir and ritonavir</td></tr><tr><td><a href=\"http://snomed.info/id/713464000\">713464000</a></td><td>Dolutegravir</td></tr><tr><td><a href=\"http://snomed.info/id/387001004\">387001004</a></td><td>Efavirenz</td></tr><tr><td><a href=\"http://snomed.info/id/404856006\">404856006</a></td><td>Emtricitabine</td></tr><tr><td><a href=\"http://snomed.info/id/432121008\">432121008</a></td><td>Etravirine</td></tr><tr><td><a href=\"http://snomed.info/id/386897000\">386897000</a></td><td>Lamivudine</td></tr><tr><td><a href=\"http://snomed.info/id/776569000\">776569000</a></td><td>Product containing only lopinavir and ritonavir</td></tr><tr><td><a href=\"http://snomed.info/id/386898005\">386898005</a></td><td>Nevirapine</td></tr><tr><td><a href=\"http://snomed.info/id/429707008\">429707008</a></td><td>Raltegravir</td></tr><tr><td><a href=\"http://snomed.info/id/703123005\">703123005</a></td><td>Rilpivirine</td></tr><tr><td><a href=\"http://snomed.info/id/386896009\">386896009</a></td><td>Ritonavir</td></tr><tr><td><a href=\"http://snomed.info/id/386895008\">386895008</a></td><td>Stavudine</td></tr><tr><td><a href=\"http://snomed.info/id/422091007\">422091007</a></td><td>Tenofovir</td></tr><tr><td><a href=\"http://snomed.info/id/421203005\">421203005</a></td><td>Tenofovir disoproxil</td></tr><tr><td><a href=\"http://snomed.info/id/414090006\">414090006</a></td><td>Product containing emtricitabine and tenofovir</td></tr><tr><td><a href=\"http://snomed.info/id/387151007\">387151007</a></td><td>Zidovudine</td></tr><tr><td><a href=\"http://snomed.info/id/776469003\">776469003</a></td><td>Product containing only lamivudine and zidovudine</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://openhie.org/fhir/training-solution-1/ValueSet/vs-arv-regimen"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "VSARVRegimen"] ; # 
+  fhir:title [ fhir:v "A list of ARV regimen"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-10-20T07:47:51+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Jembi Health Systems"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Jembi Health Systems" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.jembi.org" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@jembi.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Richard Langford" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "richard.langford@jembi.org" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A list of ARV regimen."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "387105006" ] ;
+         fhir:display [ fhir:v "Didanosine" ]
+       ] [
+         fhir:code [ fhir:v "387005008" ] ;
+         fhir:display [ fhir:v "Abacavir" ]
+       ] [
+         fhir:code [ fhir:v "772188001" ] ;
+         fhir:display [ fhir:v "Product containing only abacavir and lamivudine" ]
+       ] [
+         fhir:code [ fhir:v "427314002" ] ;
+         fhir:display [ fhir:v "Antiviral therapy" ]
+       ] [
+         fhir:code [ fhir:v "878898002" ] ;
+         fhir:display [ fhir:v "Product containing only atazanavir and ritonavir" ]
+       ] [
+         fhir:code [ fhir:v "713464000" ] ;
+         fhir:display [ fhir:v "Dolutegravir" ]
+       ] [
+         fhir:code [ fhir:v "387001004" ] ;
+         fhir:display [ fhir:v "Efavirenz" ]
+       ] [
+         fhir:code [ fhir:v "404856006" ] ;
+         fhir:display [ fhir:v "Emtricitabine" ]
+       ] [
+         fhir:code [ fhir:v "432121008" ] ;
+         fhir:display [ fhir:v "Etravirine" ]
+       ] [
+         fhir:code [ fhir:v "386897000" ] ;
+         fhir:display [ fhir:v "Lamivudine" ]
+       ] [
+         fhir:code [ fhir:v "776569000" ] ;
+         fhir:display [ fhir:v "Product containing only lopinavir and ritonavir" ]
+       ] [
+         fhir:code [ fhir:v "386898005" ] ;
+         fhir:display [ fhir:v "Nevirapine" ]
+       ] [
+         fhir:code [ fhir:v "429707008" ] ;
+         fhir:display [ fhir:v "Raltegravir" ]
+       ] [
+         fhir:code [ fhir:v "703123005" ] ;
+         fhir:display [ fhir:v "Rilpivirine" ]
+       ] [
+         fhir:code [ fhir:v "386896009" ] ;
+         fhir:display [ fhir:v "Ritonavir" ]
+       ] [
+         fhir:code [ fhir:v "386895008" ] ;
+         fhir:display [ fhir:v "Stavudine" ]
+       ] [
+         fhir:code [ fhir:v "422091007" ] ;
+         fhir:display [ fhir:v "Tenofovir" ]
+       ] [
+         fhir:code [ fhir:v "421203005" ] ;
+         fhir:display [ fhir:v "Tenofovir disoproxil" ]
+       ] [
+         fhir:code [ fhir:v "414090006" ] ;
+         fhir:display [ fhir:v "Product containing emtricitabine and tenofovir" ]
+       ] [
+         fhir:code [ fhir:v "387151007" ] ;
+         fhir:display [ fhir:v "Zidovudine" ]
+       ] [
+         fhir:code [ fhir:v "776469003" ] ;
+         fhir:display [ fhir:v "Product containing only lamivudine and zidovudine" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

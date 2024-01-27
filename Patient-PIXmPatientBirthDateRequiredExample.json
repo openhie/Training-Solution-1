@@ -1,0 +1,56 @@
+{
+  "resourceType" : "Patient",
+  "id" : "PIXmPatientBirthDateRequiredExample",
+  "meta" : {
+    "profile" : ["http://openhie.org/fhir/training-solution-1/StructureDefinition/pixm-patient-birthate-required"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Jane Maria Smith (OFFICIAL)</b> female, DoB: 1990-12-12 ( Patient folder number:\u00a0ORG1-0765712)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Id:</td><td colspan=\"3\">id:\u00a0NID1234567</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li><a href=\"tel:+27821234567\">+27821234567</a></li><li><a href=\"mailto:someone@example.com\">someone@example.com</a></li><li>99 Walmer Blvd Sunnydale Cape Town Western Province South Africa </li></ul></td></tr></table></div>"
+  },
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "MR",
+        "display" : "Medical record number"
+      }],
+      "text" : "Patient folder number"
+    },
+    "system" : "http://openhie.org/fhir/training-solution-1/identifier/mr",
+    "value" : "ORG1-0765712"
+  },
+  {
+    "system" : "http://openhie.org/fhir/training-solution-1/identifier/nid",
+    "value" : "NID1234567"
+  }],
+  "name" : [{
+    "use" : "official",
+    "family" : "Smith",
+    "given" : ["Jane",
+    "Maria"]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "+27821234567"
+  },
+  {
+    "system" : "email",
+    "value" : "someone@example.com"
+  }],
+  "gender" : "female",
+  "birthDate" : "1990-12-12",
+  "address" : [{
+    "line" : ["99",
+    "Walmer Blvd",
+    "Sunnydale"],
+    "city" : "Cape Town",
+    "district" : "City of Cape Town",
+    "state" : "Western Province",
+    "country" : "South Africa"
+  }]
+}

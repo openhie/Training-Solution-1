@@ -1,0 +1,135 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-art-regimen-change-type",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VSARTRegimenChangeType",
+      "title" : "ART Regimen Change Types",
+      "description" : "A list of options to determine whether an ARV regimen was switched or substituted.",
+      "systems" : [
+        "http://openhie.org/fhir/training-solution-1/CodeSystem/cs-art-regimen-change-type"
+      ]
+    },
+    {
+      "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-artregimen-lines",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VSARTRegimenLines",
+      "title" : "ART Regimen Lines",
+      "description" : "A list of ART regimen therapeutic lines.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-arv-regimen",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VSARVRegimen",
+      "title" : "A list of ARV regimen",
+      "description" : "A list of ARV regimen.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-arvtreatment-activity-type",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VSARVMedicationRequest",
+      "title" : "ARV Treatment Medication Request",
+      "description" : "Codes used to represent a medication request for ART.",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-careplan-outcome",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VSCarePlanActivityOutcome",
+      "title" : "ARV treatment outcomes",
+      "description" : "A list of possible ARV treatment outcomes.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-condition",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VSCondition",
+      "title" : "Conditions",
+      "description" : "A list of possible HIV conditions.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-hiv-test-done",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VSHIVTestDone",
+      "title" : "HIV Test Done",
+      "description" : "Used by the observation to indicate that a HIV test was performed.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-key-population-status",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VSKeyPopulationSatus",
+      "title" : "Key Population Status",
+      "description" : "A list of key population types",
+      "systems" : [
+        "http://openhie.org/fhir/training-solution-1/CodeSystem/cs-key-population-status",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-reason-for-assessment",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VSReasonForAssessment",
+      "title" : "Reason for Assessment",
+      "description" : "A list of reasons associated with the service request for the lab order.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-reason-sample-cancelled-or-rejected",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VSReasonForSampleCancellationOrRejection",
+      "title" : "Reasons why a lab order was cancelled or rejected",
+      "description" : "Reasons why a lab order was cancelled or rejected.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-specimen-type",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VSSpecimenType",
+      "title" : "Specimen Type Used In Viral Load testing",
+      "description" : "A list of specimen types.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-test-types",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VSTestTypes",
+      "title" : "Test Types",
+      "description" : "A list of HIV test types",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-vl-result-code",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VSVLResultCode",
+      "title" : "Viral Load Result Code",
+      "description" : "A code used to indicate the category for the lab result.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-vl-suppression",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VSVLSuppression",
+      "title" : "Viral Load Suppressions Status",
+      "description" : "Describes a patient's current viral load status.",
+      "systems" : ["http://snomed.info/sct"]
+    }
+  ]
+}

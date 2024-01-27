@@ -1,0 +1,275 @@
+[
+  {
+    "id" : "cs-art-regimen-change-type",
+    "type" : "CodeSystem",
+    "url" : "http://openhie.org/fhir/training-solution-1/CodeSystem/cs-art-regimen-change-type",
+    "version" : "0.1.0",
+    "name" : "CSARTRegimenChangeType"
+  },
+  {
+    "id" : "cs-key-population-status",
+    "type" : "CodeSystem",
+    "url" : "http://openhie.org/fhir/training-solution-1/CodeSystem/cs-key-population-status",
+    "version" : "0.1.0",
+    "name" : "CSKeyPopulationStatus"
+  },
+  {
+    "id" : "openhie.fhir.training.solution.1",
+    "type" : "ImplementationGuide",
+    "url" : "http://openhie.org/fhir/training-solution-1/ImplementationGuide/openhie.fhir.training.solution.1",
+    "version" : "0.1.0",
+    "name" : "TrainingSolution1"
+  },
+  {
+    "id" : "HIV-lab-order",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/HIV-lab-order",
+    "version" : "0.1.0",
+    "name" : "HIVServiceRequest"
+  },
+  {
+    "id" : "art-regimen-line",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/art-regimen-line",
+    "version" : "0.1.0",
+    "name" : "ARTRegimenLine"
+  },
+  {
+    "id" : "art-regimen-switched-or-substituted",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/art-regimen-switched-or-substituted",
+    "version" : "0.1.0",
+    "name" : "ARTRegimenSwitchedOrSubstituted"
+  },
+  {
+    "id" : "date-hiv-test-done",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/date-hiv-test-done",
+    "version" : "0.1.0",
+    "name" : "DateHIVTestDone"
+  },
+  {
+    "id" : "hiv-arv-treatment",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-arv-treatment",
+    "version" : "0.1.0",
+    "name" : "ARVTreatment"
+  },
+  {
+    "id" : "hiv-care-next-visit",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-care-next-visit",
+    "version" : "0.1.0",
+    "name" : "HIVCareNextAppointment"
+  },
+  {
+    "id" : "hiv-diagnosis",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-diagnosis",
+    "version" : "0.1.0",
+    "name" : "HIVDiagnosis"
+  },
+  {
+    "id" : "hiv-diagnostic-report",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-diagnostic-report",
+    "version" : "0.1.0",
+    "name" : "HIVDiagnosticReport"
+  },
+  {
+    "id" : "hiv-episode-of-care",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-episode-of-care",
+    "version" : "0.1.0",
+    "name" : "HIVEpisodeOfCare"
+  },
+  {
+    "id" : "hiv-lab-task",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task",
+    "version" : "0.1.0",
+    "name" : "HIVLabTask"
+  },
+  {
+    "id" : "hiv-organization",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-organization",
+    "version" : "0.1.0",
+    "name" : "HIVOrganization"
+  },
+  {
+    "id" : "hiv-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-patient",
+    "version" : "0.1.0",
+    "name" : "HIVPatient"
+  },
+  {
+    "id" : "hiv-practitioner",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-practitioner",
+    "version" : "0.1.0",
+    "name" : "HIVPractitioner"
+  },
+  {
+    "id" : "hiv-service-request-location",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-service-request-location",
+    "version" : "0.1.0",
+    "name" : "HIVServiceRequestLocation"
+  },
+  {
+    "id" : "hiv-test-results",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-test-results",
+    "version" : "0.1.0",
+    "name" : "HIVTestResult"
+  },
+  {
+    "id" : "key-population-status",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/key-population-status",
+    "version" : "0.1.0",
+    "name" : "KeyPopulationStatus"
+  },
+  {
+    "id" : "pdqm-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/pdqm-patient",
+    "version" : "0.1.0",
+    "name" : "PDQmPatient"
+  },
+  {
+    "id" : "pixm-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/pixm-patient",
+    "version" : "0.1.0",
+    "name" : "PIXmPatient"
+  },
+  {
+    "id" : "pixm-patient-birthate-required",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/pixm-patient-birthate-required",
+    "version" : "0.1.0",
+    "name" : "PIXmPatientBirthDateRequired"
+  },
+  {
+    "id" : "target-facility-encounter",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/target-facility-encounter",
+    "version" : "0.1.0",
+    "name" : "TargetFacilityEncounter"
+  },
+  {
+    "id" : "transferring-facility-encounter",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/transferring-facility-encounter",
+    "version" : "0.1.0",
+    "name" : "TransferringFacilityEncounter"
+  },
+  {
+    "id" : "viral-load-specimen",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/training-solution-1/StructureDefinition/viral-load-specimen",
+    "version" : "0.1.0",
+    "name" : "VLSpecimen"
+  },
+  {
+    "id" : "vs-art-regimen-change-type",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-art-regimen-change-type",
+    "version" : "0.1.0",
+    "name" : "VSARTRegimenChangeType"
+  },
+  {
+    "id" : "vs-artregimen-lines",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-artregimen-lines",
+    "version" : "0.1.0",
+    "name" : "VSARTRegimenLines"
+  },
+  {
+    "id" : "vs-arv-regimen",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-arv-regimen",
+    "version" : "0.1.0",
+    "name" : "VSARVRegimen"
+  },
+  {
+    "id" : "vs-arvtreatment-activity-type",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-arvtreatment-activity-type",
+    "version" : "0.1.0",
+    "name" : "VSARVMedicationRequest"
+  },
+  {
+    "id" : "vs-careplan-outcome",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-careplan-outcome",
+    "version" : "0.1.0",
+    "name" : "VSCarePlanActivityOutcome"
+  },
+  {
+    "id" : "vs-condition",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-condition",
+    "version" : "0.1.0",
+    "name" : "VSCondition"
+  },
+  {
+    "id" : "vs-hiv-test-done",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-hiv-test-done",
+    "version" : "0.1.0",
+    "name" : "VSHIVTestDone"
+  },
+  {
+    "id" : "vs-key-population-status",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-key-population-status",
+    "version" : "0.1.0",
+    "name" : "VSKeyPopulationSatus"
+  },
+  {
+    "id" : "vs-reason-for-assessment",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-reason-for-assessment",
+    "version" : "0.1.0",
+    "name" : "VSReasonForAssessment"
+  },
+  {
+    "id" : "vs-reason-sample-cancelled-or-rejected",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-reason-sample-cancelled-or-rejected",
+    "version" : "0.1.0",
+    "name" : "VSReasonForSampleCancellationOrRejection"
+  },
+  {
+    "id" : "vs-specimen-type",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-specimen-type",
+    "version" : "0.1.0",
+    "name" : "VSSpecimenType"
+  },
+  {
+    "id" : "vs-test-types",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-test-types",
+    "version" : "0.1.0",
+    "name" : "VSTestTypes"
+  },
+  {
+    "id" : "vs-vl-result-code",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-vl-result-code",
+    "version" : "0.1.0",
+    "name" : "VSVLResultCode"
+  },
+  {
+    "id" : "vs-vl-suppression",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-vl-suppression",
+    "version" : "0.1.0",
+    "name" : "VSVLSuppression"
+  }
+]

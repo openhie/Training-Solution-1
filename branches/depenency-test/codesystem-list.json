@@ -1,0 +1,20 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://openhie.org/fhir/training-solution-1/CodeSystem/cs-art-regimen-change-type",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "CSARTRegimenChangeType",
+      "title" : "ART Regimen Change Types",
+      "description" : "A list of options to determine whether an ARV regimen was switched or substituted."
+    },
+    {
+      "url" : "http://openhie.org/fhir/training-solution-1/CodeSystem/cs-key-population-status",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "CSKeyPopulationStatus",
+      "title" : "Key Population Status",
+      "description" : "A list of key population types"
+    }
+  ]
+}

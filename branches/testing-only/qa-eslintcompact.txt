@@ -1,0 +1,11 @@
+﻿/github/workspace/fsh-generated/resources/Bundle-EMR.json: line 297, col 8, Warning - Best Practice Recommendation: In general, all observations should have a performer (INVALID)
+/github/workspace/fsh-generated/resources/Bundle-EMR.json: line 297, col 8, Warning - Best Practice Recommendation: In general, all observations should have a performer (INVALID)
+/github/workspace/fsh-generated/resources/Observation-DateHIVTestDoneExample.json: line 1, col 2, Warning - Best Practice Recommendation: In general, all observations should have a performer (INVALID)
+/github/workspace/fsh-generated/resources/ValueSet-vs-reason-for-assessment.json: line 1, col 2524, Info - This SNOMED-CT based include has some concepts with semantic tags (FSN terms) and some without (preferred terms) - check that this is what is intended  (examples for FSN: [Breastfeeding (mother)] and examples for no FSN: [Pregnancy, Repeat laboratory specimen sent, Screened - no result yet, Absent response to treatment, Chronic disease - treatment changed]) (BUSINESSRULE)
+
+TrainingSolution1 : Validation Results
+=========================================
+
+err = 0, warn = 3, info = 1
+IG Publisher Version: 1.4.16
+Generated Fri Oct 20 07:49:25 UTC 2023. FHIR version 4.0.1 for openhie.fhir.training.solution.1#0.1.0 (canonical = http://openhie.org/fhir/training-solution-1)

@@ -1,0 +1,1401 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/training-solution-1/ImplementationGuide/openhie.fhir.training.solution.1> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "openhie.fhir.training.solution.1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TrainingSolution1</h2><p>The official URL for this implementation guide is: </p><pre>http://openhie.org/fhir/training-solution-1/ImplementationGuide/openhie.fhir.training.solution.1</pre><div><p>A FHIR Implementation Guide which represents the solution to a FHIR training hackathon (https://docs.google.com/document/d/1MYZHukPqMvZMSbtwm8SRcHnl7ee9bvC6NtZTwFQd45I).</p>\n</div></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://openhie.org/fhir/training-solution-1/ImplementationGuide/openhie.fhir.training.solution.1"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "TrainingSolution1"] ; # 
+  fhir:title [ fhir:v "HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-03-24"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Jembi Health Systems"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Jembi Health Systems" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.jembi.org" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@jembi.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Richard Langford" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "richard.langford@jembi.org" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A FHIR Implementation Guide which represents the solution to a FHIR training hackathon (https://docs.google.com/document/d/1MYZHukPqMvZMSbtwm8SRcHnl7ee9bvC6NtZTwFQd45I)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:packageId [ fhir:v "openhie.fhir.training.solution.1"] ; # 
+  fhir:license [ fhir:v "CC0-1.0"] ; # 
+  fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
+  fhir:dependsOn ( [
+     fhir:id [ fhir:v "hl7tx" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
+     fhir:version [ fhir:v "5.3.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7ext" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
+     fhir:version [ fhir:v "1.0.0" ]
+  ] ) ; # 
+  fhir:definition [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "copyrightyear" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "2021+" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "releaselabel" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "STU1" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "autoload-resources" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-qa" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/qa" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-temp" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/pages" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-output" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "output" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-suppressed-warnings" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-history" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://openhie.org/fhir/training-solution-1/history.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-html" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-md" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page-md.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-contact" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-context" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-copyright" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-jurisdiction" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-license" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-publisher" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-version" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-wg" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "active-tables" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "fmm-definition" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "propagate-status" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludelogbinaryformat" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "tabbed-snapshots" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#current" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "copyrightyear" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "2021+" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "releaselabel" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "STU1" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "autoload-resources" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-qa" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/qa" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-temp" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/pages" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-output" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "output" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-suppressed-warnings" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-history" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://openhie.org/fhir/training-solution-1/history.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-html" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-md" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page-md.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-contact" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-context" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-copyright" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-jurisdiction" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-license" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-publisher" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-version" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-wg" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "active-tables" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "fmm-definition" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "propagate-status" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludelogbinaryformat" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "tabbed-snapshots" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/ValueSet/vs-arv-regimen> ;
+         fhir:reference [ fhir:v "ValueSet/vs-arv-regimen" ]
+       ] ;
+       fhir:name [ fhir:v "A list of ARV regimen" ] ;
+       fhir:description [ fhir:v "A list of ARV regimen." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/ValueSet/vs-art-regimen-change-type> ;
+         fhir:reference [ fhir:v "ValueSet/vs-art-regimen-change-type" ]
+       ] ;
+       fhir:name [ fhir:v "ART Regimen Change Types" ] ;
+       fhir:description [ fhir:v "A list of options to determine whether an ARV regimen was switched or substituted." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/CodeSystem/cs-art-regimen-change-type> ;
+         fhir:reference [ fhir:v "CodeSystem/cs-art-regimen-change-type" ]
+       ] ;
+       fhir:name [ fhir:v "ART Regimen Change Types" ] ;
+       fhir:description [ fhir:v "A list of options to determine whether an ARV regimen was switched or substituted." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/art-regimen-line> ;
+         fhir:reference [ fhir:v "StructureDefinition/art-regimen-line" ]
+       ] ;
+       fhir:name [ fhir:v "ART Regimen Line" ] ;
+       fhir:description [ fhir:v "Therapeutic lines that are used to classify the patient's currently prescribed ARV regimen." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/ValueSet/vs-artregimen-lines> ;
+         fhir:reference [ fhir:v "ValueSet/vs-artregimen-lines" ]
+       ] ;
+       fhir:name [ fhir:v "ART Regimen Lines" ] ;
+       fhir:description [ fhir:v "A list of ART regimen therapeutic lines." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/art-regimen-switched-or-substituted> ;
+         fhir:reference [ fhir:v "StructureDefinition/art-regimen-switched-or-substituted" ]
+       ] ;
+       fhir:name [ fhir:v "ART Regimen Switched Or Substituted" ] ;
+       fhir:description [ fhir:v "The ARV regimen has been switched to a new ARV regimen or has been substituted by another ARV regimen." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CarePlan" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/CarePlan/ARVTreatmentRegimenSwitchedOrSubstitutedExample> ;
+         fhir:reference [ fhir:v "CarePlan/ARVTreatmentRegimenSwitchedOrSubstitutedExample" ]
+       ] ;
+       fhir:name [ fhir:v "ARV Regimen switched or substituted example" ] ;
+       fhir:description [ fhir:v "ARV Regimen switched or substituted example" ] ;
+       fhir:example [
+         fhir:v "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-arv-treatment"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-arv-treatment>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-arv-treatment> ;
+         fhir:reference [ fhir:v "StructureDefinition/hiv-arv-treatment" ]
+       ] ;
+       fhir:name [ fhir:v "ARV Treatment" ] ;
+       fhir:description [ fhir:v "This profile is to record prescribed ARV regimen against a given therapeutic line." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/ValueSet/vs-arvtreatment-activity-type> ;
+         fhir:reference [ fhir:v "ValueSet/vs-arvtreatment-activity-type" ]
+       ] ;
+       fhir:name [ fhir:v "ARV Treatment Medication Request" ] ;
+       fhir:description [ fhir:v "Codes used to represent a medication request for ART." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/ValueSet/vs-careplan-outcome> ;
+         fhir:reference [ fhir:v "ValueSet/vs-careplan-outcome" ]
+       ] ;
+       fhir:name [ fhir:v "ARV treatment outcomes" ] ;
+       fhir:description [ fhir:v "A list of possible ARV treatment outcomes." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CarePlan" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/CarePlan/ARVTreatmentRefusedExample> ;
+         fhir:reference [ fhir:v "CarePlan/ARVTreatmentRefusedExample" ]
+       ] ;
+       fhir:name [ fhir:v "ARV Treatment Refused Example" ] ;
+       fhir:description [ fhir:v "ARV Treatment Refused Example" ] ;
+       fhir:example [
+         fhir:v "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-arv-treatment"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-arv-treatment>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CarePlan" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/CarePlan/ARVTreatmentExample> ;
+         fhir:reference [ fhir:v "CarePlan/ARVTreatmentExample" ]
+       ] ;
+       fhir:name [ fhir:v "ARVCarePlan example" ] ;
+       fhir:description [ fhir:v "ARVCarePlan example" ] ;
+       fhir:example [
+         fhir:v "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-arv-treatment"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-arv-treatment>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/ValueSet/vs-condition> ;
+         fhir:reference [ fhir:v "ValueSet/vs-condition" ]
+       ] ;
+       fhir:name [ fhir:v "Conditions" ] ;
+       fhir:description [ fhir:v "A list of possible HIV conditions." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CarePlan" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/CarePlan/ARVTreatmentContactedExample> ;
+         fhir:reference [ fhir:v "CarePlan/ARVTreatmentContactedExample" ]
+       ] ;
+       fhir:name [ fhir:v "Contacted For ARV Treatment Example" ] ;
+       fhir:description [ fhir:v "Contacted For ARV Treatment Example" ] ;
+       fhir:example [
+         fhir:v "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-arv-treatment"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-arv-treatment>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/date-hiv-test-done> ;
+         fhir:reference [ fhir:v "StructureDefinition/date-hiv-test-done" ]
+       ] ;
+       fhir:name [ fhir:v "Date HIV Test Done" ] ;
+       fhir:description [ fhir:v "This profile is to record the date when HIV test was done for a patient." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/Observation/DateHIVTestDoneExample> ;
+         fhir:reference [ fhir:v "Observation/DateHIVTestDoneExample" ]
+       ] ;
+       fhir:name [ fhir:v "Date HIV Test Done example" ] ;
+       fhir:description [ fhir:v "Date HIV Test Done example" ] ;
+       fhir:example [
+         fhir:v "http://openhie.org/fhir/training-solution-1/StructureDefinition/date-hiv-test-done"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/date-hiv-test-done>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-diagnosis> ;
+         fhir:reference [ fhir:v "StructureDefinition/hiv-diagnosis" ]
+       ] ;
+       fhir:name [ fhir:v "Diagnosis" ] ;
+       fhir:description [ fhir:v "This profile represents the confirmation of HIV diagnosis." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-diagnostic-report> ;
+         fhir:reference [ fhir:v "StructureDefinition/hiv-diagnostic-report" ]
+       ] ;
+       fhir:name [ fhir:v "Diagnostic Report" ] ;
+       fhir:description [ fhir:v "A report as a result of the lab task being completed." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Condition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/Condition/HIVDiagnosisExample> ;
+         fhir:reference [ fhir:v "Condition/HIVDiagnosisExample" ]
+       ] ;
+       fhir:name [ fhir:v "HIV Condition example" ] ;
+       fhir:description [ fhir:v "Showing a confirmed HIV diagnosis" ] ;
+       fhir:example [
+         fhir:v "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-diagnosis"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-diagnosis>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EpisodeOfCare" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/EpisodeOfCare/HIVEpisodeOfCareExample> ;
+         fhir:reference [ fhir:v "EpisodeOfCare/HIVEpisodeOfCareExample" ]
+       ] ;
+       fhir:name [ fhir:v "HIV Episode Of Care" ] ;
+       fhir:description [ fhir:v "This resource is used for Management of a Patient's HIV Programme." ] ;
+       fhir:example [
+         fhir:v "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-episode-of-care"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-episode-of-care>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Task" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/Task/HIVLabOrderCancellationTaskExample> ;
+         fhir:reference [ fhir:v "Task/HIVLabOrderCancellationTaskExample" ]
+       ] ;
+       fhir:name [ fhir:v "HIV Lab Order Cancellation  example" ] ;
+       fhir:description [ fhir:v "HIV Lab Order Cancellation Task example" ] ;
+       fhir:example [
+         fhir:v "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ServiceRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/ServiceRequest/HIVServiceRequestExample> ;
+         fhir:reference [ fhir:v "ServiceRequest/HIVServiceRequestExample" ]
+       ] ;
+       fhir:name [ fhir:v "HIV Lab Order example" ] ;
+       fhir:description [ fhir:v "HIV Lab Order example" ] ;
+       fhir:example [
+         fhir:v "http://openhie.org/fhir/training-solution-1/StructureDefinition/HIV-lab-order"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/HIV-lab-order>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Task" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/Task/HIVLabOrderRejectionTaskExample> ;
+         fhir:reference [ fhir:v "Task/HIVLabOrderRejectionTaskExample" ]
+       ] ;
+       fhir:name [ fhir:v "HIV Lab Order Rejection  example" ] ;
+       fhir:description [ fhir:v "HIV Lab Order Rejection Task example" ] ;
+       fhir:example [
+         fhir:v "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "DiagnosticReport" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/DiagnosticReport/HIVLabResultsDiagnosticReportExample> ;
+         fhir:reference [ fhir:v "DiagnosticReport/HIVLabResultsDiagnosticReportExample" ]
+       ] ;
+       fhir:name [ fhir:v "HIV Lab Results Diagnostic Report example" ] ;
+       fhir:description [ fhir:v "HIV Lab Results Diagnostic Report example" ] ;
+       fhir:example [
+         fhir:v "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-diagnostic-report"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-diagnostic-report>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-organization> ;
+         fhir:reference [ fhir:v "StructureDefinition/hiv-organization" ]
+       ] ;
+       fhir:name [ fhir:v "HIV Organization" ] ;
+       fhir:description [ fhir:v "Organization providing HIV Testing Services." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/Organization/HIVOrganizationExample> ;
+         fhir:reference [ fhir:v "Organization/HIVOrganizationExample" ]
+       ] ;
+       fhir:name [ fhir:v "HIV Organization Example" ] ;
+       fhir:description [ fhir:v "Organization example" ] ;
+       fhir:example [
+         fhir:v "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-organization"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-organization>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/Organization/HIVServiceRequestLocationExample> ;
+         fhir:reference [ fhir:v "Organization/HIVServiceRequestLocationExample" ]
+       ] ;
+       fhir:name [ fhir:v "HIV Service Request Location example" ] ;
+       fhir:description [ fhir:v "HIV Service Request Location example" ] ;
+       fhir:example [
+         fhir:v "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-service-request-location"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-service-request-location>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/Bundle/EMR> ;
+         fhir:reference [ fhir:v "Bundle/EMR" ]
+       ] ;
+       fhir:name [ fhir:v "HIV Submit EMR Bundle Example" ] ;
+       fhir:description [ fhir:v "HIV Submit EMR Bundle Example" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/Bundle/LabCancellation> ;
+         fhir:reference [ fhir:v "Bundle/LabCancellation" ]
+       ] ;
+       fhir:name [ fhir:v "HIV Submit Lab Cancellation Bundle Example" ] ;
+       fhir:description [ fhir:v "HIV Submit Lab Cancellation Bundle Example" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/Bundle/LabOrder> ;
+         fhir:reference [ fhir:v "Bundle/LabOrder" ]
+       ] ;
+       fhir:name [ fhir:v "HIV Submit Lab Order Bundle Example" ] ;
+       fhir:description [ fhir:v "HIV Submit Lab Order Bundle Example" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/Bundle/LabRejection> ;
+         fhir:reference [ fhir:v "Bundle/LabRejection" ]
+       ] ;
+       fhir:name [ fhir:v "HIV Submit Lab Rejection Bundle Example" ] ;
+       fhir:description [ fhir:v "HIV Submit Lab Rejection Bundle Example" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/Bundle/LabResult> ;
+         fhir:reference [ fhir:v "Bundle/LabResult" ]
+       ] ;
+       fhir:name [ fhir:v "HIV Submit Lab Result Bundle Example" ] ;
+       fhir:description [ fhir:v "HIV Submit Lab Result Bundle Example" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/ValueSet/vs-hiv-test-done> ;
+         fhir:reference [ fhir:v "ValueSet/vs-hiv-test-done" ]
+       ] ;
+       fhir:name [ fhir:v "HIV Test Done" ] ;
+       fhir:description [ fhir:v "Used by the observation to indicate that a HIV test was performed." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/key-population-status> ;
+         fhir:reference [ fhir:v "StructureDefinition/key-population-status" ]
+       ] ;
+       fhir:name [ fhir:v "Key HIV Population" ] ;
+       fhir:description [ fhir:v "Populations who are at higher risk for HIV." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/ValueSet/vs-key-population-status> ;
+         fhir:reference [ fhir:v "ValueSet/vs-key-population-status" ]
+       ] ;
+       fhir:name [ fhir:v "Key Population Status" ] ;
+       fhir:description [ fhir:v "A list of key population types" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/CodeSystem/cs-key-population-status> ;
+         fhir:reference [ fhir:v "CodeSystem/cs-key-population-status" ]
+       ] ;
+       fhir:name [ fhir:v "Key Population Status" ] ;
+       fhir:description [ fhir:v "A list of key population types" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/HIV-lab-order> ;
+         fhir:reference [ fhir:v "StructureDefinition/HIV-lab-order" ]
+       ] ;
+       fhir:name [ fhir:v "Lab Order" ] ;
+       fhir:description [ fhir:v "A service request that initiates the need for the lab to collect the test sample." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Task" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/Task/HIVLabOrderTaskExample> ;
+         fhir:reference [ fhir:v "Task/HIVLabOrderTaskExample" ]
+       ] ;
+       fhir:name [ fhir:v "Lab Order example" ] ;
+       fhir:description [ fhir:v "Lab Order example" ] ;
+       fhir:example [
+         fhir:v "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-service-request-location> ;
+         fhir:reference [ fhir:v "StructureDefinition/hiv-service-request-location" ]
+       ] ;
+       fhir:name [ fhir:v "Lab Order Request Location" ] ;
+       fhir:description [ fhir:v "What is the location of the organization responsible for conducting the examination of the individual's sample?" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Task" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/Task/HIVLabResultTaskExample> ;
+         fhir:reference [ fhir:v "Task/HIVLabResultTaskExample" ]
+       ] ;
+       fhir:name [ fhir:v "Lab Result Task example" ] ;
+       fhir:description [ fhir:v "Lab Result Task example" ] ;
+       fhir:example [
+         fhir:v "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-test-results> ;
+         fhir:reference [ fhir:v "StructureDefinition/hiv-test-results" ]
+       ] ;
+       fhir:name [ fhir:v "Lab Results" ] ;
+       fhir:description [ fhir:v "The result of the lab test which determines whether the patient is infected with HIV or not." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-lab-task> ;
+         fhir:reference [ fhir:v "StructureDefinition/hiv-lab-task" ]
+       ] ;
+       fhir:name [ fhir:v "Lab Task" ] ;
+       fhir:description [ fhir:v "Assists with tracking the state of the lab order and its completion status." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-care-next-visit> ;
+         fhir:reference [ fhir:v "StructureDefinition/hiv-care-next-visit" ]
+       ] ;
+       fhir:name [ fhir:v "Next Appointment Date" ] ;
+       fhir:description [ fhir:v "A date representing the patient's next scheduled appointment." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/hiv-patient" ]
+       ] ;
+       fhir:name [ fhir:v "Patient" ] ;
+       fhir:description [ fhir:v "A patient resource for an HIV Patient" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-episode-of-care> ;
+         fhir:reference [ fhir:v "StructureDefinition/hiv-episode-of-care" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Enrollment Type" ] ;
+       fhir:description [ fhir:v "This profile is used to enrol the patient into HIV care." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/Patient/HIVPatientExample> ;
+         fhir:reference [ fhir:v "Patient/HIVPatientExample" ]
+       ] ;
+       fhir:name [ fhir:v "Patient example" ] ;
+       fhir:description [ fhir:v "Patient example" ] ;
+       fhir:example [
+         fhir:v "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-patient"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-practitioner> ;
+         fhir:reference [ fhir:v "StructureDefinition/hiv-practitioner" ]
+       ] ;
+       fhir:name [ fhir:v "Practitioner" ] ;
+       fhir:description [ fhir:v "The healthcare professional who has been assigned to a given lab task." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/Practitioner/PractitionerExample> ;
+         fhir:reference [ fhir:v "Practitioner/PractitionerExample" ]
+       ] ;
+       fhir:name [ fhir:v "Practitioner example" ] ;
+       fhir:description [ fhir:v "Practitioner example" ] ;
+       fhir:example [
+         fhir:v "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-practitioner"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-practitioner>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/ValueSet/vs-reason-for-assessment> ;
+         fhir:reference [ fhir:v "ValueSet/vs-reason-for-assessment" ]
+       ] ;
+       fhir:name [ fhir:v "Reason for Assessment" ] ;
+       fhir:description [ fhir:v "A list of reasons associated with the service request for the lab order." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/ValueSet/vs-reason-sample-cancelled-or-rejected> ;
+         fhir:reference [ fhir:v "ValueSet/vs-reason-sample-cancelled-or-rejected" ]
+       ] ;
+       fhir:name [ fhir:v "Reasons why a lab order was cancelled or rejected" ] ;
+       fhir:description [ fhir:v "Reasons why a lab order was cancelled or rejected." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/ValueSet/vs-specimen-type> ;
+         fhir:reference [ fhir:v "ValueSet/vs-specimen-type" ]
+       ] ;
+       fhir:name [ fhir:v "Specimen Type Used In Viral Load testing" ] ;
+       fhir:description [ fhir:v "A list of specimen types." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/target-facility-encounter> ;
+         fhir:reference [ fhir:v "StructureDefinition/target-facility-encounter" ]
+       ] ;
+       fhir:name [ fhir:v "Target Facility Encounter" ] ;
+       fhir:description [ fhir:v "This profile represents the current facility at which the patient is receiving treatment." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Encounter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/Encounter/TargetFacilityEncounterExample> ;
+         fhir:reference [ fhir:v "Encounter/TargetFacilityEncounterExample" ]
+       ] ;
+       fhir:name [ fhir:v "Target Facility Encounter example" ] ;
+       fhir:description [ fhir:v "Target Facility Encounter example" ] ;
+       fhir:example [
+         fhir:v "http://openhie.org/fhir/training-solution-1/StructureDefinition/target-facility-encounter"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/target-facility-encounter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/ValueSet/vs-test-types> ;
+         fhir:reference [ fhir:v "ValueSet/vs-test-types" ]
+       ] ;
+       fhir:name [ fhir:v "Test Types" ] ;
+       fhir:description [ fhir:v "A list of HIV test types" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/transferring-facility-encounter> ;
+         fhir:reference [ fhir:v "StructureDefinition/transferring-facility-encounter" ]
+       ] ;
+       fhir:name [ fhir:v "Transferring Facility Encounter" ] ;
+       fhir:description [ fhir:v "This profile represents the facility the patient is being transferred from." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Encounter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/Encounter/TransferringFacilityEncounterExample> ;
+         fhir:reference [ fhir:v "Encounter/TransferringFacilityEncounterExample" ]
+       ] ;
+       fhir:name [ fhir:v "Transferring Facility Encounter example" ] ;
+       fhir:description [ fhir:v "Transferring Facility Encounter example" ] ;
+       fhir:example [
+         fhir:v "http://openhie.org/fhir/training-solution-1/StructureDefinition/transferring-facility-encounter"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/transferring-facility-encounter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/ValueSet/vs-vl-result-code> ;
+         fhir:reference [ fhir:v "ValueSet/vs-vl-result-code" ]
+       ] ;
+       fhir:name [ fhir:v "Viral Load Result Code" ] ;
+       fhir:description [ fhir:v "A code used to indicate the category for the lab result." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/viral-load-specimen> ;
+         fhir:reference [ fhir:v "StructureDefinition/viral-load-specimen" ]
+       ] ;
+       fhir:name [ fhir:v "Viral Load Specimen" ] ;
+       fhir:description [ fhir:v "The test sample that was collected for the initiated lab order." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Specimen" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/Specimen/VLSpecimenExample> ;
+         fhir:reference [ fhir:v "Specimen/VLSpecimenExample" ]
+       ] ;
+       fhir:name [ fhir:v "Viral Load Specimen example" ] ;
+       fhir:description [ fhir:v "Viral Load Specimen example" ] ;
+       fhir:example [
+         fhir:v "http://openhie.org/fhir/training-solution-1/StructureDefinition/viral-load-specimen"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/viral-load-specimen>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/Observation/HIVTestResultExample> ;
+         fhir:reference [ fhir:v "Observation/HIVTestResultExample" ]
+       ] ;
+       fhir:name [ fhir:v "Viral Load Suppression example" ] ;
+       fhir:description [ fhir:v "Viral Load Suppression example" ] ;
+       fhir:example [
+         fhir:v "http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-test-results"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/training-solution-1/StructureDefinition/hiv-test-results>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/training-solution-1/ValueSet/vs-vl-suppression> ;
+         fhir:reference [ fhir:v "ValueSet/vs-vl-suppression" ]
+       ] ;
+       fhir:name [ fhir:v "Viral Load Suppressions Status" ] ;
+       fhir:description [ fhir:v "Describes a patient's current viral load status." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:page [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "toc.html"^^xsd:anyURI ]
+       ] ) ;
+       fhir:name [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:title [ fhir:v "Table of Contents" ] ;
+       fhir:generation [ fhir:v "html" ] ;
+       fhir:page ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "index.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Home" ] ;
+         fhir:generation [ fhir:v "html" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "changes.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "changes.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Changes" ] ;
+         fhir:generation [ fhir:v "html" ]
+       ] )
+     ] ;
+     fhir:parameter ( [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/capabilities" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/examples" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/extensions" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/models" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/operations" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/profiles" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/resources" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/vocabulary" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/maps" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/testing" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/history" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "fsh-generated/resources" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "template/config" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "input/images" ]
+     ] [
+       fhir:code [ fhir:v "path-tx-cache" ] ;
+       fhir:value [ fhir:v "input-cache/txcache" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

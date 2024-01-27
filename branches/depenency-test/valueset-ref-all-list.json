@@ -1,0 +1,1362 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/address-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressType",
+      "title" : "AddressType",
+      "description" : "The type of an address (physical / postal).",
+      "systems" : ["http://hl7.org/fhir/address-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.69"],
+      "sources" : ["2.16.840.1.113883.4.642.3.69"],
+      "uses" : {
+      },
+      "StructureDefinition-pixm-patient-birthate-required.html" : "PIXm Patient - BirthDate Required",
+      "StructureDefinition-pdqm-patient.html" : "PDQm Patient",
+      "StructureDefinition-hiv-service-request-location.html" : "Lab Order Request Location",
+      "StructureDefinition-hiv-patient.html" : "Patient",
+      "StructureDefinition-pixm-patient.html" : "PIXm Patient",
+      "StructureDefinition-hiv-organization.html" : "HIV Organization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/address-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressUse",
+      "title" : "AddressUse",
+      "description" : "The use of an address.",
+      "systems" : ["http://hl7.org/fhir/address-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.67"],
+      "sources" : ["2.16.840.1.113883.4.642.3.67"],
+      "uses" : {
+      },
+      "StructureDefinition-pixm-patient-birthate-required.html" : "PIXm Patient - BirthDate Required",
+      "StructureDefinition-pdqm-patient.html" : "PDQm Patient",
+      "StructureDefinition-hiv-service-request-location.html" : "Lab Order Request Location",
+      "StructureDefinition-hiv-patient.html" : "Patient",
+      "StructureDefinition-pixm-patient.html" : "PIXm Patient",
+      "StructureDefinition-hiv-organization.html" : "HIV Organization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-pixm-patient-birthate-required.html" : "PIXm Patient - BirthDate Required",
+      "StructureDefinition-pdqm-patient.html" : "PDQm Patient",
+      "StructureDefinition-hiv-patient.html" : "Patient",
+      "StructureDefinition-pixm-patient.html" : "PIXm Patient",
+      "StructureDefinition-hiv-practitioner.html" : "Practitioner"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/body-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTBodyStructures",
+      "title" : "SNOMED CT Body Structures",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.141"],
+      "sources" : ["2.16.840.1.113883.4.642.3.141"],
+      "uses" : {
+      },
+      "StructureDefinition-date-hiv-test-done.html" : "Date HIV Test Done",
+      "StructureDefinition-HIV-lab-order.html" : "Lab Order",
+      "StructureDefinition-viral-load-specimen.html" : "Viral Load Specimen",
+      "StructureDefinition-hiv-diagnosis.html" : "Diagnosis",
+      "StructureDefinition-hiv-test-results.html" : "Lab Results"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-kind",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanActivityKind",
+      "title" : "Care Plan Activity Kind",
+      "description" : "Resource types defined as part of FHIR that can be represented as in-line definitions of a care plan activity.",
+      "systems" : ["http://hl7.org/fhir/resource-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.145"],
+      "sources" : ["2.16.840.1.113883.4.642.3.145"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-arv-treatment.html" : "ARV Treatment"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanActivityStatus",
+      "title" : "CarePlanActivityStatus",
+      "description" : "Codes that reflect the current state of a care plan activity within its overall life cycle.",
+      "systems" : ["http://hl7.org/fhir/care-plan-activity-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.146"],
+      "sources" : ["2.16.840.1.113883.4.642.3.146"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-arv-treatment.html" : "ARV Treatment"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanCategory",
+      "title" : "Care Plan Category",
+      "description" : "Example codes indicating the category a care plan falls within.  Note that these are in no way complete and might not even be appropriate for some uses.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.148"],
+      "sources" : ["2.16.840.1.113883.4.642.3.148"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-arv-treatment.html" : "ARV Treatment"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanIntent",
+      "title" : "Care Plan Intent",
+      "description" : "Codes indicating the degree of authority/intentionality associated with a care plan.",
+      "systems" : ["http://hl7.org/fhir/request-intent"],
+      "oids" : ["2.16.840.1.113883.4.642.3.150"],
+      "sources" : ["2.16.840.1.113883.4.642.3.150"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-arv-treatment.html" : "ARV Treatment"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTClinicalFindings",
+      "title" : "SNOMED CT Clinical Findings",
+      "description" : "This value set includes all the \"Clinical finding\" [SNOMED CT](http://snomed.info/sct) codes - concepts where concept is-a 404684003 (Clinical finding (finding)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.232"],
+      "sources" : ["2.16.840.1.113883.4.642.3.232"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-arv-treatment.html" : "ARV Treatment",
+      "StructureDefinition-hiv-diagnostic-report.html" : "Diagnostic Report"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionCategoryCodes",
+      "title" : "Condition Category Codes",
+      "description" : "Preferred value set for Condition Categories.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.162"],
+      "sources" : ["2.16.840.1.113883.4.642.3.162"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-diagnosis.html" : "Diagnosis"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-clinical",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionClinicalStatusCodes",
+      "title" : "Condition Clinical Status Codes",
+      "description" : "Preferred value set for Condition Clinical Status.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-clinical"],
+      "oids" : ["2.16.840.1.113883.4.642.3.164"],
+      "sources" : ["2.16.840.1.113883.4.642.3.164"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-diagnosis.html" : "Diagnosis"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Condition/DiagnosisSeverity",
+      "title" : "Condition/Diagnosis Severity",
+      "description" : "Preferred value set for Condition/Diagnosis severity grading.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.168"],
+      "sources" : ["2.16.840.1.113883.4.642.3.168"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-diagnosis.html" : "Diagnosis"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-stage",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionStage",
+      "title" : "Condition Stage",
+      "description" : "Example value set for stages of cancer and other conditions.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.170"],
+      "sources" : ["2.16.840.1.113883.4.642.3.170"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-diagnosis.html" : "Diagnosis"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-stage-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionStageType",
+      "title" : "Condition Stage Type",
+      "description" : "Example value set for the type of stages of cancer and other conditions",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.171"],
+      "sources" : ["2.16.840.1.113883.4.642.3.171"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-diagnosis.html" : "Diagnosis"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-ver-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionVerificationStatus",
+      "title" : "ConditionVerificationStatus",
+      "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-ver-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.166"],
+      "sources" : ["2.16.840.1.113883.4.642.3.166"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-diagnosis.html" : "Diagnosis"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointSystem",
+      "title" : "ContactPointSystem",
+      "description" : "Telecommunications form for contact point.",
+      "systems" : ["http://hl7.org/fhir/contact-point-system"],
+      "oids" : ["2.16.840.1.113883.4.642.3.71"],
+      "sources" : ["2.16.840.1.113883.4.642.3.71"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-practitioner.html" : "Practitioner"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointUse",
+      "title" : "ContactPointUse",
+      "description" : "Use of contact point.",
+      "systems" : ["http://hl7.org/fhir/contact-point-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.73"],
+      "sources" : ["2.16.840.1.113883.4.642.3.73"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-practitioner.html" : "Practitioner"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ContactEntityType",
+      "title" : "Contact entity type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the purpose for which you would contact a contact party.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/contactentity-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.416"],
+      "sources" : ["2.16.840.1.113883.4.642.3.416"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-service-request-location.html" : "Lab Order Request Location",
+      "StructureDefinition-hiv-organization.html" : "HIV Organization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DataAbsentReason",
+      "title" : "DataAbsentReason",
+      "description" : "Used to specify why the normally expected content of the data element is missing.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/data-absent-reason"],
+      "oids" : ["2.16.840.1.113883.4.642.3.5"],
+      "sources" : ["2.16.840.1.113883.4.642.3.5"],
+      "uses" : {
+      },
+      "StructureDefinition-date-hiv-test-done.html" : "Date HIV Test Done",
+      "StructureDefinition-hiv-test-results.html" : "Lab Results"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/diagnosis-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DiagnosisRole",
+      "title" : "DiagnosisRole",
+      "description" : "This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/diagnosis-role"],
+      "oids" : ["2.16.840.1.113883.4.642.3.49"],
+      "sources" : ["2.16.840.1.113883.4.642.3.49"],
+      "uses" : {
+      },
+      "StructureDefinition-transferring-facility-encounter.html" : "Transferring Facility Encounter",
+      "StructureDefinition-hiv-episode-of-care.html" : "Patient Enrollment Type",
+      "StructureDefinition-target-facility-encounter.html" : "Target Facility Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/diagnostic-report-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DiagnosticReportStatus",
+      "title" : "DiagnosticReportStatus",
+      "description" : "The status of the diagnostic report.",
+      "systems" : ["http://hl7.org/fhir/diagnostic-report-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.235"],
+      "sources" : ["2.16.840.1.113883.4.642.3.235"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-diagnostic-report.html" : "Diagnostic Report"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/diagnostic-service-sections",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DiagnosticServiceSectionCodes",
+      "title" : "Diagnostic Service Section Codes",
+      "description" : "This value set includes all the codes in HL7 V2 table 0074.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0074"],
+      "oids" : ["2.16.840.1.113883.4.642.3.234"],
+      "sources" : ["2.16.840.1.113883.4.642.3.234"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-diagnostic-report.html" : "Diagnostic Report"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-admit-source",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AdmitSource",
+      "title" : "Admit source",
+      "description" : "This value set defines a set of codes that can be used to indicate from where the patient came in.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/admit-source"],
+      "oids" : ["2.16.840.1.113883.4.642.3.257"],
+      "sources" : ["2.16.840.1.113883.4.642.3.257"],
+      "uses" : {
+      },
+      "StructureDefinition-transferring-facility-encounter.html" : "Transferring Facility Encounter",
+      "StructureDefinition-target-facility-encounter.html" : "Target Facility Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-diet",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Diet",
+      "title" : "Diet",
+      "description" : "This value set defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/diet"],
+      "oids" : ["2.16.840.1.113883.4.642.3.255"],
+      "sources" : ["2.16.840.1.113883.4.642.3.255"],
+      "uses" : {
+      },
+      "StructureDefinition-transferring-facility-encounter.html" : "Transferring Facility Encounter",
+      "StructureDefinition-target-facility-encounter.html" : "Target Facility Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-discharge-disposition",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DischargeDisposition",
+      "title" : "Discharge disposition",
+      "description" : "This value set defines a set of codes that can be used to where the patient left the hospital.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/discharge-disposition"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.259"],
+      "sources" : ["2.16.840.1.113883.4.642.3.259"],
+      "uses" : {
+      },
+      "StructureDefinition-transferring-facility-encounter.html" : "Transferring Facility Encounter",
+      "StructureDefinition-target-facility-encounter.html" : "Target Facility Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-location-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterLocationStatus",
+      "title" : "EncounterLocationStatus",
+      "description" : "The status of the location.",
+      "systems" : ["http://hl7.org/fhir/encounter-location-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.262"],
+      "sources" : ["2.16.840.1.113883.4.642.3.262"],
+      "uses" : {
+      },
+      "StructureDefinition-transferring-facility-encounter.html" : "Transferring Facility Encounter",
+      "StructureDefinition-target-facility-encounter.html" : "Target Facility Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-participant-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipantType",
+      "title" : "Participant type",
+      "description" : "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/participant-type",
+        "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.250"],
+      "sources" : ["2.16.840.1.113883.4.642.3.250"],
+      "uses" : {
+      },
+      "StructureDefinition-transferring-facility-encounter.html" : "Transferring Facility Encounter",
+      "StructureDefinition-target-facility-encounter.html" : "Target Facility Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterReasonCodes",
+      "title" : "Encounter Reason Codes",
+      "description" : "This examples value set defines the set of codes that can be used to indicate reasons for an encounter.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.261"],
+      "sources" : ["2.16.840.1.113883.4.642.3.261"],
+      "uses" : {
+      },
+      "StructureDefinition-transferring-facility-encounter.html" : "Transferring Facility Encounter",
+      "StructureDefinition-target-facility-encounter.html" : "Target Facility Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-special-arrangements",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecialArrangements",
+      "title" : "Special arrangements",
+      "description" : "This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/encounter-special-arrangements"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.253"],
+      "sources" : ["2.16.840.1.113883.4.642.3.253"],
+      "uses" : {
+      },
+      "StructureDefinition-transferring-facility-encounter.html" : "Transferring Facility Encounter",
+      "StructureDefinition-target-facility-encounter.html" : "Target Facility Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-special-courtesy",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecialCourtesy",
+      "title" : "Special courtesy",
+      "description" : "This value set defines a set of codes that can be used to indicate special courtesies provided to the patient.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.252"],
+      "sources" : ["2.16.840.1.113883.4.642.3.252"],
+      "uses" : {
+      },
+      "StructureDefinition-transferring-facility-encounter.html" : "Transferring Facility Encounter",
+      "StructureDefinition-target-facility-encounter.html" : "Target Facility Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterStatus",
+      "title" : "EncounterStatus",
+      "description" : "Current state of the encounter.",
+      "systems" : ["http://hl7.org/fhir/encounter-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.246"],
+      "sources" : ["2.16.840.1.113883.4.642.3.246"],
+      "uses" : {
+      },
+      "StructureDefinition-transferring-facility-encounter.html" : "Transferring Facility Encounter",
+      "StructureDefinition-target-facility-encounter.html" : "Target Facility Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterType",
+      "title" : "Encounter type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the type of encounter: a specific code indicating type of service provided.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/encounter-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.248"],
+      "sources" : ["2.16.840.1.113883.4.642.3.248"],
+      "uses" : {
+      },
+      "StructureDefinition-transferring-facility-encounter.html" : "Transferring Facility Encounter",
+      "StructureDefinition-target-facility-encounter.html" : "Target Facility Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/episode-of-care-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EpisodeOfCareStatus",
+      "title" : "EpisodeOfCareStatus",
+      "description" : "The status of the episode of care.",
+      "systems" : ["http://hl7.org/fhir/episode-of-care-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.664"],
+      "sources" : ["2.16.840.1.113883.4.642.3.664"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-episode-of-care.html" : "Patient Enrollment Type"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/episodeofcare-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EpisodeOfCareType",
+      "title" : "Episode of care type",
+      "description" : "This example value set defines a set of codes that can be used to express the usage type of an EpisodeOfCare record.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/episodeofcare-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.666"],
+      "sources" : ["2.16.840.1.113883.4.642.3.666"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-episode-of-care.html" : "Patient Enrollment Type"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Identifier Type Codes",
+      "title" : "IdentifierType",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.4.642.3.45"],
+      "sources" : ["2.16.840.1.113883.4.642.3.45"],
+      "uses" : {
+      },
+      "StructureDefinition-pixm-patient-birthate-required.html" : "PIXm Patient - BirthDate Required",
+      "StructureDefinition-HIV-lab-order.html" : "Lab Order",
+      "StructureDefinition-viral-load-specimen.html" : "Viral Load Specimen",
+      "StructureDefinition-hiv-lab-task.html" : "Lab Task",
+      "StructureDefinition-hiv-service-request-location.html" : "Lab Order Request Location",
+      "StructureDefinition-hiv-diagnosis.html" : "Diagnosis",
+      "StructureDefinition-hiv-episode-of-care.html" : "Patient Enrollment Type",
+      "StructureDefinition-hiv-patient.html" : "Patient",
+      "StructureDefinition-pixm-patient.html" : "PIXm Patient",
+      "StructureDefinition-hiv-organization.html" : "HIV Organization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "systems" : ["http://hl7.org/fhir/identifier-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.57"],
+      "sources" : ["2.16.840.1.113883.4.642.3.57"],
+      "uses" : {
+      },
+      "StructureDefinition-pixm-patient-birthate-required.html" : "PIXm Patient - BirthDate Required",
+      "StructureDefinition-HIV-lab-order.html" : "Lab Order",
+      "StructureDefinition-viral-load-specimen.html" : "Viral Load Specimen",
+      "StructureDefinition-hiv-lab-task.html" : "Lab Task",
+      "StructureDefinition-hiv-service-request-location.html" : "Lab Order Request Location",
+      "StructureDefinition-hiv-diagnosis.html" : "Diagnosis",
+      "StructureDefinition-hiv-episode-of-care.html" : "Patient Enrollment Type",
+      "StructureDefinition-hiv-patient.html" : "Patient",
+      "StructureDefinition-pixm-patient.html" : "PIXm Patient",
+      "StructureDefinition-hiv-organization.html" : "HIV Organization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.20"],
+      "sources" : ["2.16.840.1.113883.4.642.3.20"],
+      "uses" : {
+      },
+      "StructureDefinition-date-hiv-test-done.html" : "Date HIV Test Done",
+      "StructureDefinition-pdqm-patient.html" : "PDQm Patient",
+      "StructureDefinition-transferring-facility-encounter.html" : "Transferring Facility Encounter",
+      "StructureDefinition-viral-load-specimen.html" : "Viral Load Specimen",
+      "StructureDefinition-hiv-lab-task.html" : "Lab Task",
+      "StructureDefinition-hiv-diagnosis.html" : "Diagnosis",
+      "StructureDefinition-hiv-organization.html" : "HIV Organization",
+      "StructureDefinition-pixm-patient-birthate-required.html" : "PIXm Patient - BirthDate Required",
+      "StructureDefinition-HIV-lab-order.html" : "Lab Order",
+      "StructureDefinition-hiv-arv-treatment.html" : "ARV Treatment",
+      "StructureDefinition-hiv-service-request-location.html" : "Lab Order Request Location",
+      "StructureDefinition-hiv-episode-of-care.html" : "Patient Enrollment Type",
+      "StructureDefinition-hiv-patient.html" : "Patient",
+      "StructureDefinition-pixm-patient.html" : "PIXm Patient",
+      "StructureDefinition-target-facility-encounter.html" : "Target Facility Encounter",
+      "StructureDefinition-hiv-diagnostic-report.html" : "Diagnostic Report",
+      "StructureDefinition-hiv-practitioner.html" : "Practitioner",
+      "StructureDefinition-hiv-test-results.html" : "Lab Results"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/link-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "LinkType",
+      "description" : "The type of link between this patient resource and another patient resource.",
+      "systems" : ["http://hl7.org/fhir/link-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.423"],
+      "sources" : ["2.16.840.1.113883.4.642.3.423"],
+      "uses" : {
+      },
+      "StructureDefinition-pixm-patient-birthate-required.html" : "PIXm Patient - BirthDate Required",
+      "StructureDefinition-pdqm-patient.html" : "PDQm Patient",
+      "StructureDefinition-hiv-patient.html" : "Patient",
+      "StructureDefinition-pixm-patient.html" : "PIXm Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/location-physical-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LocationType",
+      "title" : "Location type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/location-physical-type"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.328"],
+      "sources" : ["2.16.840.1.113883.4.642.3.328"],
+      "uses" : {
+      },
+      "StructureDefinition-transferring-facility-encounter.html" : "Transferring Facility Encounter",
+      "StructureDefinition-target-facility-encounter.html" : "Target Facility Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/manifestation-or-symptom",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ManifestationAndSymptomCodes",
+      "title" : "Manifestation and Symptom Codes",
+      "description" : "Example value set for Manifestation and Symptom codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.169"],
+      "sources" : ["2.16.840.1.113883.4.642.3.169"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-diagnosis.html" : "Diagnosis"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/marital-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Marital Status Codes",
+      "title" : "MaritalStatus",
+      "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.29"],
+      "sources" : ["2.16.840.1.113883.4.642.3.29"],
+      "uses" : {
+      },
+      "StructureDefinition-pixm-patient-birthate-required.html" : "PIXm Patient - BirthDate Required",
+      "StructureDefinition-pdqm-patient.html" : "PDQm Patient",
+      "StructureDefinition-hiv-patient.html" : "Patient",
+      "StructureDefinition-pixm-patient.html" : "PIXm Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-as-needed-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationAsNeededReasonCodes",
+      "title" : "SNOMED CT Medication As Needed Reason Codes",
+      "description" : "This value set includes all clinical findings from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.96"],
+      "sources" : ["2.16.840.1.113883.4.642.3.96"],
+      "uses" : {
+      },
+      "StructureDefinition-HIV-lab-order.html" : "Lab Order"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationCodes",
+      "title" : "SNOMED CT Medication Codes",
+      "description" : "This value set includes all drug or medicament substance codes and all pharmaceutical/biologic products from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.375"],
+      "sources" : ["2.16.840.1.113883.4.642.3.375"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-arv-treatment.html" : "ARV Treatment"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/name-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "NameUse",
+      "title" : "NameUse",
+      "description" : "The use of a human name.",
+      "systems" : ["http://hl7.org/fhir/name-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.65"],
+      "sources" : ["2.16.840.1.113883.4.642.3.65"],
+      "uses" : {
+      },
+      "StructureDefinition-pixm-patient-birthate-required.html" : "PIXm Patient - BirthDate Required",
+      "StructureDefinition-pdqm-patient.html" : "PDQm Patient",
+      "StructureDefinition-hiv-patient.html" : "Patient",
+      "StructureDefinition-pixm-patient.html" : "PIXm Patient",
+      "StructureDefinition-hiv-practitioner.html" : "Practitioner"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationCategoryCodes",
+      "title" : "Observation Category Codes",
+      "description" : "Observation Category codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.403"],
+      "sources" : ["2.16.840.1.113883.4.642.3.403"],
+      "uses" : {
+      },
+      "StructureDefinition-date-hiv-test-done.html" : "Date HIV Test Done",
+      "StructureDefinition-hiv-test-results.html" : "Lab Results"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LOINCCodes",
+      "title" : "LOINC Codes",
+      "description" : "This value set includes all LOINC codes",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.396"],
+      "sources" : ["2.16.840.1.113883.4.642.3.396"],
+      "uses" : {
+      },
+      "StructureDefinition-date-hiv-test-done.html" : "Date HIV Test Done",
+      "StructureDefinition-hiv-test-results.html" : "Lab Results"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationInterpretationCodes",
+      "title" : "Observation Interpretation Codes",
+      "description" : "A categorical assessment, providing a rough qualitative interpretation of the observation value,    such as “normal”/ “abnormal”,”low” / “high”, “better” / “worse”, “susceptible” / “resistant”, “expected”/ “not expected”.    The value set is intended to be for ANY use where coded representation of an interpretation is needed.   \r\n   \r\n   Notes:\r\n   \r\n   This is being communicated in v2.x in OBX-8 (Observation Interpretation), in v3 in ObservationInterpretation (CWE) in R1 (Representative Realm) and in FHIR in    Observation.interpretation. Historically these values come from the laboratory domain, and these codes are extensively    used. The value set binding is extensible, so codes outside the value set that are needed for interpretation concepts    (i.e. particular meanings) that are not included in the value set can be used, and these new codes may also be added to    the value set and published in a future version.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.399"],
+      "sources" : ["2.16.840.1.113883.4.642.3.399"],
+      "uses" : {
+      },
+      "StructureDefinition-date-hiv-test-done.html" : "Date HIV Test Done",
+      "StructureDefinition-hiv-test-results.html" : "Lab Results"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationMethods",
+      "title" : "Observation Methods",
+      "description" : "Observation Method codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 272394005 (Technique (qualifier value)) or is-a 129264002 (Action (qualifier value)) or is-a 386053000 (Evaluation procedure(procedure))",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.395"],
+      "sources" : ["2.16.840.1.113883.4.642.3.395"],
+      "uses" : {
+      },
+      "StructureDefinition-date-hiv-test-done.html" : "Date HIV Test Done",
+      "StructureDefinition-hiv-test-results.html" : "Lab Results"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "ObservationStatus",
+      "description" : "Codes providing the status of an observation.",
+      "systems" : ["http://hl7.org/fhir/observation-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.400"],
+      "sources" : ["2.16.840.1.113883.4.642.3.400"],
+      "uses" : {
+      },
+      "StructureDefinition-date-hiv-test-done.html" : "Date HIV Test Done",
+      "StructureDefinition-hiv-test-results.html" : "Lab Results"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/organization-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "OrganizationType",
+      "title" : "Organization type",
+      "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/organization-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.414"],
+      "sources" : ["2.16.840.1.113883.4.642.3.414"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-service-request-location.html" : "Lab Order Request Location",
+      "StructureDefinition-hiv-organization.html" : "HIV Organization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/participant-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipantRoles",
+      "title" : "Participant Roles",
+      "description" : "Roles of participants that may be included in a care team.  Defined as: Is a Person, Healthcare professional (occupation) or Healthcare related organization (qualifier value).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.152"],
+      "sources" : ["2.16.840.1.113883.4.642.3.152"],
+      "uses" : {
+      },
+      "StructureDefinition-HIV-lab-order.html" : "Lab Order"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PatientContactRelationship",
+      "title" : "Patient Contact Relationship ",
+      "description" : "The nature of the relationship between the patient and the contact person.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0131"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1130"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1130"],
+      "uses" : {
+      },
+      "StructureDefinition-pixm-patient-birthate-required.html" : "PIXm Patient - BirthDate Required",
+      "StructureDefinition-pdqm-patient.html" : "PDQm Patient",
+      "StructureDefinition-hiv-patient.html" : "Patient",
+      "StructureDefinition-pixm-patient.html" : "PIXm Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/performer-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedurePerformerRoleCodes",
+      "title" : "Procedure Performer Role Codes",
+      "description" : "This example value set defines the set of codes that can be used to indicate a role of a procedure performer.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.433"],
+      "sources" : ["2.16.840.1.113883.4.642.3.433"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-lab-task.html" : "Lab Task"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeAppliesToCodes",
+      "title" : "Observation Reference Range Applies To Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the particular target population the reference range applies to.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-Race",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.407"],
+      "sources" : ["2.16.840.1.113883.4.642.3.407"],
+      "uses" : {
+      },
+      "StructureDefinition-date-hiv-test-done.html" : "Date HIV Test Done",
+      "StructureDefinition-hiv-test-results.html" : "Lab Results"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeMeaningCodes",
+      "title" : "Observation Reference Range Meaning Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/referencerange-meaning"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.397"],
+      "sources" : ["2.16.840.1.113883.4.642.3.397"],
+      "uses" : {
+      },
+      "StructureDefinition-date-hiv-test-done.html" : "Date HIV Test Done",
+      "StructureDefinition-hiv-test-results.html" : "Lab Results"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestIntent",
+      "title" : "RequestIntent",
+      "description" : "Codes indicating the degree of authority/intentionality associated with a request.",
+      "systems" : ["http://hl7.org/fhir/request-intent"],
+      "oids" : ["2.16.840.1.113883.4.642.3.113"],
+      "sources" : ["2.16.840.1.113883.4.642.3.113"],
+      "uses" : {
+      },
+      "StructureDefinition-HIV-lab-order.html" : "Lab Order"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-priority",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "Request priority",
+      "description" : "The clinical priority of a diagnostic order.",
+      "systems" : ["http://hl7.org/fhir/request-priority"],
+      "oids" : ["2.16.840.1.113883.4.642.3.115"],
+      "sources" : ["2.16.840.1.113883.4.642.3.115"],
+      "uses" : {
+      },
+      "StructureDefinition-HIV-lab-order.html" : "Lab Order",
+      "StructureDefinition-hiv-lab-task.html" : "Lab Task"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestStatus",
+      "title" : "RequestStatus",
+      "description" : "Codes identifying the lifecycle stage of a request.",
+      "systems" : ["http://hl7.org/fhir/request-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.111"],
+      "sources" : ["2.16.840.1.113883.4.642.3.111"],
+      "uses" : {
+      },
+      "StructureDefinition-HIV-lab-order.html" : "Lab Order",
+      "StructureDefinition-hiv-arv-treatment.html" : "ARV Treatment"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/service-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceType",
+      "title" : "Service type",
+      "description" : "This value set defines an example set of codes of service-types.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/service-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.518"],
+      "sources" : ["2.16.840.1.113883.4.642.3.518"],
+      "uses" : {
+      },
+      "StructureDefinition-transferring-facility-encounter.html" : "Transferring Facility Encounter",
+      "StructureDefinition-target-facility-encounter.html" : "Target Facility Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/servicerequest-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceRequestCategoryCodes",
+      "title" : "Service Request Category Codes",
+      "description" : "An example value set of SNOMED CT concepts that can classify a requested service",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.434"],
+      "sources" : ["2.16.840.1.113883.4.642.3.434"],
+      "uses" : {
+      },
+      "StructureDefinition-HIV-lab-order.html" : "Lab Order"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/servicerequest-orderdetail",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceRequestOrderDetailsCodes",
+      "title" : "Service Request Order Details Codes",
+      "description" : "An example value set of Codified order entry details concepts.  These concepts only make sense in the context of what is being ordered.  This example is for a patient ventilation order",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.435"],
+      "sources" : ["2.16.840.1.113883.4.642.3.435"],
+      "uses" : {
+      },
+      "StructureDefinition-HIV-lab-order.html" : "Lab Order"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/specimen-collection-method",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "FHIRSpecimenCollectionMethod",
+      "title" : "FHIR Specimen Collection Method",
+      "description" : " This example value set defines a set of codes that can be used to indicate the method by which a specimen was collected.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.468"],
+      "sources" : ["2.16.840.1.113883.4.642.3.468"],
+      "uses" : {
+      },
+      "StructureDefinition-viral-load-specimen.html" : "Viral Load Specimen"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/specimen-container-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecimenContainerType",
+      "title" : "Specimen Container Type",
+      "description" : "Checks on the patient prior specimen collection. All SNOMED CT concepts descendants of 706041008 |Device for body fluid and tissue collection/transfer/processing (physical object)|",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.470"],
+      "sources" : ["2.16.840.1.113883.4.642.3.470"],
+      "uses" : {
+      },
+      "StructureDefinition-viral-load-specimen.html" : "Viral Load Specimen"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/specimen-processing-procedure",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecimenProcessingProcedure",
+      "title" : "Specimen processing procedure",
+      "description" : "The technique that is used to perform the process or preserve the specimen.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0373"],
+      "oids" : ["2.16.840.1.113883.4.642.3.469"],
+      "sources" : ["2.16.840.1.113883.4.642.3.469"],
+      "uses" : {
+      },
+      "StructureDefinition-viral-load-specimen.html" : "Viral Load Specimen"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/specimen-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecimenStatus",
+      "title" : "SpecimenStatus",
+      "description" : "Codes providing the status/availability of a specimen.",
+      "systems" : ["http://hl7.org/fhir/specimen-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.471"],
+      "sources" : ["2.16.840.1.113883.4.642.3.471"],
+      "uses" : {
+      },
+      "StructureDefinition-viral-load-specimen.html" : "Viral Load Specimen"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/task-code",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "TaskCode",
+      "title" : "Task Codes",
+      "description" : "Codes indicating the type of action that is expected to be performed",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/task-code"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1396"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1396"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-lab-task.html" : "Lab Task"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/task-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "TaskIntent",
+      "title" : "TaskIntent",
+      "description" : "Distinguishes whether the task is a proposal, plan or full order.",
+      "systems" : [
+        "http://hl7.org/fhir/request-intent",
+        "http://hl7.org/fhir/task-intent"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1240"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1240"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-lab-task.html" : "Lab Task"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/task-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "TaskStatus",
+      "title" : "TaskStatus",
+      "description" : "The current status of the task.",
+      "systems" : ["http://hl7.org/fhir/task-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.790"],
+      "sources" : ["2.16.840.1.113883.4.642.3.790"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-lab-task.html" : "Lab Task"
+    },
+    {
+      "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-art-regimen-change-type",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VSARTRegimenChangeType",
+      "title" : "ART Regimen Change Types",
+      "description" : "A list of options to determine whether an ARV regimen was switched or substituted.",
+      "systems" : [
+        "http://openhie.org/fhir/training-solution-1/CodeSystem/cs-art-regimen-change-type"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-art-regimen-switched-or-substituted.html" : "ART Regimen Switched Or Substituted"
+    },
+    {
+      "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-artregimen-lines",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VSARTRegimenLines",
+      "title" : "ART Regimen Lines",
+      "description" : "A list of ART regimen therapeutic lines.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-art-regimen-line.html" : "ART Regimen Line"
+    },
+    {
+      "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-arv-regimen",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VSARVRegimen",
+      "title" : "A list of ARV regimen",
+      "description" : "A list of ARV regimen.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-arv-treatment.html" : "ARV Treatment"
+    },
+    {
+      "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-arvtreatment-activity-type",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VSARVMedicationRequest",
+      "title" : "ARV Treatment Medication Request",
+      "description" : "Codes used to represent a medication request for ART.",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-arv-treatment.html" : "ARV Treatment"
+    },
+    {
+      "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-careplan-outcome",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VSCarePlanActivityOutcome",
+      "title" : "ARV treatment outcomes",
+      "description" : "A list of possible ARV treatment outcomes.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-arv-treatment.html" : "ARV Treatment"
+    },
+    {
+      "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-condition",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VSCondition",
+      "title" : "Conditions",
+      "description" : "A list of possible HIV conditions.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-diagnosis.html" : "Diagnosis"
+    },
+    {
+      "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-hiv-test-done",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VSHIVTestDone",
+      "title" : "HIV Test Done",
+      "description" : "Used by the observation to indicate that a HIV test was performed.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-date-hiv-test-done.html" : "Date HIV Test Done"
+    },
+    {
+      "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-key-population-status",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VSKeyPopulationSatus",
+      "title" : "Key Population Status",
+      "description" : "A list of key population types",
+      "systems" : [
+        "http://openhie.org/fhir/training-solution-1/CodeSystem/cs-key-population-status",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-key-population-status.html" : "Key HIV Population"
+    },
+    {
+      "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-reason-for-assessment",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VSReasonForAssessment",
+      "title" : "Reason for Assessment",
+      "description" : "A list of reasons associated with the service request for the lab order.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-HIV-lab-order.html" : "Lab Order"
+    },
+    {
+      "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-reason-sample-cancelled-or-rejected",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VSReasonForSampleCancellationOrRejection",
+      "title" : "Reasons why a lab order was cancelled or rejected",
+      "description" : "Reasons why a lab order was cancelled or rejected.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-lab-task.html" : "Lab Task"
+    },
+    {
+      "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-specimen-type",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VSSpecimenType",
+      "title" : "Specimen Type Used In Viral Load testing",
+      "description" : "A list of specimen types.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-viral-load-specimen.html" : "Viral Load Specimen"
+    },
+    {
+      "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-test-types",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VSTestTypes",
+      "title" : "Test Types",
+      "description" : "A list of HIV test types",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-HIV-lab-order.html" : "Lab Order",
+      "StructureDefinition-hiv-diagnostic-report.html" : "Diagnostic Report"
+    },
+    {
+      "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-vl-result-code",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VSVLResultCode",
+      "title" : "Viral Load Result Code",
+      "description" : "A code used to indicate the category for the lab result.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-lab-task.html" : "Lab Task",
+      "StructureDefinition-hiv-test-results.html" : "Lab Results"
+    },
+    {
+      "url" : "http://openhie.org/fhir/training-solution-1/ValueSet/vs-vl-suppression",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "VSVLSuppression",
+      "title" : "Viral Load Suppressions Status",
+      "description" : "Describes a patient's current viral load status.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-test-results.html" : "Lab Results"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0092",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSReAdmissionIndicator",
+      "title" : "hl7VS-re-admissionIndicator",
+      "description" : "Value Set of codes which are used to specify that a patient is being re-admitted to a healthcare facility from which they were discharged, and indicates the circumstances around such re-admission.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0092"],
+      "oids" : ["2.16.840.1.113883.21.40"],
+      "sources" : ["2.16.840.1.113883.21.40"],
+      "uses" : {
+      },
+      "StructureDefinition-transferring-facility-encounter.html" : "Transferring Facility Encounter",
+      "StructureDefinition-target-facility-encounter.html" : "Target Facility Encounter"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0371",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSAdditivePreservative",
+      "title" : "hl7VS-additivePreservative",
+      "description" : "Concepts specifying any additive introduced to the specimen before or at the time of collection.  These additives may be introduced in order to preserve, maintain or enhance the particular nature or component of the specimen.  Used in Version 2 messaging in the SPM segment.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0371"],
+      "oids" : ["2.16.840.1.113883.21.245"],
+      "sources" : ["2.16.840.1.113883.21.245"],
+      "uses" : {
+      },
+      "StructureDefinition-viral-load-specimen.html" : "Viral Load Specimen"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0493",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSSpecimenCondition",
+      "title" : "hl7VS-specimenCondition",
+      "description" : "Concepts of modes or states of being that describe the nature of a specimen.  Used in Version 2 messaging in the SPM segment.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0493"],
+      "oids" : ["2.16.840.1.113883.21.333"],
+      "sources" : ["2.16.840.1.113883.21.333"],
+      "uses" : {
+      },
+      "StructureDefinition-viral-load-specimen.html" : "Viral Load Specimen"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0916",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSRelevantClincialInformation",
+      "title" : "hl7VS-relevantClincialInformation",
+      "description" : "Value Set of codes that specify additional clinical information about the patient or specimen to report the supporting and/or suspected diagnosis and clinical findings on requests for interpreted diagnostic studies.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0916"],
+      "oids" : ["2.16.840.1.113883.21.440"],
+      "sources" : ["2.16.840.1.113883.21.440"],
+      "uses" : {
+      },
+      "StructureDefinition-viral-load-specimen.html" : "Viral Load Specimen"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-2.7-0360",
+      "version" : "0360",
+      "status" : "active",
+      "name" : "v2.0360.2.7",
+      "title" : "v2 table 0360, Version 2.7",
+      "description" : "FHIR Value set/code system definition for HL7 v2 table 0360 ver 2.9 ( Degree/License/Certificate)",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0360|2.7"],
+      "uses" : {
+      },
+      "StructureDefinition-hiv-practitioner.html" : "Practitioner"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ActEncounterCode",
+      "title" : "ActEncounterCode",
+      "description" : "Domain provides codes that qualify the ActEncounterClass (ENC)",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "oids" : ["2.16.840.1.113883.1.11.13955"],
+      "sources" : ["2.16.840.1.113883.1.11.13955"],
+      "uses" : {
+      },
+      "StructureDefinition-transferring-facility-encounter.html" : "Transferring Facility Encounter",
+      "StructureDefinition-target-facility-encounter.html" : "Target Facility Encounter"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActPriority",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ActPriority",
+      "title" : "ActPriority",
+      "description" : "A code or set of codes (e.g., for routine, emergency,) specifying the urgency under which the Act happened, can happen, is happening, is intended to happen, or is requested/demanded to happen.\r\n\r\n*Discussion:* This attribute is used in orders to indicate the ordered priority, and in event documentation it indicates the actual priority used to perform the act. In definition mood it indicates the available priorities.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActPriority"],
+      "oids" : ["2.16.840.1.113883.1.11.16866"],
+      "sources" : ["2.16.840.1.113883.1.11.16866"],
+      "uses" : {
+      },
+      "StructureDefinition-transferring-facility-encounter.html" : "Transferring Facility Encounter",
+      "StructureDefinition-target-facility-encounter.html" : "Target Facility Encounter"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ServiceDeliveryLocationRoleType",
+      "title" : "ServiceDeliveryLocationRoleType",
+      "description" : "A role of a place that further classifies the setting (e.g., accident site, road side, work site, community location) in which services are delivered.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleCode"],
+      "oids" : ["2.16.840.1.113883.1.11.17660"],
+      "sources" : ["2.16.840.1.113883.1.11.17660"],
+      "uses" : {
+      },
+      "StructureDefinition-HIV-lab-order.html" : "Lab Order"
+    }
+  ]
+}
