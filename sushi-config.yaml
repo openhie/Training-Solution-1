@@ -63,11 +63,11 @@ dependencies:
   ihe.iti.pdqm:
     id: IHE_PDQm
     uri: https://profiles.ihe.net/ITI/PDQm/ImplementationGuide/ihe.iti.pdqm
-    version: current #2.4.0
+    version: 2.4.0
   ihe.iti.pixm:
     id: IHE_PIXm
     uri: https://profiles.ihe.net/ITI/PDQm/ImplementationGuide/ihe.iti.pixm
-    version: current #3.0.3
+    version: 3.0.3
 #  hl7.fhir.us.core: 3.1.0
 #  hl7.fhir.us.mcode:
 #    id: mcode
