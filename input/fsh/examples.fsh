@@ -68,6 +68,8 @@ InstanceOf: PDQmPatient
 Usage: #example
 Title: "PDQm Patient example"
 Description: "PDQm Patient example"
+* meta.security[+].system = "http://terminology.hl7.org/CodeSystem/v3-ActReason"
+* meta.security[=].code = #HTEST
 * name.use = #official
 * name.family = "Smith"
 * name.given[0] = "Jane"
@@ -91,6 +93,8 @@ InstanceOf: PIXmPatient
 Usage: #example
 Title: "PIXm Patient example"
 Description: "PIXm Patient example"
+* meta.security[+].system = "http://terminology.hl7.org/CodeSystem/v3-ActReason"
+* meta.security[=].code = #HTEST
 * identifier[NID].value = "NID1234567"
 * identifier[NID].system = "http://openhie.org/fhir/training-solution-1/identifier/nid"
 * identifier[MR].value = "ORG1-0765712"
@@ -121,6 +125,8 @@ InstanceOf: PIXmPatientBirthDateRequired
 Usage: #example
 Title: "PIXm Patient example - BirthDate Required"
 Description: "PIXm Patient example - BirthDate Required"
+* meta.security[+].system = "http://terminology.hl7.org/CodeSystem/v3-ActReason"
+* meta.security[=].code = #HTEST
 * identifier[NID].value = "NID1234567"
 * identifier[NID].system = "http://openhie.org/fhir/training-solution-1/identifier/nid"
 * identifier[MR].value = "ORG1-0765712"
